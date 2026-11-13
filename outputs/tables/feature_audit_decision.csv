@@ -1,0 +1,11 @@
+feature,shap_test_rank,rf_rank,permutation_rank,shap_validation_rank,official_methods_in_top10,domain_reason,proposed_removal_experiment
+Destination Port,1,5,1,1,3,experimental_setup_proxy,yes
+Init_Win_bytes_backward,3,16,6,4,2,experimental_setup_proxy,yes
+Init_Win_bytes_forward,5,23,3,5,2,experimental_setup_proxy,yes
+Bwd Packet Length Mean,4,6,5,3,3,none,no
+Bwd Packet Length Std,2,3,27,2,2,none,no
+Bwd Packet Length Max,10,4,22,9,2,none,no
+Bwd Packet Length Min,8,35,10,8,2,none,no
+Fwd IAT Min,7,28,2,6,2,none,no
+Bwd Packets/s,6,37,57,7,1,none,no
+min_seg_size_forward,9,36,16,10,1,none,no

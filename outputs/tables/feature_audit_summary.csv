@@ -1,0 +1,11 @@
+feature,shap_test_rank,rf_rank,permutation_rank,shap_validation_rank,train_nunique,train_frac_neg1,train_frac_0,train_missing_rate,train_impossible
+Destination Port,1,5,1,1,47297,0.0,0.0006004716026698395,0.0,0
+Bwd Packet Length Std,2,3,27,2,158913,0.0,0.6585150081885468,0.0,0
+Init_Win_bytes_backward,3,16,6,4,10553,0.4968899237983856,0.028749296885078116,0.0,0
+Bwd Packet Length Mean,4,6,5,3,96098,0.0,0.23623351731643544,0.0,0
+Init_Win_bytes_forward,5,23,3,5,9956,0.38277019748771063,0.0488831031743797,0.0,0
+Bwd Packets/s,6,37,57,7,691721,0.0,0.1173787744747838,0.0,0
+Fwd IAT Min,7,28,2,6,86482,6.548218131623113e-06,0.23570638575683978,0.0,11
+Bwd Packet Length Min,8,35,10,8,529,0.0,0.5494059783921899,0.0,0
+min_seg_size_forward,9,36,16,10,22,6.548218131623113e-07,0.0006508928822833375,0.0,35
+Bwd Packet Length Max,10,4,22,9,4663,0.0,0.23623351731643544,0.0,0

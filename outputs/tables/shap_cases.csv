@@ -1,0 +1,6 @@
+id,present,friday_index,label_original,label,score,n_tied
+tp_confident,True,352055,PortScan,1,0.9999704360961914,1
+tp_marginal,True,532774,DDoS,1,0.010005769319832325,1
+fp_confident,True,181994,BENIGN,0,0.9996188879013062,5
+fp_marginal,True,182411,BENIGN,0,0.010128781199455261,2
+fn_marginal,True,442290,DDoS,1,0.009999923408031464,2

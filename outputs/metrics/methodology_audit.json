@@ -1,0 +1,787 @@
+{
+  "raw_files_modified": false,
+  "rows_deleted": false,
+  "training_performed": false,
+  "split_saved": false,
+  "models_retained": [
+    "logistic_regression",
+    "random_forest",
+    "xgboost"
+  ],
+  "files": [
+    {
+      "file": "Monday-WorkingHours.pcap_ISCX.csv",
+      "day": "Monday",
+      "rows": 529918,
+      "bad_width": 0,
+      "distinct_exact_in_file": 502983,
+      "extra_exact_in_file": 26935,
+      "extra_exact_by_label": {
+        "BENIGN": 26935
+      },
+      "distinct_features_in_file": 502983,
+      "extra_features_in_file": 26935,
+      "extra_features_by_label": {
+        "BENIGN": 26935
+      },
+      "feature_rows_disagreeing_with_first_label_in_file": 0
+    },
+    {
+      "file": "Tuesday-WorkingHours.pcap_ISCX.csv",
+      "day": "Tuesday",
+      "rows": 445909,
+      "bad_width": 0,
+      "distinct_exact_in_file": 421844,
+      "extra_exact_in_file": 24065,
+      "extra_exact_by_label": {
+        "BENIGN": 19382,
+        "FTP-Patator": 2005,
+        "SSH-Patator": 2678
+      },
+      "distinct_features_in_file": 421844,
+      "extra_features_in_file": 24065,
+      "extra_features_by_label": {
+        "BENIGN": 19382,
+        "FTP-Patator": 2005,
+        "SSH-Patator": 2678
+      },
+      "feature_rows_disagreeing_with_first_label_in_file": 0
+    },
+    {
+      "file": "Wednesday-workingHours.pcap_ISCX.csv",
+      "day": "Wednesday",
+      "rows": 692703,
+      "bad_width": 0,
+      "distinct_exact_in_file": 610794,
+      "extra_exact_in_file": 81909,
+      "extra_exact_by_label": {
+        "BENIGN": 22996,
+        "DoS slowloris": 411,
+        "DoS Slowhttptest": 271,
+        "DoS Hulk": 58224,
+        "DoS GoldenEye": 7
+      },
+      "distinct_features_in_file": 610746,
+      "extra_features_in_file": 81957,
+      "extra_features_by_label": {
+        "BENIGN": 23039,
+        "DoS slowloris": 411,
+        "DoS Slowhttptest": 271,
+        "DoS Hulk": 58229,
+        "DoS GoldenEye": 7
+      },
+      "feature_rows_disagreeing_with_first_label_in_file": 117
+    },
+    {
+      "file": "Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv",
+      "day": "Thursday-Morning",
+      "rows": 170366,
+      "bad_width": 0,
+      "distinct_exact_in_file": 164300,
+      "extra_exact_in_file": 6066,
+      "extra_exact_by_label": {
+        "BENIGN": 6029,
+        "Web Attack � Brute Force": 37
+      },
+      "distinct_features_in_file": 164300,
+      "extra_features_in_file": 6066,
+      "extra_features_by_label": {
+        "BENIGN": 6029,
+        "Web Attack � Brute Force": 37
+      },
+      "feature_rows_disagreeing_with_first_label_in_file": 0
+    },
+    {
+      "file": "Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv",
+      "day": "Thursday-Afternoon",
+      "rows": 288602,
+      "bad_width": 0,
+      "distinct_exact_in_file": 252972,
+      "extra_exact_in_file": 35630,
+      "extra_exact_by_label": {
+        "BENIGN": 35630
+      },
+      "distinct_features_in_file": 252972,
+      "extra_features_in_file": 35630,
+      "extra_features_by_label": {
+        "BENIGN": 35630
+      },
+      "feature_rows_disagreeing_with_first_label_in_file": 0
+    },
+    {
+      "file": "Friday-WorkingHours-Morning.pcap_ISCX.csv",
+      "day": "Friday-Morning",
+      "rows": 191033,
+      "bad_width": 0,
+      "distinct_exact_in_file": 184145,
+      "extra_exact_in_file": 6888,
+      "extra_exact_by_label": {
+        "BENIGN": 6875,
+        "Bot": 13
+      },
+      "distinct_features_in_file": 184145,
+      "extra_features_in_file": 6888,
+      "extra_features_by_label": {
+        "BENIGN": 6875,
+        "Bot": 13
+      },
+      "feature_rows_disagreeing_with_first_label_in_file": 0
+    },
+    {
+      "file": "Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv",
+      "day": "Friday-Afternoon-PortScan",
+      "rows": 286467,
+      "bad_width": 0,
+      "distinct_exact_in_file": 214114,
+      "extra_exact_in_file": 72353,
+      "extra_exact_by_label": {
+        "BENIGN": 4242,
+        "PortScan": 68111
+      },
+      "distinct_features_in_file": 214114,
+      "extra_features_in_file": 72353,
+      "extra_features_by_label": {
+        "BENIGN": 4242,
+        "PortScan": 68111
+      },
+      "feature_rows_disagreeing_with_first_label_in_file": 0
+    },
+    {
+      "file": "Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+      "day": "Friday-Afternoon-DDoS",
+      "rows": 225745,
+      "bad_width": 0,
+      "distinct_exact_in_file": 223112,
+      "extra_exact_in_file": 2633,
+      "extra_exact_by_label": {
+        "BENIGN": 2622,
+        "DDoS": 11
+      },
+      "distinct_features_in_file": 223112,
+      "extra_features_in_file": 2633,
+      "extra_features_by_label": {
+        "BENIGN": 2622,
+        "DDoS": 11
+      },
+      "feature_rows_disagreeing_with_first_label_in_file": 0
+    }
+  ],
+  "exact_duplicates": {
+    "rows": 2830743,
+    "distinct_rows": 2522362,
+    "extra_rows": 308381,
+    "rows_after_keeping_one_exact_copy": 2522362,
+    "by_label": [
+      {
+        "label": "BENIGN",
+        "rows": 2273097,
+        "distinct_rows": 2096484,
+        "extra_rows": 176613,
+        "rows_after_keeping_one": 2096484
+      },
+      {
+        "label": "DoS Hulk",
+        "rows": 231073,
+        "distinct_rows": 172849,
+        "extra_rows": 58224,
+        "rows_after_keeping_one": 172849
+      },
+      {
+        "label": "PortScan",
+        "rows": 158930,
+        "distinct_rows": 90819,
+        "extra_rows": 68111,
+        "rows_after_keeping_one": 90819
+      },
+      {
+        "label": "DDoS",
+        "rows": 128027,
+        "distinct_rows": 128016,
+        "extra_rows": 11,
+        "rows_after_keeping_one": 128016
+      },
+      {
+        "label": "DoS GoldenEye",
+        "rows": 10293,
+        "distinct_rows": 10286,
+        "extra_rows": 7,
+        "rows_after_keeping_one": 10286
+      },
+      {
+        "label": "FTP-Patator",
+        "rows": 7938,
+        "distinct_rows": 5933,
+        "extra_rows": 2005,
+        "rows_after_keeping_one": 5933
+      },
+      {
+        "label": "SSH-Patator",
+        "rows": 5897,
+        "distinct_rows": 3219,
+        "extra_rows": 2678,
+        "rows_after_keeping_one": 3219
+      },
+      {
+        "label": "DoS slowloris",
+        "rows": 5796,
+        "distinct_rows": 5385,
+        "extra_rows": 411,
+        "rows_after_keeping_one": 5385
+      },
+      {
+        "label": "DoS Slowhttptest",
+        "rows": 5499,
+        "distinct_rows": 5228,
+        "extra_rows": 271,
+        "rows_after_keeping_one": 5228
+      },
+      {
+        "label": "Bot",
+        "rows": 1966,
+        "distinct_rows": 1953,
+        "extra_rows": 13,
+        "rows_after_keeping_one": 1953
+      },
+      {
+        "label": "Web Attack � Brute Force",
+        "rows": 1507,
+        "distinct_rows": 1470,
+        "extra_rows": 37,
+        "rows_after_keeping_one": 1470
+      },
+      {
+        "label": "Web Attack � XSS",
+        "rows": 652,
+        "distinct_rows": 652,
+        "extra_rows": 0,
+        "rows_after_keeping_one": 652
+      },
+      {
+        "label": "Infiltration",
+        "rows": 36,
+        "distinct_rows": 36,
+        "extra_rows": 0,
+        "rows_after_keeping_one": 36
+      },
+      {
+        "label": "Web Attack � Sql Injection",
+        "rows": 21,
+        "distinct_rows": 21,
+        "extra_rows": 0,
+        "rows_after_keeping_one": 21
+      },
+      {
+        "label": "Heartbleed",
+        "rows": 11,
+        "distinct_rows": 11,
+        "extra_rows": 0,
+        "rows_after_keeping_one": 11
+      }
+    ],
+    "across_files": {
+      "distinct_contents": 33563,
+      "rows": 139843,
+      "by_label": [
+        {
+          "label": "BENIGN",
+          "contents": 33563,
+          "rows": 139843,
+          "extra_rows": 106280
+        }
+      ]
+    },
+    "file_pairs": [
+      {
+        "left": "Monday",
+        "right": "Tuesday",
+        "distinct_contents": 53,
+        "rows": 1747
+      },
+      {
+        "left": "Monday",
+        "right": "Wednesday",
+        "distinct_contents": 202,
+        "rows": 8522
+      },
+      {
+        "left": "Monday",
+        "right": "Thursday-Morning",
+        "distinct_contents": 140,
+        "rows": 8113
+      },
+      {
+        "left": "Monday",
+        "right": "Thursday-Afternoon",
+        "distinct_contents": 153,
+        "rows": 8241
+      },
+      {
+        "left": "Monday",
+        "right": "Friday-Morning",
+        "distinct_contents": 134,
+        "rows": 8051
+      },
+      {
+        "left": "Monday",
+        "right": "Friday-Afternoon-PortScan",
+        "distinct_contents": 103,
+        "rows": 7801
+      },
+      {
+        "left": "Monday",
+        "right": "Friday-Afternoon-DDoS",
+        "distinct_contents": 61,
+        "rows": 6937
+      },
+      {
+        "left": "Tuesday",
+        "right": "Wednesday",
+        "distinct_contents": 8047,
+        "rows": 47613
+      },
+      {
+        "left": "Tuesday",
+        "right": "Thursday-Morning",
+        "distinct_contents": 3895,
+        "rows": 30636
+      },
+      {
+        "left": "Tuesday",
+        "right": "Thursday-Afternoon",
+        "distinct_contents": 4306,
+        "rows": 32215
+      },
+      {
+        "left": "Tuesday",
+        "right": "Friday-Morning",
+        "distinct_contents": 4289,
+        "rows": 32038
+      },
+      {
+        "left": "Tuesday",
+        "right": "Friday-Afternoon-PortScan",
+        "distinct_contents": 3421,
+        "rows": 27989
+      },
+      {
+        "left": "Tuesday",
+        "right": "Friday-Afternoon-DDoS",
+        "distinct_contents": 1937,
+        "rows": 18603
+      },
+      {
+        "left": "Wednesday",
+        "right": "Thursday-Morning",
+        "distinct_contents": 6028,
+        "rows": 57584
+      },
+      {
+        "left": "Wednesday",
+        "right": "Thursday-Afternoon",
+        "distinct_contents": 6947,
+        "rows": 61728
+      },
+      {
+        "left": "Wednesday",
+        "right": "Friday-Morning",
+        "distinct_contents": 6639,
+        "rows": 60160
+      },
+      {
+        "left": "Wednesday",
+        "right": "Friday-Afternoon-PortScan",
+        "distinct_contents": 4773,
+        "rows": 51663
+      },
+      {
+        "left": "Wednesday",
+        "right": "Friday-Afternoon-DDoS",
+        "distinct_contents": 2745,
+        "rows": 38390
+      },
+      {
+        "left": "Thursday-Morning",
+        "right": "Thursday-Afternoon",
+        "distinct_contents": 4065,
+        "rows": 48952
+      },
+      {
+        "left": "Thursday-Morning",
+        "right": "Friday-Morning",
+        "distinct_contents": 3688,
+        "rows": 46597
+      },
+      {
+        "left": "Thursday-Morning",
+        "right": "Friday-Afternoon-PortScan",
+        "distinct_contents": 2765,
+        "rows": 42035
+      },
+      {
+        "left": "Thursday-Morning",
+        "right": "Friday-Afternoon-DDoS",
+        "distinct_contents": 1731,
+        "rows": 33316
+      },
+      {
+        "left": "Thursday-Afternoon",
+        "right": "Friday-Morning",
+        "distinct_contents": 4048,
+        "rows": 48399
+      },
+      {
+        "left": "Thursday-Afternoon",
+        "right": "Friday-Afternoon-PortScan",
+        "distinct_contents": 3103,
+        "rows": 43615
+      },
+      {
+        "left": "Thursday-Afternoon",
+        "right": "Friday-Afternoon-DDoS",
+        "distinct_contents": 2215,
+        "rows": 35506
+      },
+      {
+        "left": "Friday-Morning",
+        "right": "Friday-Afternoon-PortScan",
+        "distinct_contents": 2975,
+        "rows": 42867
+      },
+      {
+        "left": "Friday-Morning",
+        "right": "Friday-Afternoon-DDoS",
+        "distinct_contents": 1728,
+        "rows": 33392
+      },
+      {
+        "left": "Friday-Afternoon-PortScan",
+        "right": "Friday-Afternoon-DDoS",
+        "distinct_contents": 1525,
+        "rows": 31698
+      }
+    ]
+  },
+  "feature_duplicates": {
+    "rows": 2830743,
+    "label_specific_groups": 2522362,
+    "distinct_feature_contents": 2521664,
+    "conflicts": {
+      "feature_contents_with_several_labels": 698,
+      "rows_in_those_contents": 7020,
+      "label_pairs": [
+        {
+          "label_a": "BENIGN",
+          "label_b": "PortScan",
+          "contents": 564,
+          "rows": 1618,
+          "contents_with_labels_in_disjoint_files": 564,
+          "contents_sharing_at_least_one_file": 0
+        },
+        {
+          "label_a": "BENIGN",
+          "label_b": "DoS Hulk",
+          "contents": 130,
+          "rows": 5388,
+          "contents_with_labels_in_disjoint_files": 83,
+          "contents_sharing_at_least_one_file": 47
+        },
+        {
+          "label_a": "BENIGN",
+          "label_b": "DDoS",
+          "contents": 3,
+          "rows": 9,
+          "contents_with_labels_in_disjoint_files": 3,
+          "contents_sharing_at_least_one_file": 0
+        },
+        {
+          "label_a": "BENIGN",
+          "label_b": "DoS slowloris",
+          "contents": 1,
+          "rows": 5,
+          "contents_with_labels_in_disjoint_files": 0,
+          "contents_sharing_at_least_one_file": 1
+        }
+      ]
+    },
+    "file_pairs": [
+      {
+        "left": "Monday",
+        "right": "Tuesday",
+        "distinct_contents": 53,
+        "rows": 1747
+      },
+      {
+        "left": "Monday",
+        "right": "Wednesday",
+        "distinct_contents": 202,
+        "rows": 8522
+      },
+      {
+        "left": "Monday",
+        "right": "Thursday-Morning",
+        "distinct_contents": 140,
+        "rows": 8113
+      },
+      {
+        "left": "Monday",
+        "right": "Thursday-Afternoon",
+        "distinct_contents": 153,
+        "rows": 8241
+      },
+      {
+        "left": "Monday",
+        "right": "Friday-Morning",
+        "distinct_contents": 134,
+        "rows": 8051
+      },
+      {
+        "left": "Monday",
+        "right": "Friday-Afternoon-PortScan",
+        "distinct_contents": 103,
+        "rows": 7801
+      },
+      {
+        "left": "Monday",
+        "right": "Friday-Afternoon-DDoS",
+        "distinct_contents": 61,
+        "rows": 6937
+      },
+      {
+        "left": "Tuesday",
+        "right": "Wednesday",
+        "distinct_contents": 8047,
+        "rows": 47613
+      },
+      {
+        "left": "Tuesday",
+        "right": "Thursday-Morning",
+        "distinct_contents": 3895,
+        "rows": 30636
+      },
+      {
+        "left": "Tuesday",
+        "right": "Thursday-Afternoon",
+        "distinct_contents": 4306,
+        "rows": 32215
+      },
+      {
+        "left": "Tuesday",
+        "right": "Friday-Morning",
+        "distinct_contents": 4289,
+        "rows": 32038
+      },
+      {
+        "left": "Tuesday",
+        "right": "Friday-Afternoon-PortScan",
+        "distinct_contents": 3421,
+        "rows": 27989
+      },
+      {
+        "left": "Tuesday",
+        "right": "Friday-Afternoon-DDoS",
+        "distinct_contents": 1937,
+        "rows": 18603
+      },
+      {
+        "left": "Wednesday",
+        "right": "Thursday-Morning",
+        "distinct_contents": 6028,
+        "rows": 57584
+      },
+      {
+        "left": "Wednesday",
+        "right": "Thursday-Afternoon",
+        "distinct_contents": 6947,
+        "rows": 61728
+      },
+      {
+        "left": "Wednesday",
+        "right": "Friday-Morning",
+        "distinct_contents": 6639,
+        "rows": 60160
+      },
+      {
+        "left": "Wednesday",
+        "right": "Friday-Afternoon-PortScan",
+        "distinct_contents": 4773,
+        "rows": 51663
+      },
+      {
+        "left": "Wednesday",
+        "right": "Friday-Afternoon-DDoS",
+        "distinct_contents": 2745,
+        "rows": 38390
+      },
+      {
+        "left": "Thursday-Morning",
+        "right": "Thursday-Afternoon",
+        "distinct_contents": 4065,
+        "rows": 48952
+      },
+      {
+        "left": "Thursday-Morning",
+        "right": "Friday-Morning",
+        "distinct_contents": 3688,
+        "rows": 46597
+      },
+      {
+        "left": "Thursday-Morning",
+        "right": "Friday-Afternoon-PortScan",
+        "distinct_contents": 2765,
+        "rows": 42035
+      },
+      {
+        "left": "Thursday-Morning",
+        "right": "Friday-Afternoon-DDoS",
+        "distinct_contents": 1731,
+        "rows": 33316
+      },
+      {
+        "left": "Thursday-Afternoon",
+        "right": "Friday-Morning",
+        "distinct_contents": 4048,
+        "rows": 48399
+      },
+      {
+        "left": "Thursday-Afternoon",
+        "right": "Friday-Afternoon-PortScan",
+        "distinct_contents": 3103,
+        "rows": 43615
+      },
+      {
+        "left": "Thursday-Afternoon",
+        "right": "Friday-Afternoon-DDoS",
+        "distinct_contents": 2215,
+        "rows": 35506
+      },
+      {
+        "left": "Friday-Morning",
+        "right": "Friday-Afternoon-PortScan",
+        "distinct_contents": 2975,
+        "rows": 42867
+      },
+      {
+        "left": "Friday-Morning",
+        "right": "Friday-Afternoon-DDoS",
+        "distinct_contents": 1728,
+        "rows": 33392
+      },
+      {
+        "left": "Friday-Afternoon-PortScan",
+        "right": "Friday-Afternoon-DDoS",
+        "distinct_contents": 1525,
+        "rows": 31698
+      }
+    ]
+  },
+  "column_anomalies": {
+    "rows_compared": 2830743,
+    "fwd_header_length_equal": 2830743,
+    "fwd_header_length_different": 0,
+    "fwd_header_length_left_missing": 0,
+    "fwd_header_length_right_missing": 0,
+    "positive_inf_flow_bytes": 1509,
+    "positive_inf_flow_bytes_with_duration_zero": 1509,
+    "positive_inf_flow_packets": 2867,
+    "positive_inf_flow_packets_with_duration_zero": 2867,
+    "missing_flow_bytes": 1358,
+    "missing_flow_bytes_with_duration_zero": 1358,
+    "missing_flow_bytes_with_packets_inf": 1358,
+    "both_rates_positive_inf": 1509
+  },
+  "simulated_group_split_not_applied": {
+    "rule": "Pour chaque contenu exact distinct, train = n - 2 * (n * 15 // 100), validation = test = n * 15 // 100. Simulation de comptage, indices non enregistrés.",
+    "by_label": [
+      {
+        "label": "BENIGN",
+        "train": 1467540,
+        "validation": 314472,
+        "test": 314472
+      },
+      {
+        "label": "DoS Hulk",
+        "train": 120995,
+        "validation": 25927,
+        "test": 25927
+      },
+      {
+        "label": "PortScan",
+        "train": 63575,
+        "validation": 13622,
+        "test": 13622
+      },
+      {
+        "label": "DDoS",
+        "train": 89612,
+        "validation": 19202,
+        "test": 19202
+      },
+      {
+        "label": "DoS GoldenEye",
+        "train": 7202,
+        "validation": 1542,
+        "test": 1542
+      },
+      {
+        "label": "FTP-Patator",
+        "train": 4155,
+        "validation": 889,
+        "test": 889
+      },
+      {
+        "label": "SSH-Patator",
+        "train": 2255,
+        "validation": 482,
+        "test": 482
+      },
+      {
+        "label": "DoS slowloris",
+        "train": 3771,
+        "validation": 807,
+        "test": 807
+      },
+      {
+        "label": "DoS Slowhttptest",
+        "train": 3660,
+        "validation": 784,
+        "test": 784
+      },
+      {
+        "label": "Bot",
+        "train": 1369,
+        "validation": 292,
+        "test": 292
+      },
+      {
+        "label": "Web Attack � Brute Force",
+        "train": 1030,
+        "validation": 220,
+        "test": 220
+      },
+      {
+        "label": "Web Attack � XSS",
+        "train": 458,
+        "validation": 97,
+        "test": 97
+      },
+      {
+        "label": "Infiltration",
+        "train": 26,
+        "validation": 5,
+        "test": 5
+      },
+      {
+        "label": "Web Attack � Sql Injection",
+        "train": 15,
+        "validation": 3,
+        "test": 3
+      },
+      {
+        "label": "Heartbleed",
+        "train": 9,
+        "validation": 1,
+        "test": 1
+      }
+    ]
+  }
+}

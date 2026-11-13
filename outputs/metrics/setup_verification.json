@@ -1,0 +1,82 @@
+{
+  "checked_at_utc": "2026-11-12T22:49:30.665237+00:00",
+  "fit_called": false,
+  "dataset_read": false,
+  "dataset_download_attempted": false,
+  "python": "3.12.7 (tags/v3.12.7:0b05ead, Oct  1 2024, 03:06:41) [MSC v.1941 64 bit (AMD64)]",
+  "pythonhashseed": "42",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+  "cpu_count": 20,
+  "config_sha256": "2e4548c8ba38b01ada2dba2aad7d6cd725f059738ad5042c40f6c2627874292d",
+  "config_errors": [],
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "shap": "0.54.1",
+    "matplotlib": "3.11.2",
+    "seaborn": "0.13.2",
+    "pyarrow": "26.0.1",
+    "PyYAML": "6.0.3",
+    "pytest": "9.2.0",
+    "joblib": "1.6.0",
+    "jupyter": "1.1.1",
+    "ipykernel": "7.4.0"
+  },
+  "cpu": {
+    "fit_called": false,
+    "csv_read": false,
+    "tree_explainer_executed": false,
+    "xgboost_build_info": {
+      "BUILTIN_PREFETCH_PRESENT": false,
+      "CUDA_VERSION": "[13, 3]",
+      "DEBUG": false,
+      "MM_PREFETCH_PRESENT": true,
+      "THRUST_VERSION": "[3, 3, 3]",
+      "USE_CUDA": true,
+      "USE_DLOPEN_NCCL": false,
+      "USE_FEDERATED": false,
+      "USE_NCCL": false,
+      "USE_NVCOMP": false,
+      "USE_OPENMP": true,
+      "USE_RMM": false,
+      "libxgboost": "C:\\venvs\\explainable-ids\\Lib\\site-packages\\xgboost\\lib\\xgboost.dll"
+    },
+    "use_cuda_key_present": true,
+    "use_cuda": true,
+    "nvidia_smi_present": false,
+    "average_precision_accepts_y_score": true,
+    "constructors_accept_config": true,
+    "xgboost_device_effective": "cpu",
+    "xgboost_tree_method_effective": "hist",
+    "xgboost_accepts_scale_pos_weight": true,
+    "shap_tree_explainer_present": true
+  },
+  "directories": {
+    "data_root": "C:\\data\\cic-ids2017",
+    "raw": "C:\\data\\cic-ids2017\\raw",
+    "interim": "C:\\data\\cic-ids2017\\interim",
+    "processed": "C:\\data\\cic-ids2017\\processed",
+    "splits": "C:\\data\\cic-ids2017\\splits",
+    "stability_splits": "C:\\data\\cic-ids2017\\splits\\stability",
+    "chronological_splits": "C:\\data\\cic-ids2017\\splits\\chronological",
+    "outputs": "C:\\Users\\nouha\\OneDrive\\Desktop\\projet eya\\outputs",
+    "metrics": "C:\\Users\\nouha\\OneDrive\\Desktop\\projet eya\\outputs\\metrics",
+    "figures": "C:\\Users\\nouha\\OneDrive\\Desktop\\projet eya\\outputs\\figures",
+    "tables": "C:\\Users\\nouha\\OneDrive\\Desktop\\projet eya\\outputs\\tables",
+    "models": "C:\\Users\\nouha\\OneDrive\\Desktop\\projet eya\\outputs\\models",
+    "venv": "C:\\venvs\\explainable-ids"
+  },
+  "raw_csv_count": 0,
+  "raw_csv_names": [],
+  "warnings": [
+    "La roue XGBoost contient du code CUDA. nvidia-smi est absent et device est forcé à cpu."
+  ],
+  "notes": [
+    "TreeExplainer est importable. Il n'est pas exécuté : aucun modèle n'est ajusté dans cette phase."
+  ],
+  "problems": [],
+  "status": "passed"
+}

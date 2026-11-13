@@ -1,0 +1,16 @@
+# Versions vérifiées le 12 novembre 2026.
+# Python 3.12, Windows x86-64, roues CPU.
+# Environnement : C:\venvs\explainable-ids
+numpy==2.5.4
+pandas==3.1.1
+scikit-learn==1.9.1
+xgboost==3.4.1
+shap==0.54.1
+matplotlib==3.11.2
+seaborn==0.13.2
+pyarrow==26.0.1
+PyYAML==6.0.3
+pytest==9.2.0
+jupyter==1.1.1
+ipykernel==7.4.0
+joblib==1.6.0

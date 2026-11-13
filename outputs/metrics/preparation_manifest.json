@@ -1,0 +1,374 @@
+{
+  "created_utc": "2026-11-13T00:22:01.804006+00:00",
+  "training_performed": false,
+  "shap_computed": false,
+  "model_selected": false,
+  "test_used_for_decisions": false,
+  "raw_files_modified": false,
+  "raw_fingerprints_sha256": {
+    "Monday-WorkingHours.pcap_ISCX.csv": {
+      "sha256": "852c4beb34eda186f32561fa79df7a0747e92e1a6535b01270820dd9ffe17f34",
+      "bytes": 176927918
+    },
+    "Tuesday-WorkingHours.pcap_ISCX.csv": {
+      "sha256": "52b8692ae8c7d2ed04671fe2b98335693c0a92c7ab157d8c8b534d6523080851",
+      "bytes": 135078995
+    },
+    "Wednesday-workingHours.pcap_ISCX.csv": {
+      "sha256": "893c27dc968bf7a8adef1689f90be55ca4a4dc3088fb63d6ff247ac56856df2a",
+      "bytes": 225166395
+    },
+    "Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv": {
+      "sha256": "d67066211fb1689c78406f1506f4c44704ecb92088353d5c96d96d6474eb819d",
+      "bytes": 52023263
+    },
+    "Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv": {
+      "sha256": "6bcda3857c2504676034e3ea57762d38393cc734cb377a726bd5cb153961b1b5",
+      "bytes": 83102436
+    },
+    "Friday-WorkingHours-Morning.pcap_ISCX.csv": {
+      "sha256": "53a41c24d570ea83b7ac55b2e94df94e7a8216aeb80a2af0246b6bc8bb543000",
+      "bytes": 58316725
+    },
+    "Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv": {
+      "sha256": "ca1824c51bfbb7b3c72290a11be04366ba8815878c6a1cc5c44cb1cee269e99b",
+      "bytes": 76906168
+    },
+    "Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv": {
+      "sha256": "6ff1580f5f81c0ae28a26f7631721018577f5f7c5e0feac28b795fcfe7b411ee",
+      "bytes": 77123859
+    }
+  },
+  "raw_rows": 2830743,
+  "header_stripped": [
+    "Destination Port",
+    "Flow Duration",
+    "Total Fwd Packets",
+    "Total Backward Packets",
+    "Total Length of Fwd Packets",
+    "Total Length of Bwd Packets",
+    "Fwd Packet Length Max",
+    "Fwd Packet Length Min",
+    "Fwd Packet Length Mean",
+    "Fwd Packet Length Std",
+    "Bwd Packet Length Max",
+    "Bwd Packet Length Min",
+    "Bwd Packet Length Mean",
+    "Bwd Packet Length Std",
+    "Flow Bytes/s",
+    "Flow Packets/s",
+    "Flow IAT Mean",
+    "Flow IAT Std",
+    "Flow IAT Max",
+    "Flow IAT Min",
+    "Fwd IAT Total",
+    "Fwd IAT Mean",
+    "Fwd IAT Std",
+    "Fwd IAT Max",
+    "Fwd IAT Min",
+    "Bwd IAT Total",
+    "Bwd IAT Mean",
+    "Bwd IAT Std",
+    "Bwd IAT Max",
+    "Bwd IAT Min",
+    "Fwd PSH Flags",
+    "Bwd PSH Flags",
+    "Fwd URG Flags",
+    "Bwd URG Flags",
+    "Fwd Header Length",
+    "Bwd Header Length",
+    "Fwd Packets/s",
+    "Bwd Packets/s",
+    "Min Packet Length",
+    "Max Packet Length",
+    "Packet Length Mean",
+    "Packet Length Std",
+    "Packet Length Variance",
+    "FIN Flag Count",
+    "SYN Flag Count",
+    "RST Flag Count",
+    "PSH Flag Count",
+    "ACK Flag Count",
+    "URG Flag Count",
+    "CWE Flag Count",
+    "ECE Flag Count",
+    "Down/Up Ratio",
+    "Average Packet Size",
+    "Avg Fwd Segment Size",
+    "Avg Bwd Segment Size",
+    "Fwd Header Length",
+    "Fwd Avg Bytes/Bulk",
+    "Fwd Avg Packets/Bulk",
+    "Fwd Avg Bulk Rate",
+    "Bwd Avg Bytes/Bulk",
+    "Bwd Avg Packets/Bulk",
+    "Bwd Avg Bulk Rate",
+    "Subflow Fwd Packets",
+    "Subflow Fwd Bytes",
+    "Subflow Bwd Packets",
+    "Subflow Bwd Bytes",
+    "Init_Win_bytes_forward",
+    "Init_Win_bytes_backward",
+    "act_data_pkt_fwd",
+    "min_seg_size_forward",
+    "Active Mean",
+    "Active Std",
+    "Active Max",
+    "Active Min",
+    "Idle Mean",
+    "Idle Std",
+    "Idle Max",
+    "Idle Min",
+    "Label"
+  ],
+  "feature_columns": [
+    "Destination Port",
+    "Flow Duration",
+    "Total Fwd Packets",
+    "Total Backward Packets",
+    "Total Length of Fwd Packets",
+    "Total Length of Bwd Packets",
+    "Fwd Packet Length Max",
+    "Fwd Packet Length Min",
+    "Fwd Packet Length Mean",
+    "Fwd Packet Length Std",
+    "Bwd Packet Length Max",
+    "Bwd Packet Length Min",
+    "Bwd Packet Length Mean",
+    "Bwd Packet Length Std",
+    "Flow Bytes/s",
+    "Flow Packets/s",
+    "Flow IAT Mean",
+    "Flow IAT Std",
+    "Flow IAT Max",
+    "Flow IAT Min",
+    "Fwd IAT Total",
+    "Fwd IAT Mean",
+    "Fwd IAT Std",
+    "Fwd IAT Max",
+    "Fwd IAT Min",
+    "Bwd IAT Total",
+    "Bwd IAT Mean",
+    "Bwd IAT Std",
+    "Bwd IAT Max",
+    "Bwd IAT Min",
+    "Fwd PSH Flags",
+    "Bwd PSH Flags",
+    "Fwd URG Flags",
+    "Bwd URG Flags",
+    "Fwd Header Length",
+    "Bwd Header Length",
+    "Fwd Packets/s",
+    "Bwd Packets/s",
+    "Min Packet Length",
+    "Max Packet Length",
+    "Packet Length Mean",
+    "Packet Length Std",
+    "Packet Length Variance",
+    "FIN Flag Count",
+    "SYN Flag Count",
+    "RST Flag Count",
+    "PSH Flag Count",
+    "ACK Flag Count",
+    "URG Flag Count",
+    "CWE Flag Count",
+    "ECE Flag Count",
+    "Down/Up Ratio",
+    "Average Packet Size",
+    "Avg Fwd Segment Size",
+    "Avg Bwd Segment Size",
+    "Fwd Avg Bytes/Bulk",
+    "Fwd Avg Packets/Bulk",
+    "Fwd Avg Bulk Rate",
+    "Bwd Avg Bytes/Bulk",
+    "Bwd Avg Packets/Bulk",
+    "Bwd Avg Bulk Rate",
+    "Subflow Fwd Packets",
+    "Subflow Fwd Bytes",
+    "Subflow Bwd Packets",
+    "Subflow Bwd Bytes",
+    "Init_Win_bytes_forward",
+    "Init_Win_bytes_backward",
+    "act_data_pkt_fwd",
+    "min_seg_size_forward",
+    "Active Mean",
+    "Active Std",
+    "Active Max",
+    "Active Min",
+    "Idle Mean",
+    "Idle Std",
+    "Idle Max",
+    "Idle Min"
+  ],
+  "feature_count": 77,
+  "dropped_column": "Fwd Header Length (second occurrence)",
+  "fwd_header_mismatches": 0,
+  "numeric_storage": "float32",
+  "float32_changed_cells": 25203389,
+  "infinity_cells_replaced_with_missing": 2773,
+  "missing_tokens_preserved_as_missing": 351,
+  "contradictory_groups_excluded": 698,
+  "contradictory_rows_excluded": 7020,
+  "later_exact_copies_removed": 302757,
+  "cross_set_exact_contents_blocked": 28011,
+  "contradictory_exact_contents_also_spanning_sets": 13,
+  "attack_exact_contents_crossing_files": 0,
+  "kept_rows": 2520966,
+  "kept_exact_contents": 2520966,
+  "derived_parquet": "C:\\data\\cic-ids2017\\interim\\flows.parquet",
+  "derived_parquet_sha256": "7adb748fe1215eb698dd372e60741e8f8dda3bbe78ceb134cf2f54f92597cb18",
+  "audit": {
+    "rows": 2520966,
+    "infinite_cells": 0,
+    "missing_cells_by_column": {
+      "Flow Bytes/s": 1562,
+      "Flow Packets/s": 1562
+    },
+    "missing_cells": 3124,
+    "contradictory_profiles_remaining": 0,
+    "chronological_rows": {
+      "train": 1527133,
+      "validation": 398110,
+      "test": 595723
+    }
+  },
+  "chronological": {
+    "seed": null,
+    "rule": "file order Monday through Friday-Afternoon-DDoS",
+    "days": {
+      "enabled": true,
+      "role": "official_evaluation",
+      "train_days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday"
+      ],
+      "validation_days": [
+        "Thursday-Morning",
+        "Thursday-Afternoon"
+      ],
+      "test_days": [
+        "Friday-Morning",
+        "Friday-Afternoon-PortScan",
+        "Friday-Afternoon-DDoS"
+      ],
+      "validation_selects_model": true,
+      "validation_selects_threshold": true,
+      "test_selects_model": false,
+      "test_selects_threshold": false,
+      "test_selects_features": false,
+      "test_selects_hyperparameters": false,
+      "day_order_to_confirm": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday-Morning",
+        "Thursday-Afternoon",
+        "Friday-Morning",
+        "Friday-Afternoon-PortScan",
+        "Friday-Afternoon-DDoS"
+      ]
+    },
+    "class_counts": {
+      "train": {
+        "normal": 1324353,
+        "attack": 202780
+      },
+      "validation": {
+        "normal": 395931,
+        "attack": 2179
+      },
+      "test": {
+        "normal": 375502,
+        "attack": 220221
+      }
+    },
+    "proportions": {
+      "train": {
+        "normal": 0.8672152327269466,
+        "attack": 0.1327847672730535
+      },
+      "validation": {
+        "normal": 0.9945266383662806,
+        "attack": 0.005473361633719324
+      },
+      "test": {
+        "normal": 0.6303298680762703,
+        "attack": 0.36967013192372966
+      }
+    },
+    "families": {
+      "train": {
+        "DoS GoldenEye": 10286,
+        "DoS Hulk": 172719,
+        "DoS Slowhttptest": 5228,
+        "DoS slowloris": 5384,
+        "FTP-Patator": 5933,
+        "Heartbleed": 11,
+        "SSH-Patator": 3219
+      },
+      "validation": {
+        "Infiltration": 36,
+        "Web Attack � Brute Force": 1470,
+        "Web Attack � Sql Injection": 21,
+        "Web Attack � XSS": 652
+      },
+      "test": {
+        "Bot": 1953,
+        "DDoS": 128013,
+        "PortScan": 90255
+      }
+    },
+    "indices": {
+      "train": {
+        "rows": 1527133,
+        "sha256": "f09b9aab39fb885515184131b96fac6abbcdc78bee372729f2f3ebf3ce845e73",
+        "path": "C:\\data\\cic-ids2017\\splits\\chronological\\train.npy"
+      },
+      "validation": {
+        "rows": 398110,
+        "sha256": "375e1e937c92498f48ebff64eda69aa93063f874323826519ac4f423cdc94eb0",
+        "path": "C:\\data\\cic-ids2017\\splits\\chronological\\validation.npy"
+      },
+      "test": {
+        "rows": 595723,
+        "sha256": "203589b7c1d24a62f05d59f1ef925283117d3b3af26739984f6fd6959d6af0a1",
+        "path": "C:\\data\\cic-ids2017\\splits\\chronological\\test.npy"
+      }
+    },
+    "exact_contents_shared_between_sets": 0
+  },
+  "grouped": {
+    "seed": 42,
+    "generator": "random.Random",
+    "python": "3.12",
+    "rule": "shuffle within original label, then n*15//100 for validation and for test",
+    "stratify_on": "label_original",
+    "selects_official_model": false,
+    "indices": {
+      "train": {
+        "rows": 1764696,
+        "sha256": "9d4a5d324d00f9c02bfa0be7b72614f051245973104f5f8843aa8e4a3927335c",
+        "path": "C:\\data\\cic-ids2017\\splits\\grouped\\train.npy"
+      },
+      "validation": {
+        "rows": 378135,
+        "sha256": "ac0b7131a71a1a8466f06b3ba6272d6e13cbdebf195a12aa937bd753b1b7d8a6",
+        "path": "C:\\data\\cic-ids2017\\splits\\grouped\\validation.npy"
+      },
+      "test": {
+        "rows": 378135,
+        "sha256": "d9d20d5e4fdb24e5266a674e003f011a8d5a6b9766c97f45e08d64511682eab4",
+        "path": "C:\\data\\cic-ids2017\\splits\\grouped\\test.npy"
+      }
+    },
+    "exact_contents_shared_between_sets": 0,
+    "allocation_matches_integer_rule": true
+  },
+  "pipelines_fit": false,
+  "models": [
+    "logistic_regression",
+    "random_forest",
+    "xgboost"
+  ]
+}

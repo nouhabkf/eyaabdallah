@@ -1,0 +1,3693 @@
+{
+  "raw_dir": "C:\\data\\cic-ids2017\\raw",
+  "csv_count": 8,
+  "files": [
+    {
+      "name": "Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+      "day": "Friday-Afternoon-DDoS",
+      "bytes": 77123859,
+      "newline": "lf",
+      "encoding_checked": "utf-8",
+      "columns_raw": [
+        " Destination Port",
+        " Flow Duration",
+        " Total Fwd Packets",
+        " Total Backward Packets",
+        "Total Length of Fwd Packets",
+        " Total Length of Bwd Packets",
+        " Fwd Packet Length Max",
+        " Fwd Packet Length Min",
+        " Fwd Packet Length Mean",
+        " Fwd Packet Length Std",
+        "Bwd Packet Length Max",
+        " Bwd Packet Length Min",
+        " Bwd Packet Length Mean",
+        " Bwd Packet Length Std",
+        "Flow Bytes/s",
+        " Flow Packets/s",
+        " Flow IAT Mean",
+        " Flow IAT Std",
+        " Flow IAT Max",
+        " Flow IAT Min",
+        "Fwd IAT Total",
+        " Fwd IAT Mean",
+        " Fwd IAT Std",
+        " Fwd IAT Max",
+        " Fwd IAT Min",
+        "Bwd IAT Total",
+        " Bwd IAT Mean",
+        " Bwd IAT Std",
+        " Bwd IAT Max",
+        " Bwd IAT Min",
+        "Fwd PSH Flags",
+        " Bwd PSH Flags",
+        " Fwd URG Flags",
+        " Bwd URG Flags",
+        " Fwd Header Length",
+        " Bwd Header Length",
+        "Fwd Packets/s",
+        " Bwd Packets/s",
+        " Min Packet Length",
+        " Max Packet Length",
+        " Packet Length Mean",
+        " Packet Length Std",
+        " Packet Length Variance",
+        "FIN Flag Count",
+        " SYN Flag Count",
+        " RST Flag Count",
+        " PSH Flag Count",
+        " ACK Flag Count",
+        " URG Flag Count",
+        " CWE Flag Count",
+        " ECE Flag Count",
+        " Down/Up Ratio",
+        " Average Packet Size",
+        " Avg Fwd Segment Size",
+        " Avg Bwd Segment Size",
+        " Fwd Header Length",
+        "Fwd Avg Bytes/Bulk",
+        " Fwd Avg Packets/Bulk",
+        " Fwd Avg Bulk Rate",
+        " Bwd Avg Bytes/Bulk",
+        " Bwd Avg Packets/Bulk",
+        "Bwd Avg Bulk Rate",
+        "Subflow Fwd Packets",
+        " Subflow Fwd Bytes",
+        " Subflow Bwd Packets",
+        " Subflow Bwd Bytes",
+        "Init_Win_bytes_forward",
+        " Init_Win_bytes_backward",
+        " act_data_pkt_fwd",
+        " min_seg_size_forward",
+        "Active Mean",
+        " Active Std",
+        " Active Max",
+        " Active Min",
+        "Idle Mean",
+        " Idle Std",
+        " Idle Max",
+        " Idle Min",
+        " Label"
+      ],
+      "columns_stripped": [
+        "Destination Port",
+        "Flow Duration",
+        "Total Fwd Packets",
+        "Total Backward Packets",
+        "Total Length of Fwd Packets",
+        "Total Length of Bwd Packets",
+        "Fwd Packet Length Max",
+        "Fwd Packet Length Min",
+        "Fwd Packet Length Mean",
+        "Fwd Packet Length Std",
+        "Bwd Packet Length Max",
+        "Bwd Packet Length Min",
+        "Bwd Packet Length Mean",
+        "Bwd Packet Length Std",
+        "Flow Bytes/s",
+        "Flow Packets/s",
+        "Flow IAT Mean",
+        "Flow IAT Std",
+        "Flow IAT Max",
+        "Flow IAT Min",
+        "Fwd IAT Total",
+        "Fwd IAT Mean",
+        "Fwd IAT Std",
+        "Fwd IAT Max",
+        "Fwd IAT Min",
+        "Bwd IAT Total",
+        "Bwd IAT Mean",
+        "Bwd IAT Std",
+        "Bwd IAT Max",
+        "Bwd IAT Min",
+        "Fwd PSH Flags",
+        "Bwd PSH Flags",
+        "Fwd URG Flags",
+        "Bwd URG Flags",
+        "Fwd Header Length",
+        "Bwd Header Length",
+        "Fwd Packets/s",
+        "Bwd Packets/s",
+        "Min Packet Length",
+        "Max Packet Length",
+        "Packet Length Mean",
+        "Packet Length Std",
+        "Packet Length Variance",
+        "FIN Flag Count",
+        "SYN Flag Count",
+        "RST Flag Count",
+        "PSH Flag Count",
+        "ACK Flag Count",
+        "URG Flag Count",
+        "CWE Flag Count",
+        "ECE Flag Count",
+        "Down/Up Ratio",
+        "Average Packet Size",
+        "Avg Fwd Segment Size",
+        "Avg Bwd Segment Size",
+        "Fwd Header Length",
+        "Fwd Avg Bytes/Bulk",
+        "Fwd Avg Packets/Bulk",
+        "Fwd Avg Bulk Rate",
+        "Bwd Avg Bytes/Bulk",
+        "Bwd Avg Packets/Bulk",
+        "Bwd Avg Bulk Rate",
+        "Subflow Fwd Packets",
+        "Subflow Fwd Bytes",
+        "Subflow Bwd Packets",
+        "Subflow Bwd Bytes",
+        "Init_Win_bytes_forward",
+        "Init_Win_bytes_backward",
+        "act_data_pkt_fwd",
+        "min_seg_size_forward",
+        "Active Mean",
+        "Active Std",
+        "Active Max",
+        "Active Min",
+        "Idle Mean",
+        "Idle Std",
+        "Idle Max",
+        "Idle Min",
+        "Label"
+      ],
+      "n_columns": 79,
+      "duplicate_raw_column_names": [
+        " Fwd Header Length"
+      ],
+      "duplicate_stripped_column_names": [
+        "Fwd Header Length"
+      ],
+      "same_header_as_first_file": true,
+      "data_rows_file": 225745,
+      "extra_duplicate_rows_in_file": 2633,
+      "unique_rows_in_file": 223112,
+      "utf8_errors": 0,
+      "empty_rows": 0,
+      "parsed_rows": 225745,
+      "normal_rows": 97718,
+      "attack_rows": 128027,
+      "missing_label_rows": 0,
+      "label_counts": {
+        "BENIGN": 97718,
+        "DDoS": 128027
+      },
+      "nulls": {
+        "Flow Bytes/s": 4
+      },
+      "positive_infs": {
+        "Flow Bytes/s": 30,
+        " Flow Packets/s": 34
+      },
+      "negative_infs": {},
+      "dtypes": {
+        " Destination Port": [
+          "int64"
+        ],
+        " Flow Duration": [
+          "int64"
+        ],
+        " Total Fwd Packets": [
+          "int64"
+        ],
+        " Total Backward Packets": [
+          "int64"
+        ],
+        "Total Length of Fwd Packets": [
+          "int64"
+        ],
+        " Total Length of Bwd Packets": [
+          "int64"
+        ],
+        " Fwd Packet Length Max": [
+          "int64"
+        ],
+        " Fwd Packet Length Min": [
+          "int64"
+        ],
+        " Fwd Packet Length Mean": [
+          "float64"
+        ],
+        " Fwd Packet Length Std": [
+          "float64"
+        ],
+        "Bwd Packet Length Max": [
+          "int64"
+        ],
+        " Bwd Packet Length Min": [
+          "int64"
+        ],
+        " Bwd Packet Length Mean": [
+          "float64"
+        ],
+        " Bwd Packet Length Std": [
+          "float64"
+        ],
+        "Flow Bytes/s": [
+          "float64"
+        ],
+        " Flow Packets/s": [
+          "float64"
+        ],
+        " Flow IAT Mean": [
+          "float64"
+        ],
+        " Flow IAT Std": [
+          "float64"
+        ],
+        " Flow IAT Max": [
+          "int64"
+        ],
+        " Flow IAT Min": [
+          "int64"
+        ],
+        "Fwd IAT Total": [
+          "int64"
+        ],
+        " Fwd IAT Mean": [
+          "float64"
+        ],
+        " Fwd IAT Std": [
+          "float64"
+        ],
+        " Fwd IAT Max": [
+          "int64"
+        ],
+        " Fwd IAT Min": [
+          "int64"
+        ],
+        "Bwd IAT Total": [
+          "int64"
+        ],
+        " Bwd IAT Mean": [
+          "float64"
+        ],
+        " Bwd IAT Std": [
+          "float64"
+        ],
+        " Bwd IAT Max": [
+          "int64"
+        ],
+        " Bwd IAT Min": [
+          "int64"
+        ],
+        "Fwd PSH Flags": [
+          "int64"
+        ],
+        " Bwd PSH Flags": [
+          "int64"
+        ],
+        " Fwd URG Flags": [
+          "int64"
+        ],
+        " Bwd URG Flags": [
+          "int64"
+        ],
+        " Fwd Header Length": [
+          "int64"
+        ],
+        " Bwd Header Length": [
+          "int64"
+        ],
+        "Fwd Packets/s": [
+          "float64"
+        ],
+        " Bwd Packets/s": [
+          "float64"
+        ],
+        " Min Packet Length": [
+          "int64"
+        ],
+        " Max Packet Length": [
+          "int64"
+        ],
+        " Packet Length Mean": [
+          "float64"
+        ],
+        " Packet Length Std": [
+          "float64"
+        ],
+        " Packet Length Variance": [
+          "float64"
+        ],
+        "FIN Flag Count": [
+          "int64"
+        ],
+        " SYN Flag Count": [
+          "int64"
+        ],
+        " RST Flag Count": [
+          "int64"
+        ],
+        " PSH Flag Count": [
+          "int64"
+        ],
+        " ACK Flag Count": [
+          "int64"
+        ],
+        " URG Flag Count": [
+          "int64"
+        ],
+        " CWE Flag Count": [
+          "int64"
+        ],
+        " ECE Flag Count": [
+          "int64"
+        ],
+        " Down/Up Ratio": [
+          "int64"
+        ],
+        " Average Packet Size": [
+          "float64"
+        ],
+        " Avg Fwd Segment Size": [
+          "float64"
+        ],
+        " Avg Bwd Segment Size": [
+          "float64"
+        ],
+        " Fwd Header Length.1": [
+          "int64"
+        ],
+        "Fwd Avg Bytes/Bulk": [
+          "int64"
+        ],
+        " Fwd Avg Packets/Bulk": [
+          "int64"
+        ],
+        " Fwd Avg Bulk Rate": [
+          "int64"
+        ],
+        " Bwd Avg Bytes/Bulk": [
+          "int64"
+        ],
+        " Bwd Avg Packets/Bulk": [
+          "int64"
+        ],
+        "Bwd Avg Bulk Rate": [
+          "int64"
+        ],
+        "Subflow Fwd Packets": [
+          "int64"
+        ],
+        " Subflow Fwd Bytes": [
+          "int64"
+        ],
+        " Subflow Bwd Packets": [
+          "int64"
+        ],
+        " Subflow Bwd Bytes": [
+          "int64"
+        ],
+        "Init_Win_bytes_forward": [
+          "int64"
+        ],
+        " Init_Win_bytes_backward": [
+          "int64"
+        ],
+        " act_data_pkt_fwd": [
+          "int64"
+        ],
+        " min_seg_size_forward": [
+          "int64"
+        ],
+        "Active Mean": [
+          "float64"
+        ],
+        " Active Std": [
+          "float64"
+        ],
+        " Active Max": [
+          "int64"
+        ],
+        " Active Min": [
+          "int64"
+        ],
+        "Idle Mean": [
+          "float64"
+        ],
+        " Idle Std": [
+          "float64"
+        ],
+        " Idle Max": [
+          "int64"
+        ],
+        " Idle Min": [
+          "int64"
+        ],
+        " Label": [
+          "str"
+        ]
+      },
+      "datetime_columns": [],
+      "examples": [
+        {
+          "label": "BENIGN",
+          "destination_port": "54865",
+          "flow_duration": "3"
+        },
+        {
+          "label": "BENIGN",
+          "destination_port": "55054",
+          "flow_duration": "109"
+        },
+        {
+          "label": "BENIGN",
+          "destination_port": "55055",
+          "flow_duration": "52"
+        }
+      ],
+      "null_cells": 4,
+      "positive_inf_cells": 64,
+      "negative_inf_cells": 0
+    },
+    {
+      "name": "Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv",
+      "day": "Friday-Afternoon-PortScan",
+      "bytes": 76906168,
+      "newline": "lf",
+      "encoding_checked": "utf-8",
+      "columns_raw": [
+        " Destination Port",
+        " Flow Duration",
+        " Total Fwd Packets",
+        " Total Backward Packets",
+        "Total Length of Fwd Packets",
+        " Total Length of Bwd Packets",
+        " Fwd Packet Length Max",
+        " Fwd Packet Length Min",
+        " Fwd Packet Length Mean",
+        " Fwd Packet Length Std",
+        "Bwd Packet Length Max",
+        " Bwd Packet Length Min",
+        " Bwd Packet Length Mean",
+        " Bwd Packet Length Std",
+        "Flow Bytes/s",
+        " Flow Packets/s",
+        " Flow IAT Mean",
+        " Flow IAT Std",
+        " Flow IAT Max",
+        " Flow IAT Min",
+        "Fwd IAT Total",
+        " Fwd IAT Mean",
+        " Fwd IAT Std",
+        " Fwd IAT Max",
+        " Fwd IAT Min",
+        "Bwd IAT Total",
+        " Bwd IAT Mean",
+        " Bwd IAT Std",
+        " Bwd IAT Max",
+        " Bwd IAT Min",
+        "Fwd PSH Flags",
+        " Bwd PSH Flags",
+        " Fwd URG Flags",
+        " Bwd URG Flags",
+        " Fwd Header Length",
+        " Bwd Header Length",
+        "Fwd Packets/s",
+        " Bwd Packets/s",
+        " Min Packet Length",
+        " Max Packet Length",
+        " Packet Length Mean",
+        " Packet Length Std",
+        " Packet Length Variance",
+        "FIN Flag Count",
+        " SYN Flag Count",
+        " RST Flag Count",
+        " PSH Flag Count",
+        " ACK Flag Count",
+        " URG Flag Count",
+        " CWE Flag Count",
+        " ECE Flag Count",
+        " Down/Up Ratio",
+        " Average Packet Size",
+        " Avg Fwd Segment Size",
+        " Avg Bwd Segment Size",
+        " Fwd Header Length",
+        "Fwd Avg Bytes/Bulk",
+        " Fwd Avg Packets/Bulk",
+        " Fwd Avg Bulk Rate",
+        " Bwd Avg Bytes/Bulk",
+        " Bwd Avg Packets/Bulk",
+        "Bwd Avg Bulk Rate",
+        "Subflow Fwd Packets",
+        " Subflow Fwd Bytes",
+        " Subflow Bwd Packets",
+        " Subflow Bwd Bytes",
+        "Init_Win_bytes_forward",
+        " Init_Win_bytes_backward",
+        " act_data_pkt_fwd",
+        " min_seg_size_forward",
+        "Active Mean",
+        " Active Std",
+        " Active Max",
+        " Active Min",
+        "Idle Mean",
+        " Idle Std",
+        " Idle Max",
+        " Idle Min",
+        " Label"
+      ],
+      "columns_stripped": [
+        "Destination Port",
+        "Flow Duration",
+        "Total Fwd Packets",
+        "Total Backward Packets",
+        "Total Length of Fwd Packets",
+        "Total Length of Bwd Packets",
+        "Fwd Packet Length Max",
+        "Fwd Packet Length Min",
+        "Fwd Packet Length Mean",
+        "Fwd Packet Length Std",
+        "Bwd Packet Length Max",
+        "Bwd Packet Length Min",
+        "Bwd Packet Length Mean",
+        "Bwd Packet Length Std",
+        "Flow Bytes/s",
+        "Flow Packets/s",
+        "Flow IAT Mean",
+        "Flow IAT Std",
+        "Flow IAT Max",
+        "Flow IAT Min",
+        "Fwd IAT Total",
+        "Fwd IAT Mean",
+        "Fwd IAT Std",
+        "Fwd IAT Max",
+        "Fwd IAT Min",
+        "Bwd IAT Total",
+        "Bwd IAT Mean",
+        "Bwd IAT Std",
+        "Bwd IAT Max",
+        "Bwd IAT Min",
+        "Fwd PSH Flags",
+        "Bwd PSH Flags",
+        "Fwd URG Flags",
+        "Bwd URG Flags",
+        "Fwd Header Length",
+        "Bwd Header Length",
+        "Fwd Packets/s",
+        "Bwd Packets/s",
+        "Min Packet Length",
+        "Max Packet Length",
+        "Packet Length Mean",
+        "Packet Length Std",
+        "Packet Length Variance",
+        "FIN Flag Count",
+        "SYN Flag Count",
+        "RST Flag Count",
+        "PSH Flag Count",
+        "ACK Flag Count",
+        "URG Flag Count",
+        "CWE Flag Count",
+        "ECE Flag Count",
+        "Down/Up Ratio",
+        "Average Packet Size",
+        "Avg Fwd Segment Size",
+        "Avg Bwd Segment Size",
+        "Fwd Header Length",
+        "Fwd Avg Bytes/Bulk",
+        "Fwd Avg Packets/Bulk",
+        "Fwd Avg Bulk Rate",
+        "Bwd Avg Bytes/Bulk",
+        "Bwd Avg Packets/Bulk",
+        "Bwd Avg Bulk Rate",
+        "Subflow Fwd Packets",
+        "Subflow Fwd Bytes",
+        "Subflow Bwd Packets",
+        "Subflow Bwd Bytes",
+        "Init_Win_bytes_forward",
+        "Init_Win_bytes_backward",
+        "act_data_pkt_fwd",
+        "min_seg_size_forward",
+        "Active Mean",
+        "Active Std",
+        "Active Max",
+        "Active Min",
+        "Idle Mean",
+        "Idle Std",
+        "Idle Max",
+        "Idle Min",
+        "Label"
+      ],
+      "n_columns": 79,
+      "duplicate_raw_column_names": [
+        " Fwd Header Length"
+      ],
+      "duplicate_stripped_column_names": [
+        "Fwd Header Length"
+      ],
+      "same_header_as_first_file": true,
+      "data_rows_file": 286467,
+      "extra_duplicate_rows_in_file": 72353,
+      "unique_rows_in_file": 214114,
+      "utf8_errors": 0,
+      "empty_rows": 0,
+      "parsed_rows": 286467,
+      "normal_rows": 127537,
+      "attack_rows": 158930,
+      "missing_label_rows": 0,
+      "label_counts": {
+        "BENIGN": 127537,
+        "PortScan": 158930
+      },
+      "nulls": {
+        "Flow Bytes/s": 15
+      },
+      "positive_infs": {
+        "Flow Bytes/s": 356,
+        " Flow Packets/s": 371
+      },
+      "negative_infs": {},
+      "dtypes": {
+        " Destination Port": [
+          "int64"
+        ],
+        " Flow Duration": [
+          "int64"
+        ],
+        " Total Fwd Packets": [
+          "int64"
+        ],
+        " Total Backward Packets": [
+          "int64"
+        ],
+        "Total Length of Fwd Packets": [
+          "int64"
+        ],
+        " Total Length of Bwd Packets": [
+          "int64"
+        ],
+        " Fwd Packet Length Max": [
+          "int64"
+        ],
+        " Fwd Packet Length Min": [
+          "int64"
+        ],
+        " Fwd Packet Length Mean": [
+          "float64"
+        ],
+        " Fwd Packet Length Std": [
+          "float64"
+        ],
+        "Bwd Packet Length Max": [
+          "int64"
+        ],
+        " Bwd Packet Length Min": [
+          "int64"
+        ],
+        " Bwd Packet Length Mean": [
+          "float64"
+        ],
+        " Bwd Packet Length Std": [
+          "float64"
+        ],
+        "Flow Bytes/s": [
+          "float64"
+        ],
+        " Flow Packets/s": [
+          "float64"
+        ],
+        " Flow IAT Mean": [
+          "float64"
+        ],
+        " Flow IAT Std": [
+          "float64"
+        ],
+        " Flow IAT Max": [
+          "int64"
+        ],
+        " Flow IAT Min": [
+          "int64"
+        ],
+        "Fwd IAT Total": [
+          "int64"
+        ],
+        " Fwd IAT Mean": [
+          "float64"
+        ],
+        " Fwd IAT Std": [
+          "float64"
+        ],
+        " Fwd IAT Max": [
+          "int64"
+        ],
+        " Fwd IAT Min": [
+          "int64"
+        ],
+        "Bwd IAT Total": [
+          "int64"
+        ],
+        " Bwd IAT Mean": [
+          "float64"
+        ],
+        " Bwd IAT Std": [
+          "float64"
+        ],
+        " Bwd IAT Max": [
+          "int64"
+        ],
+        " Bwd IAT Min": [
+          "int64"
+        ],
+        "Fwd PSH Flags": [
+          "int64"
+        ],
+        " Bwd PSH Flags": [
+          "int64"
+        ],
+        " Fwd URG Flags": [
+          "int64"
+        ],
+        " Bwd URG Flags": [
+          "int64"
+        ],
+        " Fwd Header Length": [
+          "int64"
+        ],
+        " Bwd Header Length": [
+          "int64"
+        ],
+        "Fwd Packets/s": [
+          "float64"
+        ],
+        " Bwd Packets/s": [
+          "float64"
+        ],
+        " Min Packet Length": [
+          "int64"
+        ],
+        " Max Packet Length": [
+          "int64"
+        ],
+        " Packet Length Mean": [
+          "float64"
+        ],
+        " Packet Length Std": [
+          "float64"
+        ],
+        " Packet Length Variance": [
+          "float64"
+        ],
+        "FIN Flag Count": [
+          "int64"
+        ],
+        " SYN Flag Count": [
+          "int64"
+        ],
+        " RST Flag Count": [
+          "int64"
+        ],
+        " PSH Flag Count": [
+          "int64"
+        ],
+        " ACK Flag Count": [
+          "int64"
+        ],
+        " URG Flag Count": [
+          "int64"
+        ],
+        " CWE Flag Count": [
+          "int64"
+        ],
+        " ECE Flag Count": [
+          "int64"
+        ],
+        " Down/Up Ratio": [
+          "int64"
+        ],
+        " Average Packet Size": [
+          "float64"
+        ],
+        " Avg Fwd Segment Size": [
+          "float64"
+        ],
+        " Avg Bwd Segment Size": [
+          "float64"
+        ],
+        " Fwd Header Length.1": [
+          "int64"
+        ],
+        "Fwd Avg Bytes/Bulk": [
+          "int64"
+        ],
+        " Fwd Avg Packets/Bulk": [
+          "int64"
+        ],
+        " Fwd Avg Bulk Rate": [
+          "int64"
+        ],
+        " Bwd Avg Bytes/Bulk": [
+          "int64"
+        ],
+        " Bwd Avg Packets/Bulk": [
+          "int64"
+        ],
+        "Bwd Avg Bulk Rate": [
+          "int64"
+        ],
+        "Subflow Fwd Packets": [
+          "int64"
+        ],
+        " Subflow Fwd Bytes": [
+          "int64"
+        ],
+        " Subflow Bwd Packets": [
+          "int64"
+        ],
+        " Subflow Bwd Bytes": [
+          "int64"
+        ],
+        "Init_Win_bytes_forward": [
+          "int64"
+        ],
+        " Init_Win_bytes_backward": [
+          "int64"
+        ],
+        " act_data_pkt_fwd": [
+          "int64"
+        ],
+        " min_seg_size_forward": [
+          "int64"
+        ],
+        "Active Mean": [
+          "float64"
+        ],
+        " Active Std": [
+          "float64"
+        ],
+        " Active Max": [
+          "int64"
+        ],
+        " Active Min": [
+          "int64"
+        ],
+        "Idle Mean": [
+          "float64"
+        ],
+        " Idle Std": [
+          "float64"
+        ],
+        " Idle Max": [
+          "int64"
+        ],
+        " Idle Min": [
+          "int64"
+        ],
+        " Label": [
+          "str"
+        ]
+      },
+      "datetime_columns": [],
+      "examples": [
+        {
+          "label": "BENIGN",
+          "destination_port": "22",
+          "flow_duration": "1266342"
+        },
+        {
+          "label": "BENIGN",
+          "destination_port": "22",
+          "flow_duration": "1319353"
+        },
+        {
+          "label": "BENIGN",
+          "destination_port": "22",
+          "flow_duration": "160"
+        }
+      ],
+      "null_cells": 15,
+      "positive_inf_cells": 727,
+      "negative_inf_cells": 0
+    },
+    {
+      "name": "Friday-WorkingHours-Morning.pcap_ISCX.csv",
+      "day": "Friday-Morning",
+      "bytes": 58316725,
+      "newline": "lf",
+      "encoding_checked": "utf-8",
+      "columns_raw": [
+        " Destination Port",
+        " Flow Duration",
+        " Total Fwd Packets",
+        " Total Backward Packets",
+        "Total Length of Fwd Packets",
+        " Total Length of Bwd Packets",
+        " Fwd Packet Length Max",
+        " Fwd Packet Length Min",
+        " Fwd Packet Length Mean",
+        " Fwd Packet Length Std",
+        "Bwd Packet Length Max",
+        " Bwd Packet Length Min",
+        " Bwd Packet Length Mean",
+        " Bwd Packet Length Std",
+        "Flow Bytes/s",
+        " Flow Packets/s",
+        " Flow IAT Mean",
+        " Flow IAT Std",
+        " Flow IAT Max",
+        " Flow IAT Min",
+        "Fwd IAT Total",
+        " Fwd IAT Mean",
+        " Fwd IAT Std",
+        " Fwd IAT Max",
+        " Fwd IAT Min",
+        "Bwd IAT Total",
+        " Bwd IAT Mean",
+        " Bwd IAT Std",
+        " Bwd IAT Max",
+        " Bwd IAT Min",
+        "Fwd PSH Flags",
+        " Bwd PSH Flags",
+        " Fwd URG Flags",
+        " Bwd URG Flags",
+        " Fwd Header Length",
+        " Bwd Header Length",
+        "Fwd Packets/s",
+        " Bwd Packets/s",
+        " Min Packet Length",
+        " Max Packet Length",
+        " Packet Length Mean",
+        " Packet Length Std",
+        " Packet Length Variance",
+        "FIN Flag Count",
+        " SYN Flag Count",
+        " RST Flag Count",
+        " PSH Flag Count",
+        " ACK Flag Count",
+        " URG Flag Count",
+        " CWE Flag Count",
+        " ECE Flag Count",
+        " Down/Up Ratio",
+        " Average Packet Size",
+        " Avg Fwd Segment Size",
+        " Avg Bwd Segment Size",
+        " Fwd Header Length",
+        "Fwd Avg Bytes/Bulk",
+        " Fwd Avg Packets/Bulk",
+        " Fwd Avg Bulk Rate",
+        " Bwd Avg Bytes/Bulk",
+        " Bwd Avg Packets/Bulk",
+        "Bwd Avg Bulk Rate",
+        "Subflow Fwd Packets",
+        " Subflow Fwd Bytes",
+        " Subflow Bwd Packets",
+        " Subflow Bwd Bytes",
+        "Init_Win_bytes_forward",
+        " Init_Win_bytes_backward",
+        " act_data_pkt_fwd",
+        " min_seg_size_forward",
+        "Active Mean",
+        " Active Std",
+        " Active Max",
+        " Active Min",
+        "Idle Mean",
+        " Idle Std",
+        " Idle Max",
+        " Idle Min",
+        " Label"
+      ],
+      "columns_stripped": [
+        "Destination Port",
+        "Flow Duration",
+        "Total Fwd Packets",
+        "Total Backward Packets",
+        "Total Length of Fwd Packets",
+        "Total Length of Bwd Packets",
+        "Fwd Packet Length Max",
+        "Fwd Packet Length Min",
+        "Fwd Packet Length Mean",
+        "Fwd Packet Length Std",
+        "Bwd Packet Length Max",
+        "Bwd Packet Length Min",
+        "Bwd Packet Length Mean",
+        "Bwd Packet Length Std",
+        "Flow Bytes/s",
+        "Flow Packets/s",
+        "Flow IAT Mean",
+        "Flow IAT Std",
+        "Flow IAT Max",
+        "Flow IAT Min",
+        "Fwd IAT Total",
+        "Fwd IAT Mean",
+        "Fwd IAT Std",
+        "Fwd IAT Max",
+        "Fwd IAT Min",
+        "Bwd IAT Total",
+        "Bwd IAT Mean",
+        "Bwd IAT Std",
+        "Bwd IAT Max",
+        "Bwd IAT Min",
+        "Fwd PSH Flags",
+        "Bwd PSH Flags",
+        "Fwd URG Flags",
+        "Bwd URG Flags",
+        "Fwd Header Length",
+        "Bwd Header Length",
+        "Fwd Packets/s",
+        "Bwd Packets/s",
+        "Min Packet Length",
+        "Max Packet Length",
+        "Packet Length Mean",
+        "Packet Length Std",
+        "Packet Length Variance",
+        "FIN Flag Count",
+        "SYN Flag Count",
+        "RST Flag Count",
+        "PSH Flag Count",
+        "ACK Flag Count",
+        "URG Flag Count",
+        "CWE Flag Count",
+        "ECE Flag Count",
+        "Down/Up Ratio",
+        "Average Packet Size",
+        "Avg Fwd Segment Size",
+        "Avg Bwd Segment Size",
+        "Fwd Header Length",
+        "Fwd Avg Bytes/Bulk",
+        "Fwd Avg Packets/Bulk",
+        "Fwd Avg Bulk Rate",
+        "Bwd Avg Bytes/Bulk",
+        "Bwd Avg Packets/Bulk",
+        "Bwd Avg Bulk Rate",
+        "Subflow Fwd Packets",
+        "Subflow Fwd Bytes",
+        "Subflow Bwd Packets",
+        "Subflow Bwd Bytes",
+        "Init_Win_bytes_forward",
+        "Init_Win_bytes_backward",
+        "act_data_pkt_fwd",
+        "min_seg_size_forward",
+        "Active Mean",
+        "Active Std",
+        "Active Max",
+        "Active Min",
+        "Idle Mean",
+        "Idle Std",
+        "Idle Max",
+        "Idle Min",
+        "Label"
+      ],
+      "n_columns": 79,
+      "duplicate_raw_column_names": [
+        " Fwd Header Length"
+      ],
+      "duplicate_stripped_column_names": [
+        "Fwd Header Length"
+      ],
+      "same_header_as_first_file": true,
+      "data_rows_file": 191033,
+      "extra_duplicate_rows_in_file": 6888,
+      "unique_rows_in_file": 184145,
+      "utf8_errors": 0,
+      "empty_rows": 0,
+      "parsed_rows": 191033,
+      "normal_rows": 189067,
+      "attack_rows": 1966,
+      "missing_label_rows": 0,
+      "label_counts": {
+        "BENIGN": 189067,
+        "Bot": 1966
+      },
+      "nulls": {
+        "Flow Bytes/s": 28
+      },
+      "positive_infs": {
+        "Flow Bytes/s": 94,
+        " Flow Packets/s": 122
+      },
+      "negative_infs": {},
+      "dtypes": {
+        " Destination Port": [
+          "int64"
+        ],
+        " Flow Duration": [
+          "int64"
+        ],
+        " Total Fwd Packets": [
+          "int64"
+        ],
+        " Total Backward Packets": [
+          "int64"
+        ],
+        "Total Length of Fwd Packets": [
+          "int64"
+        ],
+        " Total Length of Bwd Packets": [
+          "int64"
+        ],
+        " Fwd Packet Length Max": [
+          "int64"
+        ],
+        " Fwd Packet Length Min": [
+          "int64"
+        ],
+        " Fwd Packet Length Mean": [
+          "float64"
+        ],
+        " Fwd Packet Length Std": [
+          "float64"
+        ],
+        "Bwd Packet Length Max": [
+          "int64"
+        ],
+        " Bwd Packet Length Min": [
+          "int64"
+        ],
+        " Bwd Packet Length Mean": [
+          "float64"
+        ],
+        " Bwd Packet Length Std": [
+          "float64"
+        ],
+        "Flow Bytes/s": [
+          "float64"
+        ],
+        " Flow Packets/s": [
+          "float64"
+        ],
+        " Flow IAT Mean": [
+          "float64"
+        ],
+        " Flow IAT Std": [
+          "float64"
+        ],
+        " Flow IAT Max": [
+          "int64"
+        ],
+        " Flow IAT Min": [
+          "int64"
+        ],
+        "Fwd IAT Total": [
+          "int64"
+        ],
+        " Fwd IAT Mean": [
+          "float64"
+        ],
+        " Fwd IAT Std": [
+          "float64"
+        ],
+        " Fwd IAT Max": [
+          "int64"
+        ],
+        " Fwd IAT Min": [
+          "int64"
+        ],
+        "Bwd IAT Total": [
+          "int64"
+        ],
+        " Bwd IAT Mean": [
+          "float64"
+        ],
+        " Bwd IAT Std": [
+          "float64"
+        ],
+        " Bwd IAT Max": [
+          "int64"
+        ],
+        " Bwd IAT Min": [
+          "int64"
+        ],
+        "Fwd PSH Flags": [
+          "int64"
+        ],
+        " Bwd PSH Flags": [
+          "int64"
+        ],
+        " Fwd URG Flags": [
+          "int64"
+        ],
+        " Bwd URG Flags": [
+          "int64"
+        ],
+        " Fwd Header Length": [
+          "int64"
+        ],
+        " Bwd Header Length": [
+          "int64"
+        ],
+        "Fwd Packets/s": [
+          "float64"
+        ],
+        " Bwd Packets/s": [
+          "float64"
+        ],
+        " Min Packet Length": [
+          "int64"
+        ],
+        " Max Packet Length": [
+          "int64"
+        ],
+        " Packet Length Mean": [
+          "float64"
+        ],
+        " Packet Length Std": [
+          "float64"
+        ],
+        " Packet Length Variance": [
+          "float64"
+        ],
+        "FIN Flag Count": [
+          "int64"
+        ],
+        " SYN Flag Count": [
+          "int64"
+        ],
+        " RST Flag Count": [
+          "int64"
+        ],
+        " PSH Flag Count": [
+          "int64"
+        ],
+        " ACK Flag Count": [
+          "int64"
+        ],
+        " URG Flag Count": [
+          "int64"
+        ],
+        " CWE Flag Count": [
+          "int64"
+        ],
+        " ECE Flag Count": [
+          "int64"
+        ],
+        " Down/Up Ratio": [
+          "int64"
+        ],
+        " Average Packet Size": [
+          "float64"
+        ],
+        " Avg Fwd Segment Size": [
+          "float64"
+        ],
+        " Avg Bwd Segment Size": [
+          "float64"
+        ],
+        " Fwd Header Length.1": [
+          "int64"
+        ],
+        "Fwd Avg Bytes/Bulk": [
+          "int64"
+        ],
+        " Fwd Avg Packets/Bulk": [
+          "int64"
+        ],
+        " Fwd Avg Bulk Rate": [
+          "int64"
+        ],
+        " Bwd Avg Bytes/Bulk": [
+          "int64"
+        ],
+        " Bwd Avg Packets/Bulk": [
+          "int64"
+        ],
+        "Bwd Avg Bulk Rate": [
+          "int64"
+        ],
+        "Subflow Fwd Packets": [
+          "int64"
+        ],
+        " Subflow Fwd Bytes": [
+          "int64"
+        ],
+        " Subflow Bwd Packets": [
+          "int64"
+        ],
+        " Subflow Bwd Bytes": [
+          "int64"
+        ],
+        "Init_Win_bytes_forward": [
+          "int64"
+        ],
+        " Init_Win_bytes_backward": [
+          "int64"
+        ],
+        " act_data_pkt_fwd": [
+          "int64"
+        ],
+        " min_seg_size_forward": [
+          "int64"
+        ],
+        "Active Mean": [
+          "float64"
+        ],
+        " Active Std": [
+          "float64"
+        ],
+        " Active Max": [
+          "int64"
+        ],
+        " Active Min": [
+          "int64"
+        ],
+        "Idle Mean": [
+          "float64"
+        ],
+        " Idle Std": [
+          "float64"
+        ],
+        " Idle Max": [
+          "int64"
+        ],
+        " Idle Min": [
+          "int64"
+        ],
+        " Label": [
+          "str"
+        ]
+      },
+      "datetime_columns": [],
+      "examples": [
+        {
+          "label": "BENIGN",
+          "destination_port": "3268",
+          "flow_duration": "112740690"
+        },
+        {
+          "label": "BENIGN",
+          "destination_port": "389",
+          "flow_duration": "112740560"
+        },
+        {
+          "label": "BENIGN",
+          "destination_port": "0",
+          "flow_duration": "113757377"
+        }
+      ],
+      "null_cells": 28,
+      "positive_inf_cells": 216,
+      "negative_inf_cells": 0
+    },
+    {
+      "name": "Monday-WorkingHours.pcap_ISCX.csv",
+      "day": "Monday",
+      "bytes": 176927918,
+      "newline": "lf",
+      "encoding_checked": "utf-8",
+      "columns_raw": [
+        " Destination Port",
+        " Flow Duration",
+        " Total Fwd Packets",
+        " Total Backward Packets",
+        "Total Length of Fwd Packets",
+        " Total Length of Bwd Packets",
+        " Fwd Packet Length Max",
+        " Fwd Packet Length Min",
+        " Fwd Packet Length Mean",
+        " Fwd Packet Length Std",
+        "Bwd Packet Length Max",
+        " Bwd Packet Length Min",
+        " Bwd Packet Length Mean",
+        " Bwd Packet Length Std",
+        "Flow Bytes/s",
+        " Flow Packets/s",
+        " Flow IAT Mean",
+        " Flow IAT Std",
+        " Flow IAT Max",
+        " Flow IAT Min",
+        "Fwd IAT Total",
+        " Fwd IAT Mean",
+        " Fwd IAT Std",
+        " Fwd IAT Max",
+        " Fwd IAT Min",
+        "Bwd IAT Total",
+        " Bwd IAT Mean",
+        " Bwd IAT Std",
+        " Bwd IAT Max",
+        " Bwd IAT Min",
+        "Fwd PSH Flags",
+        " Bwd PSH Flags",
+        " Fwd URG Flags",
+        " Bwd URG Flags",
+        " Fwd Header Length",
+        " Bwd Header Length",
+        "Fwd Packets/s",
+        " Bwd Packets/s",
+        " Min Packet Length",
+        " Max Packet Length",
+        " Packet Length Mean",
+        " Packet Length Std",
+        " Packet Length Variance",
+        "FIN Flag Count",
+        " SYN Flag Count",
+        " RST Flag Count",
+        " PSH Flag Count",
+        " ACK Flag Count",
+        " URG Flag Count",
+        " CWE Flag Count",
+        " ECE Flag Count",
+        " Down/Up Ratio",
+        " Average Packet Size",
+        " Avg Fwd Segment Size",
+        " Avg Bwd Segment Size",
+        " Fwd Header Length",
+        "Fwd Avg Bytes/Bulk",
+        " Fwd Avg Packets/Bulk",
+        " Fwd Avg Bulk Rate",
+        " Bwd Avg Bytes/Bulk",
+        " Bwd Avg Packets/Bulk",
+        "Bwd Avg Bulk Rate",
+        "Subflow Fwd Packets",
+        " Subflow Fwd Bytes",
+        " Subflow Bwd Packets",
+        " Subflow Bwd Bytes",
+        "Init_Win_bytes_forward",
+        " Init_Win_bytes_backward",
+        " act_data_pkt_fwd",
+        " min_seg_size_forward",
+        "Active Mean",
+        " Active Std",
+        " Active Max",
+        " Active Min",
+        "Idle Mean",
+        " Idle Std",
+        " Idle Max",
+        " Idle Min",
+        " Label"
+      ],
+      "columns_stripped": [
+        "Destination Port",
+        "Flow Duration",
+        "Total Fwd Packets",
+        "Total Backward Packets",
+        "Total Length of Fwd Packets",
+        "Total Length of Bwd Packets",
+        "Fwd Packet Length Max",
+        "Fwd Packet Length Min",
+        "Fwd Packet Length Mean",
+        "Fwd Packet Length Std",
+        "Bwd Packet Length Max",
+        "Bwd Packet Length Min",
+        "Bwd Packet Length Mean",
+        "Bwd Packet Length Std",
+        "Flow Bytes/s",
+        "Flow Packets/s",
+        "Flow IAT Mean",
+        "Flow IAT Std",
+        "Flow IAT Max",
+        "Flow IAT Min",
+        "Fwd IAT Total",
+        "Fwd IAT Mean",
+        "Fwd IAT Std",
+        "Fwd IAT Max",
+        "Fwd IAT Min",
+        "Bwd IAT Total",
+        "Bwd IAT Mean",
+        "Bwd IAT Std",
+        "Bwd IAT Max",
+        "Bwd IAT Min",
+        "Fwd PSH Flags",
+        "Bwd PSH Flags",
+        "Fwd URG Flags",
+        "Bwd URG Flags",
+        "Fwd Header Length",
+        "Bwd Header Length",
+        "Fwd Packets/s",
+        "Bwd Packets/s",
+        "Min Packet Length",
+        "Max Packet Length",
+        "Packet Length Mean",
+        "Packet Length Std",
+        "Packet Length Variance",
+        "FIN Flag Count",
+        "SYN Flag Count",
+        "RST Flag Count",
+        "PSH Flag Count",
+        "ACK Flag Count",
+        "URG Flag Count",
+        "CWE Flag Count",
+        "ECE Flag Count",
+        "Down/Up Ratio",
+        "Average Packet Size",
+        "Avg Fwd Segment Size",
+        "Avg Bwd Segment Size",
+        "Fwd Header Length",
+        "Fwd Avg Bytes/Bulk",
+        "Fwd Avg Packets/Bulk",
+        "Fwd Avg Bulk Rate",
+        "Bwd Avg Bytes/Bulk",
+        "Bwd Avg Packets/Bulk",
+        "Bwd Avg Bulk Rate",
+        "Subflow Fwd Packets",
+        "Subflow Fwd Bytes",
+        "Subflow Bwd Packets",
+        "Subflow Bwd Bytes",
+        "Init_Win_bytes_forward",
+        "Init_Win_bytes_backward",
+        "act_data_pkt_fwd",
+        "min_seg_size_forward",
+        "Active Mean",
+        "Active Std",
+        "Active Max",
+        "Active Min",
+        "Idle Mean",
+        "Idle Std",
+        "Idle Max",
+        "Idle Min",
+        "Label"
+      ],
+      "n_columns": 79,
+      "duplicate_raw_column_names": [
+        " Fwd Header Length"
+      ],
+      "duplicate_stripped_column_names": [
+        "Fwd Header Length"
+      ],
+      "same_header_as_first_file": true,
+      "data_rows_file": 529918,
+      "extra_duplicate_rows_in_file": 26935,
+      "unique_rows_in_file": 502983,
+      "utf8_errors": 0,
+      "empty_rows": 0,
+      "parsed_rows": 529918,
+      "normal_rows": 529918,
+      "attack_rows": 0,
+      "missing_label_rows": 0,
+      "label_counts": {
+        "BENIGN": 529918
+      },
+      "nulls": {
+        "Flow Bytes/s": 64
+      },
+      "positive_infs": {
+        "Flow Bytes/s": 373,
+        " Flow Packets/s": 437
+      },
+      "negative_infs": {},
+      "dtypes": {
+        " Destination Port": [
+          "int64"
+        ],
+        " Flow Duration": [
+          "int64"
+        ],
+        " Total Fwd Packets": [
+          "int64"
+        ],
+        " Total Backward Packets": [
+          "int64"
+        ],
+        "Total Length of Fwd Packets": [
+          "int64"
+        ],
+        " Total Length of Bwd Packets": [
+          "int64"
+        ],
+        " Fwd Packet Length Max": [
+          "int64"
+        ],
+        " Fwd Packet Length Min": [
+          "int64"
+        ],
+        " Fwd Packet Length Mean": [
+          "float64"
+        ],
+        " Fwd Packet Length Std": [
+          "float64"
+        ],
+        "Bwd Packet Length Max": [
+          "int64"
+        ],
+        " Bwd Packet Length Min": [
+          "int64"
+        ],
+        " Bwd Packet Length Mean": [
+          "float64"
+        ],
+        " Bwd Packet Length Std": [
+          "float64"
+        ],
+        "Flow Bytes/s": [
+          "float64"
+        ],
+        " Flow Packets/s": [
+          "float64"
+        ],
+        " Flow IAT Mean": [
+          "float64"
+        ],
+        " Flow IAT Std": [
+          "float64"
+        ],
+        " Flow IAT Max": [
+          "int64"
+        ],
+        " Flow IAT Min": [
+          "int64"
+        ],
+        "Fwd IAT Total": [
+          "int64"
+        ],
+        " Fwd IAT Mean": [
+          "float64"
+        ],
+        " Fwd IAT Std": [
+          "float64"
+        ],
+        " Fwd IAT Max": [
+          "int64"
+        ],
+        " Fwd IAT Min": [
+          "int64"
+        ],
+        "Bwd IAT Total": [
+          "int64"
+        ],
+        " Bwd IAT Mean": [
+          "float64"
+        ],
+        " Bwd IAT Std": [
+          "float64"
+        ],
+        " Bwd IAT Max": [
+          "int64"
+        ],
+        " Bwd IAT Min": [
+          "int64"
+        ],
+        "Fwd PSH Flags": [
+          "int64"
+        ],
+        " Bwd PSH Flags": [
+          "int64"
+        ],
+        " Fwd URG Flags": [
+          "int64"
+        ],
+        " Bwd URG Flags": [
+          "int64"
+        ],
+        " Fwd Header Length": [
+          "int64"
+        ],
+        " Bwd Header Length": [
+          "int64"
+        ],
+        "Fwd Packets/s": [
+          "float64"
+        ],
+        " Bwd Packets/s": [
+          "float64"
+        ],
+        " Min Packet Length": [
+          "int64"
+        ],
+        " Max Packet Length": [
+          "int64"
+        ],
+        " Packet Length Mean": [
+          "float64"
+        ],
+        " Packet Length Std": [
+          "float64"
+        ],
+        " Packet Length Variance": [
+          "float64"
+        ],
+        "FIN Flag Count": [
+          "int64"
+        ],
+        " SYN Flag Count": [
+          "int64"
+        ],
+        " RST Flag Count": [
+          "int64"
+        ],
+        " PSH Flag Count": [
+          "int64"
+        ],
+        " ACK Flag Count": [
+          "int64"
+        ],
+        " URG Flag Count": [
+          "int64"
+        ],
+        " CWE Flag Count": [
+          "int64"
+        ],
+        " ECE Flag Count": [
+          "int64"
+        ],
+        " Down/Up Ratio": [
+          "int64"
+        ],
+        " Average Packet Size": [
+          "float64"
+        ],
+        " Avg Fwd Segment Size": [
+          "float64"
+        ],
+        " Avg Bwd Segment Size": [
+          "float64"
+        ],
+        " Fwd Header Length.1": [
+          "int64"
+        ],
+        "Fwd Avg Bytes/Bulk": [
+          "int64"
+        ],
+        " Fwd Avg Packets/Bulk": [
+          "int64"
+        ],
+        " Fwd Avg Bulk Rate": [
+          "int64"
+        ],
+        " Bwd Avg Bytes/Bulk": [
+          "int64"
+        ],
+        " Bwd Avg Packets/Bulk": [
+          "int64"
+        ],
+        "Bwd Avg Bulk Rate": [
+          "int64"
+        ],
+        "Subflow Fwd Packets": [
+          "int64"
+        ],
+        " Subflow Fwd Bytes": [
+          "int64"
+        ],
+        " Subflow Bwd Packets": [
+          "int64"
+        ],
+        " Subflow Bwd Bytes": [
+          "int64"
+        ],
+        "Init_Win_bytes_forward": [
+          "int64"
+        ],
+        " Init_Win_bytes_backward": [
+          "int64"
+        ],
+        " act_data_pkt_fwd": [
+          "int64"
+        ],
+        " min_seg_size_forward": [
+          "int64"
+        ],
+        "Active Mean": [
+          "float64"
+        ],
+        " Active Std": [
+          "float64"
+        ],
+        " Active Max": [
+          "int64"
+        ],
+        " Active Min": [
+          "int64"
+        ],
+        "Idle Mean": [
+          "float64"
+        ],
+        " Idle Std": [
+          "float64"
+        ],
+        " Idle Max": [
+          "int64"
+        ],
+        " Idle Min": [
+          "int64"
+        ],
+        " Label": [
+          "str"
+        ]
+      },
+      "datetime_columns": [],
+      "examples": [
+        {
+          "label": "BENIGN",
+          "destination_port": "49188",
+          "flow_duration": "4"
+        },
+        {
+          "label": "BENIGN",
+          "destination_port": "49188",
+          "flow_duration": "1"
+        },
+        {
+          "label": "BENIGN",
+          "destination_port": "49188",
+          "flow_duration": "1"
+        }
+      ],
+      "null_cells": 64,
+      "positive_inf_cells": 810,
+      "negative_inf_cells": 0
+    },
+    {
+      "name": "Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv",
+      "day": "Thursday-Afternoon",
+      "bytes": 83102436,
+      "newline": "lf",
+      "encoding_checked": "utf-8",
+      "columns_raw": [
+        " Destination Port",
+        " Flow Duration",
+        " Total Fwd Packets",
+        " Total Backward Packets",
+        "Total Length of Fwd Packets",
+        " Total Length of Bwd Packets",
+        " Fwd Packet Length Max",
+        " Fwd Packet Length Min",
+        " Fwd Packet Length Mean",
+        " Fwd Packet Length Std",
+        "Bwd Packet Length Max",
+        " Bwd Packet Length Min",
+        " Bwd Packet Length Mean",
+        " Bwd Packet Length Std",
+        "Flow Bytes/s",
+        " Flow Packets/s",
+        " Flow IAT Mean",
+        " Flow IAT Std",
+        " Flow IAT Max",
+        " Flow IAT Min",
+        "Fwd IAT Total",
+        " Fwd IAT Mean",
+        " Fwd IAT Std",
+        " Fwd IAT Max",
+        " Fwd IAT Min",
+        "Bwd IAT Total",
+        " Bwd IAT Mean",
+        " Bwd IAT Std",
+        " Bwd IAT Max",
+        " Bwd IAT Min",
+        "Fwd PSH Flags",
+        " Bwd PSH Flags",
+        " Fwd URG Flags",
+        " Bwd URG Flags",
+        " Fwd Header Length",
+        " Bwd Header Length",
+        "Fwd Packets/s",
+        " Bwd Packets/s",
+        " Min Packet Length",
+        " Max Packet Length",
+        " Packet Length Mean",
+        " Packet Length Std",
+        " Packet Length Variance",
+        "FIN Flag Count",
+        " SYN Flag Count",
+        " RST Flag Count",
+        " PSH Flag Count",
+        " ACK Flag Count",
+        " URG Flag Count",
+        " CWE Flag Count",
+        " ECE Flag Count",
+        " Down/Up Ratio",
+        " Average Packet Size",
+        " Avg Fwd Segment Size",
+        " Avg Bwd Segment Size",
+        " Fwd Header Length",
+        "Fwd Avg Bytes/Bulk",
+        " Fwd Avg Packets/Bulk",
+        " Fwd Avg Bulk Rate",
+        " Bwd Avg Bytes/Bulk",
+        " Bwd Avg Packets/Bulk",
+        "Bwd Avg Bulk Rate",
+        "Subflow Fwd Packets",
+        " Subflow Fwd Bytes",
+        " Subflow Bwd Packets",
+        " Subflow Bwd Bytes",
+        "Init_Win_bytes_forward",
+        " Init_Win_bytes_backward",
+        " act_data_pkt_fwd",
+        " min_seg_size_forward",
+        "Active Mean",
+        " Active Std",
+        " Active Max",
+        " Active Min",
+        "Idle Mean",
+        " Idle Std",
+        " Idle Max",
+        " Idle Min",
+        " Label"
+      ],
+      "columns_stripped": [
+        "Destination Port",
+        "Flow Duration",
+        "Total Fwd Packets",
+        "Total Backward Packets",
+        "Total Length of Fwd Packets",
+        "Total Length of Bwd Packets",
+        "Fwd Packet Length Max",
+        "Fwd Packet Length Min",
+        "Fwd Packet Length Mean",
+        "Fwd Packet Length Std",
+        "Bwd Packet Length Max",
+        "Bwd Packet Length Min",
+        "Bwd Packet Length Mean",
+        "Bwd Packet Length Std",
+        "Flow Bytes/s",
+        "Flow Packets/s",
+        "Flow IAT Mean",
+        "Flow IAT Std",
+        "Flow IAT Max",
+        "Flow IAT Min",
+        "Fwd IAT Total",
+        "Fwd IAT Mean",
+        "Fwd IAT Std",
+        "Fwd IAT Max",
+        "Fwd IAT Min",
+        "Bwd IAT Total",
+        "Bwd IAT Mean",
+        "Bwd IAT Std",
+        "Bwd IAT Max",
+        "Bwd IAT Min",
+        "Fwd PSH Flags",
+        "Bwd PSH Flags",
+        "Fwd URG Flags",
+        "Bwd URG Flags",
+        "Fwd Header Length",
+        "Bwd Header Length",
+        "Fwd Packets/s",
+        "Bwd Packets/s",
+        "Min Packet Length",
+        "Max Packet Length",
+        "Packet Length Mean",
+        "Packet Length Std",
+        "Packet Length Variance",
+        "FIN Flag Count",
+        "SYN Flag Count",
+        "RST Flag Count",
+        "PSH Flag Count",
+        "ACK Flag Count",
+        "URG Flag Count",
+        "CWE Flag Count",
+        "ECE Flag Count",
+        "Down/Up Ratio",
+        "Average Packet Size",
+        "Avg Fwd Segment Size",
+        "Avg Bwd Segment Size",
+        "Fwd Header Length",
+        "Fwd Avg Bytes/Bulk",
+        "Fwd Avg Packets/Bulk",
+        "Fwd Avg Bulk Rate",
+        "Bwd Avg Bytes/Bulk",
+        "Bwd Avg Packets/Bulk",
+        "Bwd Avg Bulk Rate",
+        "Subflow Fwd Packets",
+        "Subflow Fwd Bytes",
+        "Subflow Bwd Packets",
+        "Subflow Bwd Bytes",
+        "Init_Win_bytes_forward",
+        "Init_Win_bytes_backward",
+        "act_data_pkt_fwd",
+        "min_seg_size_forward",
+        "Active Mean",
+        "Active Std",
+        "Active Max",
+        "Active Min",
+        "Idle Mean",
+        "Idle Std",
+        "Idle Max",
+        "Idle Min",
+        "Label"
+      ],
+      "n_columns": 79,
+      "duplicate_raw_column_names": [
+        " Fwd Header Length"
+      ],
+      "duplicate_stripped_column_names": [
+        "Fwd Header Length"
+      ],
+      "same_header_as_first_file": true,
+      "data_rows_file": 288602,
+      "extra_duplicate_rows_in_file": 35630,
+      "unique_rows_in_file": 252972,
+      "utf8_errors": 0,
+      "empty_rows": 0,
+      "parsed_rows": 288602,
+      "normal_rows": 288566,
+      "attack_rows": 36,
+      "missing_label_rows": 0,
+      "label_counts": {
+        "BENIGN": 288566,
+        "Infiltration": 36
+      },
+      "nulls": {
+        "Flow Bytes/s": 18
+      },
+      "positive_infs": {
+        "Flow Bytes/s": 189,
+        " Flow Packets/s": 207
+      },
+      "negative_infs": {},
+      "dtypes": {
+        " Destination Port": [
+          "int64"
+        ],
+        " Flow Duration": [
+          "int64"
+        ],
+        " Total Fwd Packets": [
+          "int64"
+        ],
+        " Total Backward Packets": [
+          "int64"
+        ],
+        "Total Length of Fwd Packets": [
+          "int64"
+        ],
+        " Total Length of Bwd Packets": [
+          "int64"
+        ],
+        " Fwd Packet Length Max": [
+          "int64"
+        ],
+        " Fwd Packet Length Min": [
+          "int64"
+        ],
+        " Fwd Packet Length Mean": [
+          "float64"
+        ],
+        " Fwd Packet Length Std": [
+          "float64"
+        ],
+        "Bwd Packet Length Max": [
+          "int64"
+        ],
+        " Bwd Packet Length Min": [
+          "int64"
+        ],
+        " Bwd Packet Length Mean": [
+          "float64"
+        ],
+        " Bwd Packet Length Std": [
+          "float64"
+        ],
+        "Flow Bytes/s": [
+          "float64"
+        ],
+        " Flow Packets/s": [
+          "float64"
+        ],
+        " Flow IAT Mean": [
+          "float64"
+        ],
+        " Flow IAT Std": [
+          "float64"
+        ],
+        " Flow IAT Max": [
+          "int64"
+        ],
+        " Flow IAT Min": [
+          "int64"
+        ],
+        "Fwd IAT Total": [
+          "int64"
+        ],
+        " Fwd IAT Mean": [
+          "float64"
+        ],
+        " Fwd IAT Std": [
+          "float64"
+        ],
+        " Fwd IAT Max": [
+          "int64"
+        ],
+        " Fwd IAT Min": [
+          "int64"
+        ],
+        "Bwd IAT Total": [
+          "int64"
+        ],
+        " Bwd IAT Mean": [
+          "float64"
+        ],
+        " Bwd IAT Std": [
+          "float64"
+        ],
+        " Bwd IAT Max": [
+          "int64"
+        ],
+        " Bwd IAT Min": [
+          "int64"
+        ],
+        "Fwd PSH Flags": [
+          "int64"
+        ],
+        " Bwd PSH Flags": [
+          "int64"
+        ],
+        " Fwd URG Flags": [
+          "int64"
+        ],
+        " Bwd URG Flags": [
+          "int64"
+        ],
+        " Fwd Header Length": [
+          "int64"
+        ],
+        " Bwd Header Length": [
+          "int64"
+        ],
+        "Fwd Packets/s": [
+          "float64"
+        ],
+        " Bwd Packets/s": [
+          "float64"
+        ],
+        " Min Packet Length": [
+          "int64"
+        ],
+        " Max Packet Length": [
+          "int64"
+        ],
+        " Packet Length Mean": [
+          "float64"
+        ],
+        " Packet Length Std": [
+          "float64"
+        ],
+        " Packet Length Variance": [
+          "float64"
+        ],
+        "FIN Flag Count": [
+          "int64"
+        ],
+        " SYN Flag Count": [
+          "int64"
+        ],
+        " RST Flag Count": [
+          "int64"
+        ],
+        " PSH Flag Count": [
+          "int64"
+        ],
+        " ACK Flag Count": [
+          "int64"
+        ],
+        " URG Flag Count": [
+          "int64"
+        ],
+        " CWE Flag Count": [
+          "int64"
+        ],
+        " ECE Flag Count": [
+          "int64"
+        ],
+        " Down/Up Ratio": [
+          "int64"
+        ],
+        " Average Packet Size": [
+          "float64"
+        ],
+        " Avg Fwd Segment Size": [
+          "float64"
+        ],
+        " Avg Bwd Segment Size": [
+          "float64"
+        ],
+        " Fwd Header Length.1": [
+          "int64"
+        ],
+        "Fwd Avg Bytes/Bulk": [
+          "int64"
+        ],
+        " Fwd Avg Packets/Bulk": [
+          "int64"
+        ],
+        " Fwd Avg Bulk Rate": [
+          "int64"
+        ],
+        " Bwd Avg Bytes/Bulk": [
+          "int64"
+        ],
+        " Bwd Avg Packets/Bulk": [
+          "int64"
+        ],
+        "Bwd Avg Bulk Rate": [
+          "int64"
+        ],
+        "Subflow Fwd Packets": [
+          "int64"
+        ],
+        " Subflow Fwd Bytes": [
+          "int64"
+        ],
+        " Subflow Bwd Packets": [
+          "int64"
+        ],
+        " Subflow Bwd Bytes": [
+          "int64"
+        ],
+        "Init_Win_bytes_forward": [
+          "int64"
+        ],
+        " Init_Win_bytes_backward": [
+          "int64"
+        ],
+        " act_data_pkt_fwd": [
+          "int64"
+        ],
+        " min_seg_size_forward": [
+          "int64"
+        ],
+        "Active Mean": [
+          "float64"
+        ],
+        " Active Std": [
+          "float64"
+        ],
+        " Active Max": [
+          "int64"
+        ],
+        " Active Min": [
+          "int64"
+        ],
+        "Idle Mean": [
+          "float64"
+        ],
+        " Idle Std": [
+          "float64"
+        ],
+        " Idle Max": [
+          "int64"
+        ],
+        " Idle Min": [
+          "int64"
+        ],
+        " Label": [
+          "str"
+        ]
+      },
+      "datetime_columns": [],
+      "examples": [
+        {
+          "label": "BENIGN",
+          "destination_port": "22",
+          "flow_duration": "166"
+        },
+        {
+          "label": "BENIGN",
+          "destination_port": "60148",
+          "flow_duration": "83"
+        },
+        {
+          "label": "BENIGN",
+          "destination_port": "123",
+          "flow_duration": "99947"
+        }
+      ],
+      "null_cells": 18,
+      "positive_inf_cells": 396,
+      "negative_inf_cells": 0
+    },
+    {
+      "name": "Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv",
+      "day": "Thursday-Morning",
+      "bytes": 52023263,
+      "newline": "lf",
+      "encoding_checked": "utf-8",
+      "columns_raw": [
+        " Destination Port",
+        " Flow Duration",
+        " Total Fwd Packets",
+        " Total Backward Packets",
+        "Total Length of Fwd Packets",
+        " Total Length of Bwd Packets",
+        " Fwd Packet Length Max",
+        " Fwd Packet Length Min",
+        " Fwd Packet Length Mean",
+        " Fwd Packet Length Std",
+        "Bwd Packet Length Max",
+        " Bwd Packet Length Min",
+        " Bwd Packet Length Mean",
+        " Bwd Packet Length Std",
+        "Flow Bytes/s",
+        " Flow Packets/s",
+        " Flow IAT Mean",
+        " Flow IAT Std",
+        " Flow IAT Max",
+        " Flow IAT Min",
+        "Fwd IAT Total",
+        " Fwd IAT Mean",
+        " Fwd IAT Std",
+        " Fwd IAT Max",
+        " Fwd IAT Min",
+        "Bwd IAT Total",
+        " Bwd IAT Mean",
+        " Bwd IAT Std",
+        " Bwd IAT Max",
+        " Bwd IAT Min",
+        "Fwd PSH Flags",
+        " Bwd PSH Flags",
+        " Fwd URG Flags",
+        " Bwd URG Flags",
+        " Fwd Header Length",
+        " Bwd Header Length",
+        "Fwd Packets/s",
+        " Bwd Packets/s",
+        " Min Packet Length",
+        " Max Packet Length",
+        " Packet Length Mean",
+        " Packet Length Std",
+        " Packet Length Variance",
+        "FIN Flag Count",
+        " SYN Flag Count",
+        " RST Flag Count",
+        " PSH Flag Count",
+        " ACK Flag Count",
+        " URG Flag Count",
+        " CWE Flag Count",
+        " ECE Flag Count",
+        " Down/Up Ratio",
+        " Average Packet Size",
+        " Avg Fwd Segment Size",
+        " Avg Bwd Segment Size",
+        " Fwd Header Length",
+        "Fwd Avg Bytes/Bulk",
+        " Fwd Avg Packets/Bulk",
+        " Fwd Avg Bulk Rate",
+        " Bwd Avg Bytes/Bulk",
+        " Bwd Avg Packets/Bulk",
+        "Bwd Avg Bulk Rate",
+        "Subflow Fwd Packets",
+        " Subflow Fwd Bytes",
+        " Subflow Bwd Packets",
+        " Subflow Bwd Bytes",
+        "Init_Win_bytes_forward",
+        " Init_Win_bytes_backward",
+        " act_data_pkt_fwd",
+        " min_seg_size_forward",
+        "Active Mean",
+        " Active Std",
+        " Active Max",
+        " Active Min",
+        "Idle Mean",
+        " Idle Std",
+        " Idle Max",
+        " Idle Min",
+        " Label"
+      ],
+      "columns_stripped": [
+        "Destination Port",
+        "Flow Duration",
+        "Total Fwd Packets",
+        "Total Backward Packets",
+        "Total Length of Fwd Packets",
+        "Total Length of Bwd Packets",
+        "Fwd Packet Length Max",
+        "Fwd Packet Length Min",
+        "Fwd Packet Length Mean",
+        "Fwd Packet Length Std",
+        "Bwd Packet Length Max",
+        "Bwd Packet Length Min",
+        "Bwd Packet Length Mean",
+        "Bwd Packet Length Std",
+        "Flow Bytes/s",
+        "Flow Packets/s",
+        "Flow IAT Mean",
+        "Flow IAT Std",
+        "Flow IAT Max",
+        "Flow IAT Min",
+        "Fwd IAT Total",
+        "Fwd IAT Mean",
+        "Fwd IAT Std",
+        "Fwd IAT Max",
+        "Fwd IAT Min",
+        "Bwd IAT Total",
+        "Bwd IAT Mean",
+        "Bwd IAT Std",
+        "Bwd IAT Max",
+        "Bwd IAT Min",
+        "Fwd PSH Flags",
+        "Bwd PSH Flags",
+        "Fwd URG Flags",
+        "Bwd URG Flags",
+        "Fwd Header Length",
+        "Bwd Header Length",
+        "Fwd Packets/s",
+        "Bwd Packets/s",
+        "Min Packet Length",
+        "Max Packet Length",
+        "Packet Length Mean",
+        "Packet Length Std",
+        "Packet Length Variance",
+        "FIN Flag Count",
+        "SYN Flag Count",
+        "RST Flag Count",
+        "PSH Flag Count",
+        "ACK Flag Count",
+        "URG Flag Count",
+        "CWE Flag Count",
+        "ECE Flag Count",
+        "Down/Up Ratio",
+        "Average Packet Size",
+        "Avg Fwd Segment Size",
+        "Avg Bwd Segment Size",
+        "Fwd Header Length",
+        "Fwd Avg Bytes/Bulk",
+        "Fwd Avg Packets/Bulk",
+        "Fwd Avg Bulk Rate",
+        "Bwd Avg Bytes/Bulk",
+        "Bwd Avg Packets/Bulk",
+        "Bwd Avg Bulk Rate",
+        "Subflow Fwd Packets",
+        "Subflow Fwd Bytes",
+        "Subflow Bwd Packets",
+        "Subflow Bwd Bytes",
+        "Init_Win_bytes_forward",
+        "Init_Win_bytes_backward",
+        "act_data_pkt_fwd",
+        "min_seg_size_forward",
+        "Active Mean",
+        "Active Std",
+        "Active Max",
+        "Active Min",
+        "Idle Mean",
+        "Idle Std",
+        "Idle Max",
+        "Idle Min",
+        "Label"
+      ],
+      "n_columns": 79,
+      "duplicate_raw_column_names": [
+        " Fwd Header Length"
+      ],
+      "duplicate_stripped_column_names": [
+        "Fwd Header Length"
+      ],
+      "same_header_as_first_file": true,
+      "data_rows_file": 170366,
+      "extra_duplicate_rows_in_file": 6066,
+      "unique_rows_in_file": 164300,
+      "utf8_errors": 0,
+      "empty_rows": 0,
+      "parsed_rows": 170366,
+      "normal_rows": 168186,
+      "attack_rows": 2180,
+      "missing_label_rows": 0,
+      "label_counts": {
+        "BENIGN": 168186,
+        "Web Attack � Brute Force": 1507,
+        "Web Attack � XSS": 652,
+        "Web Attack � Sql Injection": 21
+      },
+      "nulls": {
+        "Flow Bytes/s": 20
+      },
+      "positive_infs": {
+        "Flow Bytes/s": 115,
+        " Flow Packets/s": 135
+      },
+      "negative_infs": {},
+      "dtypes": {
+        " Destination Port": [
+          "int64"
+        ],
+        " Flow Duration": [
+          "int64"
+        ],
+        " Total Fwd Packets": [
+          "int64"
+        ],
+        " Total Backward Packets": [
+          "int64"
+        ],
+        "Total Length of Fwd Packets": [
+          "int64"
+        ],
+        " Total Length of Bwd Packets": [
+          "int64"
+        ],
+        " Fwd Packet Length Max": [
+          "int64"
+        ],
+        " Fwd Packet Length Min": [
+          "int64"
+        ],
+        " Fwd Packet Length Mean": [
+          "float64"
+        ],
+        " Fwd Packet Length Std": [
+          "float64"
+        ],
+        "Bwd Packet Length Max": [
+          "int64"
+        ],
+        " Bwd Packet Length Min": [
+          "int64"
+        ],
+        " Bwd Packet Length Mean": [
+          "float64"
+        ],
+        " Bwd Packet Length Std": [
+          "float64"
+        ],
+        "Flow Bytes/s": [
+          "float64"
+        ],
+        " Flow Packets/s": [
+          "float64"
+        ],
+        " Flow IAT Mean": [
+          "float64"
+        ],
+        " Flow IAT Std": [
+          "float64"
+        ],
+        " Flow IAT Max": [
+          "int64"
+        ],
+        " Flow IAT Min": [
+          "int64"
+        ],
+        "Fwd IAT Total": [
+          "int64"
+        ],
+        " Fwd IAT Mean": [
+          "float64"
+        ],
+        " Fwd IAT Std": [
+          "float64"
+        ],
+        " Fwd IAT Max": [
+          "int64"
+        ],
+        " Fwd IAT Min": [
+          "int64"
+        ],
+        "Bwd IAT Total": [
+          "int64"
+        ],
+        " Bwd IAT Mean": [
+          "float64"
+        ],
+        " Bwd IAT Std": [
+          "float64"
+        ],
+        " Bwd IAT Max": [
+          "int64"
+        ],
+        " Bwd IAT Min": [
+          "int64"
+        ],
+        "Fwd PSH Flags": [
+          "int64"
+        ],
+        " Bwd PSH Flags": [
+          "int64"
+        ],
+        " Fwd URG Flags": [
+          "int64"
+        ],
+        " Bwd URG Flags": [
+          "int64"
+        ],
+        " Fwd Header Length": [
+          "int64"
+        ],
+        " Bwd Header Length": [
+          "int64"
+        ],
+        "Fwd Packets/s": [
+          "float64"
+        ],
+        " Bwd Packets/s": [
+          "float64"
+        ],
+        " Min Packet Length": [
+          "int64"
+        ],
+        " Max Packet Length": [
+          "int64"
+        ],
+        " Packet Length Mean": [
+          "float64"
+        ],
+        " Packet Length Std": [
+          "float64"
+        ],
+        " Packet Length Variance": [
+          "float64"
+        ],
+        "FIN Flag Count": [
+          "int64"
+        ],
+        " SYN Flag Count": [
+          "int64"
+        ],
+        " RST Flag Count": [
+          "int64"
+        ],
+        " PSH Flag Count": [
+          "int64"
+        ],
+        " ACK Flag Count": [
+          "int64"
+        ],
+        " URG Flag Count": [
+          "int64"
+        ],
+        " CWE Flag Count": [
+          "int64"
+        ],
+        " ECE Flag Count": [
+          "int64"
+        ],
+        " Down/Up Ratio": [
+          "int64"
+        ],
+        " Average Packet Size": [
+          "float64"
+        ],
+        " Avg Fwd Segment Size": [
+          "float64"
+        ],
+        " Avg Bwd Segment Size": [
+          "float64"
+        ],
+        " Fwd Header Length.1": [
+          "int64"
+        ],
+        "Fwd Avg Bytes/Bulk": [
+          "int64"
+        ],
+        " Fwd Avg Packets/Bulk": [
+          "int64"
+        ],
+        " Fwd Avg Bulk Rate": [
+          "int64"
+        ],
+        " Bwd Avg Bytes/Bulk": [
+          "int64"
+        ],
+        " Bwd Avg Packets/Bulk": [
+          "int64"
+        ],
+        "Bwd Avg Bulk Rate": [
+          "int64"
+        ],
+        "Subflow Fwd Packets": [
+          "int64"
+        ],
+        " Subflow Fwd Bytes": [
+          "int64"
+        ],
+        " Subflow Bwd Packets": [
+          "int64"
+        ],
+        " Subflow Bwd Bytes": [
+          "int64"
+        ],
+        "Init_Win_bytes_forward": [
+          "int64"
+        ],
+        " Init_Win_bytes_backward": [
+          "int64"
+        ],
+        " act_data_pkt_fwd": [
+          "int64"
+        ],
+        " min_seg_size_forward": [
+          "int64"
+        ],
+        "Active Mean": [
+          "float64"
+        ],
+        " Active Std": [
+          "float64"
+        ],
+        " Active Max": [
+          "int64"
+        ],
+        " Active Min": [
+          "int64"
+        ],
+        "Idle Mean": [
+          "float64"
+        ],
+        " Idle Std": [
+          "float64"
+        ],
+        " Idle Max": [
+          "int64"
+        ],
+        " Idle Min": [
+          "int64"
+        ],
+        " Label": [
+          "str"
+        ]
+      },
+      "datetime_columns": [],
+      "examples": [
+        {
+          "label": "BENIGN",
+          "destination_port": "389",
+          "flow_duration": "113095465"
+        },
+        {
+          "label": "BENIGN",
+          "destination_port": "389",
+          "flow_duration": "113473706"
+        },
+        {
+          "label": "BENIGN",
+          "destination_port": "0",
+          "flow_duration": "119945515"
+        }
+      ],
+      "null_cells": 20,
+      "positive_inf_cells": 250,
+      "negative_inf_cells": 0
+    },
+    {
+      "name": "Tuesday-WorkingHours.pcap_ISCX.csv",
+      "day": "Tuesday",
+      "bytes": 135078995,
+      "newline": "lf",
+      "encoding_checked": "utf-8",
+      "columns_raw": [
+        " Destination Port",
+        " Flow Duration",
+        " Total Fwd Packets",
+        " Total Backward Packets",
+        "Total Length of Fwd Packets",
+        " Total Length of Bwd Packets",
+        " Fwd Packet Length Max",
+        " Fwd Packet Length Min",
+        " Fwd Packet Length Mean",
+        " Fwd Packet Length Std",
+        "Bwd Packet Length Max",
+        " Bwd Packet Length Min",
+        " Bwd Packet Length Mean",
+        " Bwd Packet Length Std",
+        "Flow Bytes/s",
+        " Flow Packets/s",
+        " Flow IAT Mean",
+        " Flow IAT Std",
+        " Flow IAT Max",
+        " Flow IAT Min",
+        "Fwd IAT Total",
+        " Fwd IAT Mean",
+        " Fwd IAT Std",
+        " Fwd IAT Max",
+        " Fwd IAT Min",
+        "Bwd IAT Total",
+        " Bwd IAT Mean",
+        " Bwd IAT Std",
+        " Bwd IAT Max",
+        " Bwd IAT Min",
+        "Fwd PSH Flags",
+        " Bwd PSH Flags",
+        " Fwd URG Flags",
+        " Bwd URG Flags",
+        " Fwd Header Length",
+        " Bwd Header Length",
+        "Fwd Packets/s",
+        " Bwd Packets/s",
+        " Min Packet Length",
+        " Max Packet Length",
+        " Packet Length Mean",
+        " Packet Length Std",
+        " Packet Length Variance",
+        "FIN Flag Count",
+        " SYN Flag Count",
+        " RST Flag Count",
+        " PSH Flag Count",
+        " ACK Flag Count",
+        " URG Flag Count",
+        " CWE Flag Count",
+        " ECE Flag Count",
+        " Down/Up Ratio",
+        " Average Packet Size",
+        " Avg Fwd Segment Size",
+        " Avg Bwd Segment Size",
+        " Fwd Header Length",
+        "Fwd Avg Bytes/Bulk",
+        " Fwd Avg Packets/Bulk",
+        " Fwd Avg Bulk Rate",
+        " Bwd Avg Bytes/Bulk",
+        " Bwd Avg Packets/Bulk",
+        "Bwd Avg Bulk Rate",
+        "Subflow Fwd Packets",
+        " Subflow Fwd Bytes",
+        " Subflow Bwd Packets",
+        " Subflow Bwd Bytes",
+        "Init_Win_bytes_forward",
+        " Init_Win_bytes_backward",
+        " act_data_pkt_fwd",
+        " min_seg_size_forward",
+        "Active Mean",
+        " Active Std",
+        " Active Max",
+        " Active Min",
+        "Idle Mean",
+        " Idle Std",
+        " Idle Max",
+        " Idle Min",
+        " Label"
+      ],
+      "columns_stripped": [
+        "Destination Port",
+        "Flow Duration",
+        "Total Fwd Packets",
+        "Total Backward Packets",
+        "Total Length of Fwd Packets",
+        "Total Length of Bwd Packets",
+        "Fwd Packet Length Max",
+        "Fwd Packet Length Min",
+        "Fwd Packet Length Mean",
+        "Fwd Packet Length Std",
+        "Bwd Packet Length Max",
+        "Bwd Packet Length Min",
+        "Bwd Packet Length Mean",
+        "Bwd Packet Length Std",
+        "Flow Bytes/s",
+        "Flow Packets/s",
+        "Flow IAT Mean",
+        "Flow IAT Std",
+        "Flow IAT Max",
+        "Flow IAT Min",
+        "Fwd IAT Total",
+        "Fwd IAT Mean",
+        "Fwd IAT Std",
+        "Fwd IAT Max",
+        "Fwd IAT Min",
+        "Bwd IAT Total",
+        "Bwd IAT Mean",
+        "Bwd IAT Std",
+        "Bwd IAT Max",
+        "Bwd IAT Min",
+        "Fwd PSH Flags",
+        "Bwd PSH Flags",
+        "Fwd URG Flags",
+        "Bwd URG Flags",
+        "Fwd Header Length",
+        "Bwd Header Length",
+        "Fwd Packets/s",
+        "Bwd Packets/s",
+        "Min Packet Length",
+        "Max Packet Length",
+        "Packet Length Mean",
+        "Packet Length Std",
+        "Packet Length Variance",
+        "FIN Flag Count",
+        "SYN Flag Count",
+        "RST Flag Count",
+        "PSH Flag Count",
+        "ACK Flag Count",
+        "URG Flag Count",
+        "CWE Flag Count",
+        "ECE Flag Count",
+        "Down/Up Ratio",
+        "Average Packet Size",
+        "Avg Fwd Segment Size",
+        "Avg Bwd Segment Size",
+        "Fwd Header Length",
+        "Fwd Avg Bytes/Bulk",
+        "Fwd Avg Packets/Bulk",
+        "Fwd Avg Bulk Rate",
+        "Bwd Avg Bytes/Bulk",
+        "Bwd Avg Packets/Bulk",
+        "Bwd Avg Bulk Rate",
+        "Subflow Fwd Packets",
+        "Subflow Fwd Bytes",
+        "Subflow Bwd Packets",
+        "Subflow Bwd Bytes",
+        "Init_Win_bytes_forward",
+        "Init_Win_bytes_backward",
+        "act_data_pkt_fwd",
+        "min_seg_size_forward",
+        "Active Mean",
+        "Active Std",
+        "Active Max",
+        "Active Min",
+        "Idle Mean",
+        "Idle Std",
+        "Idle Max",
+        "Idle Min",
+        "Label"
+      ],
+      "n_columns": 79,
+      "duplicate_raw_column_names": [
+        " Fwd Header Length"
+      ],
+      "duplicate_stripped_column_names": [
+        "Fwd Header Length"
+      ],
+      "same_header_as_first_file": true,
+      "data_rows_file": 445909,
+      "extra_duplicate_rows_in_file": 24065,
+      "unique_rows_in_file": 421844,
+      "utf8_errors": 0,
+      "empty_rows": 0,
+      "parsed_rows": 445909,
+      "normal_rows": 432074,
+      "attack_rows": 13835,
+      "missing_label_rows": 0,
+      "label_counts": {
+        "BENIGN": 432074,
+        "FTP-Patator": 7938,
+        "SSH-Patator": 5897
+      },
+      "nulls": {
+        "Flow Bytes/s": 201
+      },
+      "positive_infs": {
+        "Flow Bytes/s": 63,
+        " Flow Packets/s": 264
+      },
+      "negative_infs": {},
+      "dtypes": {
+        " Destination Port": [
+          "int64"
+        ],
+        " Flow Duration": [
+          "int64"
+        ],
+        " Total Fwd Packets": [
+          "int64"
+        ],
+        " Total Backward Packets": [
+          "int64"
+        ],
+        "Total Length of Fwd Packets": [
+          "int64"
+        ],
+        " Total Length of Bwd Packets": [
+          "int64"
+        ],
+        " Fwd Packet Length Max": [
+          "int64"
+        ],
+        " Fwd Packet Length Min": [
+          "int64"
+        ],
+        " Fwd Packet Length Mean": [
+          "float64"
+        ],
+        " Fwd Packet Length Std": [
+          "float64"
+        ],
+        "Bwd Packet Length Max": [
+          "int64"
+        ],
+        " Bwd Packet Length Min": [
+          "int64"
+        ],
+        " Bwd Packet Length Mean": [
+          "float64"
+        ],
+        " Bwd Packet Length Std": [
+          "float64"
+        ],
+        "Flow Bytes/s": [
+          "float64"
+        ],
+        " Flow Packets/s": [
+          "float64"
+        ],
+        " Flow IAT Mean": [
+          "float64"
+        ],
+        " Flow IAT Std": [
+          "float64"
+        ],
+        " Flow IAT Max": [
+          "int64"
+        ],
+        " Flow IAT Min": [
+          "int64"
+        ],
+        "Fwd IAT Total": [
+          "int64"
+        ],
+        " Fwd IAT Mean": [
+          "float64"
+        ],
+        " Fwd IAT Std": [
+          "float64"
+        ],
+        " Fwd IAT Max": [
+          "int64"
+        ],
+        " Fwd IAT Min": [
+          "int64"
+        ],
+        "Bwd IAT Total": [
+          "int64"
+        ],
+        " Bwd IAT Mean": [
+          "float64"
+        ],
+        " Bwd IAT Std": [
+          "float64"
+        ],
+        " Bwd IAT Max": [
+          "int64"
+        ],
+        " Bwd IAT Min": [
+          "int64"
+        ],
+        "Fwd PSH Flags": [
+          "int64"
+        ],
+        " Bwd PSH Flags": [
+          "int64"
+        ],
+        " Fwd URG Flags": [
+          "int64"
+        ],
+        " Bwd URG Flags": [
+          "int64"
+        ],
+        " Fwd Header Length": [
+          "int64"
+        ],
+        " Bwd Header Length": [
+          "int64"
+        ],
+        "Fwd Packets/s": [
+          "float64"
+        ],
+        " Bwd Packets/s": [
+          "float64"
+        ],
+        " Min Packet Length": [
+          "int64"
+        ],
+        " Max Packet Length": [
+          "int64"
+        ],
+        " Packet Length Mean": [
+          "float64"
+        ],
+        " Packet Length Std": [
+          "float64"
+        ],
+        " Packet Length Variance": [
+          "float64"
+        ],
+        "FIN Flag Count": [
+          "int64"
+        ],
+        " SYN Flag Count": [
+          "int64"
+        ],
+        " RST Flag Count": [
+          "int64"
+        ],
+        " PSH Flag Count": [
+          "int64"
+        ],
+        " ACK Flag Count": [
+          "int64"
+        ],
+        " URG Flag Count": [
+          "int64"
+        ],
+        " CWE Flag Count": [
+          "int64"
+        ],
+        " ECE Flag Count": [
+          "int64"
+        ],
+        " Down/Up Ratio": [
+          "int64"
+        ],
+        " Average Packet Size": [
+          "float64"
+        ],
+        " Avg Fwd Segment Size": [
+          "float64"
+        ],
+        " Avg Bwd Segment Size": [
+          "float64"
+        ],
+        " Fwd Header Length.1": [
+          "int64"
+        ],
+        "Fwd Avg Bytes/Bulk": [
+          "int64"
+        ],
+        " Fwd Avg Packets/Bulk": [
+          "int64"
+        ],
+        " Fwd Avg Bulk Rate": [
+          "int64"
+        ],
+        " Bwd Avg Bytes/Bulk": [
+          "int64"
+        ],
+        " Bwd Avg Packets/Bulk": [
+          "int64"
+        ],
+        "Bwd Avg Bulk Rate": [
+          "int64"
+        ],
+        "Subflow Fwd Packets": [
+          "int64"
+        ],
+        " Subflow Fwd Bytes": [
+          "int64"
+        ],
+        " Subflow Bwd Packets": [
+          "int64"
+        ],
+        " Subflow Bwd Bytes": [
+          "int64"
+        ],
+        "Init_Win_bytes_forward": [
+          "int64"
+        ],
+        " Init_Win_bytes_backward": [
+          "int64"
+        ],
+        " act_data_pkt_fwd": [
+          "int64"
+        ],
+        " min_seg_size_forward": [
+          "int64"
+        ],
+        "Active Mean": [
+          "float64"
+        ],
+        " Active Std": [
+          "float64"
+        ],
+        " Active Max": [
+          "int64"
+        ],
+        " Active Min": [
+          "int64"
+        ],
+        "Idle Mean": [
+          "float64"
+        ],
+        " Idle Std": [
+          "float64"
+        ],
+        " Idle Max": [
+          "int64"
+        ],
+        " Idle Min": [
+          "int64"
+        ],
+        " Label": [
+          "str"
+        ]
+      },
+      "datetime_columns": [],
+      "examples": [
+        {
+          "label": "BENIGN",
+          "destination_port": "88",
+          "flow_duration": "640"
+        },
+        {
+          "label": "BENIGN",
+          "destination_port": "88",
+          "flow_duration": "900"
+        },
+        {
+          "label": "BENIGN",
+          "destination_port": "88",
+          "flow_duration": "1205"
+        }
+      ],
+      "null_cells": 201,
+      "positive_inf_cells": 327,
+      "negative_inf_cells": 0
+    },
+    {
+      "name": "Wednesday-workingHours.pcap_ISCX.csv",
+      "day": "Wednesday",
+      "bytes": 225166395,
+      "newline": "lf",
+      "encoding_checked": "utf-8",
+      "columns_raw": [
+        " Destination Port",
+        " Flow Duration",
+        " Total Fwd Packets",
+        " Total Backward Packets",
+        "Total Length of Fwd Packets",
+        " Total Length of Bwd Packets",
+        " Fwd Packet Length Max",
+        " Fwd Packet Length Min",
+        " Fwd Packet Length Mean",
+        " Fwd Packet Length Std",
+        "Bwd Packet Length Max",
+        " Bwd Packet Length Min",
+        " Bwd Packet Length Mean",
+        " Bwd Packet Length Std",
+        "Flow Bytes/s",
+        " Flow Packets/s",
+        " Flow IAT Mean",
+        " Flow IAT Std",
+        " Flow IAT Max",
+        " Flow IAT Min",
+        "Fwd IAT Total",
+        " Fwd IAT Mean",
+        " Fwd IAT Std",
+        " Fwd IAT Max",
+        " Fwd IAT Min",
+        "Bwd IAT Total",
+        " Bwd IAT Mean",
+        " Bwd IAT Std",
+        " Bwd IAT Max",
+        " Bwd IAT Min",
+        "Fwd PSH Flags",
+        " Bwd PSH Flags",
+        " Fwd URG Flags",
+        " Bwd URG Flags",
+        " Fwd Header Length",
+        " Bwd Header Length",
+        "Fwd Packets/s",
+        " Bwd Packets/s",
+        " Min Packet Length",
+        " Max Packet Length",
+        " Packet Length Mean",
+        " Packet Length Std",
+        " Packet Length Variance",
+        "FIN Flag Count",
+        " SYN Flag Count",
+        " RST Flag Count",
+        " PSH Flag Count",
+        " ACK Flag Count",
+        " URG Flag Count",
+        " CWE Flag Count",
+        " ECE Flag Count",
+        " Down/Up Ratio",
+        " Average Packet Size",
+        " Avg Fwd Segment Size",
+        " Avg Bwd Segment Size",
+        " Fwd Header Length",
+        "Fwd Avg Bytes/Bulk",
+        " Fwd Avg Packets/Bulk",
+        " Fwd Avg Bulk Rate",
+        " Bwd Avg Bytes/Bulk",
+        " Bwd Avg Packets/Bulk",
+        "Bwd Avg Bulk Rate",
+        "Subflow Fwd Packets",
+        " Subflow Fwd Bytes",
+        " Subflow Bwd Packets",
+        " Subflow Bwd Bytes",
+        "Init_Win_bytes_forward",
+        " Init_Win_bytes_backward",
+        " act_data_pkt_fwd",
+        " min_seg_size_forward",
+        "Active Mean",
+        " Active Std",
+        " Active Max",
+        " Active Min",
+        "Idle Mean",
+        " Idle Std",
+        " Idle Max",
+        " Idle Min",
+        " Label"
+      ],
+      "columns_stripped": [
+        "Destination Port",
+        "Flow Duration",
+        "Total Fwd Packets",
+        "Total Backward Packets",
+        "Total Length of Fwd Packets",
+        "Total Length of Bwd Packets",
+        "Fwd Packet Length Max",
+        "Fwd Packet Length Min",
+        "Fwd Packet Length Mean",
+        "Fwd Packet Length Std",
+        "Bwd Packet Length Max",
+        "Bwd Packet Length Min",
+        "Bwd Packet Length Mean",
+        "Bwd Packet Length Std",
+        "Flow Bytes/s",
+        "Flow Packets/s",
+        "Flow IAT Mean",
+        "Flow IAT Std",
+        "Flow IAT Max",
+        "Flow IAT Min",
+        "Fwd IAT Total",
+        "Fwd IAT Mean",
+        "Fwd IAT Std",
+        "Fwd IAT Max",
+        "Fwd IAT Min",
+        "Bwd IAT Total",
+        "Bwd IAT Mean",
+        "Bwd IAT Std",
+        "Bwd IAT Max",
+        "Bwd IAT Min",
+        "Fwd PSH Flags",
+        "Bwd PSH Flags",
+        "Fwd URG Flags",
+        "Bwd URG Flags",
+        "Fwd Header Length",
+        "Bwd Header Length",
+        "Fwd Packets/s",
+        "Bwd Packets/s",
+        "Min Packet Length",
+        "Max Packet Length",
+        "Packet Length Mean",
+        "Packet Length Std",
+        "Packet Length Variance",
+        "FIN Flag Count",
+        "SYN Flag Count",
+        "RST Flag Count",
+        "PSH Flag Count",
+        "ACK Flag Count",
+        "URG Flag Count",
+        "CWE Flag Count",
+        "ECE Flag Count",
+        "Down/Up Ratio",
+        "Average Packet Size",
+        "Avg Fwd Segment Size",
+        "Avg Bwd Segment Size",
+        "Fwd Header Length",
+        "Fwd Avg Bytes/Bulk",
+        "Fwd Avg Packets/Bulk",
+        "Fwd Avg Bulk Rate",
+        "Bwd Avg Bytes/Bulk",
+        "Bwd Avg Packets/Bulk",
+        "Bwd Avg Bulk Rate",
+        "Subflow Fwd Packets",
+        "Subflow Fwd Bytes",
+        "Subflow Bwd Packets",
+        "Subflow Bwd Bytes",
+        "Init_Win_bytes_forward",
+        "Init_Win_bytes_backward",
+        "act_data_pkt_fwd",
+        "min_seg_size_forward",
+        "Active Mean",
+        "Active Std",
+        "Active Max",
+        "Active Min",
+        "Idle Mean",
+        "Idle Std",
+        "Idle Max",
+        "Idle Min",
+        "Label"
+      ],
+      "n_columns": 79,
+      "duplicate_raw_column_names": [
+        " Fwd Header Length"
+      ],
+      "duplicate_stripped_column_names": [
+        "Fwd Header Length"
+      ],
+      "same_header_as_first_file": true,
+      "data_rows_file": 692703,
+      "extra_duplicate_rows_in_file": 81909,
+      "unique_rows_in_file": 610794,
+      "utf8_errors": 0,
+      "empty_rows": 0,
+      "parsed_rows": 692703,
+      "normal_rows": 440031,
+      "attack_rows": 252672,
+      "missing_label_rows": 0,
+      "label_counts": {
+        "BENIGN": 440031,
+        "DoS slowloris": 5796,
+        "DoS Slowhttptest": 5499,
+        "DoS Hulk": 231073,
+        "DoS GoldenEye": 10293,
+        "Heartbleed": 11
+      },
+      "nulls": {
+        "Flow Bytes/s": 1008
+      },
+      "positive_infs": {
+        "Flow Bytes/s": 289,
+        " Flow Packets/s": 1297
+      },
+      "negative_infs": {},
+      "dtypes": {
+        " Destination Port": [
+          "int64"
+        ],
+        " Flow Duration": [
+          "int64"
+        ],
+        " Total Fwd Packets": [
+          "int64"
+        ],
+        " Total Backward Packets": [
+          "int64"
+        ],
+        "Total Length of Fwd Packets": [
+          "int64"
+        ],
+        " Total Length of Bwd Packets": [
+          "int64"
+        ],
+        " Fwd Packet Length Max": [
+          "int64"
+        ],
+        " Fwd Packet Length Min": [
+          "int64"
+        ],
+        " Fwd Packet Length Mean": [
+          "float64"
+        ],
+        " Fwd Packet Length Std": [
+          "float64"
+        ],
+        "Bwd Packet Length Max": [
+          "int64"
+        ],
+        " Bwd Packet Length Min": [
+          "int64"
+        ],
+        " Bwd Packet Length Mean": [
+          "float64"
+        ],
+        " Bwd Packet Length Std": [
+          "float64"
+        ],
+        "Flow Bytes/s": [
+          "float64"
+        ],
+        " Flow Packets/s": [
+          "float64"
+        ],
+        " Flow IAT Mean": [
+          "float64"
+        ],
+        " Flow IAT Std": [
+          "float64"
+        ],
+        " Flow IAT Max": [
+          "int64"
+        ],
+        " Flow IAT Min": [
+          "int64"
+        ],
+        "Fwd IAT Total": [
+          "int64"
+        ],
+        " Fwd IAT Mean": [
+          "float64"
+        ],
+        " Fwd IAT Std": [
+          "float64"
+        ],
+        " Fwd IAT Max": [
+          "int64"
+        ],
+        " Fwd IAT Min": [
+          "int64"
+        ],
+        "Bwd IAT Total": [
+          "int64"
+        ],
+        " Bwd IAT Mean": [
+          "float64"
+        ],
+        " Bwd IAT Std": [
+          "float64"
+        ],
+        " Bwd IAT Max": [
+          "int64"
+        ],
+        " Bwd IAT Min": [
+          "int64"
+        ],
+        "Fwd PSH Flags": [
+          "int64"
+        ],
+        " Bwd PSH Flags": [
+          "int64"
+        ],
+        " Fwd URG Flags": [
+          "int64"
+        ],
+        " Bwd URG Flags": [
+          "int64"
+        ],
+        " Fwd Header Length": [
+          "int64"
+        ],
+        " Bwd Header Length": [
+          "int64"
+        ],
+        "Fwd Packets/s": [
+          "float64"
+        ],
+        " Bwd Packets/s": [
+          "float64"
+        ],
+        " Min Packet Length": [
+          "int64"
+        ],
+        " Max Packet Length": [
+          "int64"
+        ],
+        " Packet Length Mean": [
+          "float64"
+        ],
+        " Packet Length Std": [
+          "float64"
+        ],
+        " Packet Length Variance": [
+          "float64"
+        ],
+        "FIN Flag Count": [
+          "int64"
+        ],
+        " SYN Flag Count": [
+          "int64"
+        ],
+        " RST Flag Count": [
+          "int64"
+        ],
+        " PSH Flag Count": [
+          "int64"
+        ],
+        " ACK Flag Count": [
+          "int64"
+        ],
+        " URG Flag Count": [
+          "int64"
+        ],
+        " CWE Flag Count": [
+          "int64"
+        ],
+        " ECE Flag Count": [
+          "int64"
+        ],
+        " Down/Up Ratio": [
+          "int64"
+        ],
+        " Average Packet Size": [
+          "float64"
+        ],
+        " Avg Fwd Segment Size": [
+          "float64"
+        ],
+        " Avg Bwd Segment Size": [
+          "float64"
+        ],
+        " Fwd Header Length.1": [
+          "int64"
+        ],
+        "Fwd Avg Bytes/Bulk": [
+          "int64"
+        ],
+        " Fwd Avg Packets/Bulk": [
+          "int64"
+        ],
+        " Fwd Avg Bulk Rate": [
+          "int64"
+        ],
+        " Bwd Avg Bytes/Bulk": [
+          "int64"
+        ],
+        " Bwd Avg Packets/Bulk": [
+          "int64"
+        ],
+        "Bwd Avg Bulk Rate": [
+          "int64"
+        ],
+        "Subflow Fwd Packets": [
+          "int64"
+        ],
+        " Subflow Fwd Bytes": [
+          "int64"
+        ],
+        " Subflow Bwd Packets": [
+          "int64"
+        ],
+        " Subflow Bwd Bytes": [
+          "int64"
+        ],
+        "Init_Win_bytes_forward": [
+          "int64"
+        ],
+        " Init_Win_bytes_backward": [
+          "int64"
+        ],
+        " act_data_pkt_fwd": [
+          "int64"
+        ],
+        " min_seg_size_forward": [
+          "int64"
+        ],
+        "Active Mean": [
+          "float64"
+        ],
+        " Active Std": [
+          "float64"
+        ],
+        " Active Max": [
+          "int64"
+        ],
+        " Active Min": [
+          "int64"
+        ],
+        "Idle Mean": [
+          "float64"
+        ],
+        " Idle Std": [
+          "float64"
+        ],
+        " Idle Max": [
+          "int64"
+        ],
+        " Idle Min": [
+          "int64"
+        ],
+        " Label": [
+          "str"
+        ]
+      },
+      "datetime_columns": [],
+      "examples": [
+        {
+          "label": "BENIGN",
+          "destination_port": "80",
+          "flow_duration": "38308"
+        },
+        {
+          "label": "BENIGN",
+          "destination_port": "389",
+          "flow_duration": "479"
+        },
+        {
+          "label": "BENIGN",
+          "destination_port": "88",
+          "flow_duration": "1095"
+        }
+      ],
+      "null_cells": 1008,
+      "positive_inf_cells": 1586,
+      "negative_inf_cells": 0
+    }
+  ],
+  "schema_identical": true,
+  "duplicates": {
+    "total_rows": 2830743,
+    "distinct_rows": 2522362,
+    "extra_duplicate_rows": 308381,
+    "contents_found_in_several_files": 33563,
+    "rows_of_contents_found_in_several_files": 139843
+  },
+  "models_retained": [
+    "logistic_regression",
+    "random_forest",
+    "xgboost"
+  ],
+  "split_chosen": false,
+  "cleaning_performed": false,
+  "raw_files_modified": false,
+  "training_performed": false
+}

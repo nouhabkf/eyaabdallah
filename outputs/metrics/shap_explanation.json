@@ -1,0 +1,970 @@
+{
+  "model": "xgboost",
+  "model_modified": false,
+  "model_refit": false,
+  "threshold": 0.01,
+  "threshold_modified": false,
+  "friday_results_modified": false,
+  "feature_audit_started": false,
+  "stability_started": false,
+  "used_for_feature_decision": false,
+  "model_sha256": "597c34a7fbab40967f5a43c025fb0be561eaa56bd8a72609f72bc26fa8ca43bf",
+  "friday_evaluation_sha256": "e4582959231c6f37e3daac364f28e09aa106dbaa69860b63d2c0eba9520f7240",
+  "method": {
+    "explainer": "shap.TreeExplainer",
+    "shap_version": "0.54.1",
+    "feature_perturbation": "tree_path_dependent",
+    "model_output": "raw",
+    "explained_class": "attack",
+    "explained_class_value": 1,
+    "scale": "log_odds",
+    "output_selected": "positive_raw_margin",
+    "kernel_explainer": false,
+    "device": "cpu",
+    "background_rows": 0,
+    "case_rule": "scores_and_labels_only_v1",
+    "cases_selected_before_local_shap": true
+  },
+  "score_check": {
+    "tn": 375243,
+    "fp": 259,
+    "fn": 136015,
+    "tp": 84206,
+    "pr_auc": 0.8061119575266651,
+    "matches_published_confusion": true
+  },
+  "sample": {
+    "split": "test",
+    "role": "illustration_only",
+    "rows": 2000,
+    "max_rows": 2000,
+    "seed": 42,
+    "stratification": "label_original_proportional_largest_remainder",
+    "allocation": [
+      {
+        "label": "BENIGN",
+        "rows": 375502,
+        "sampled": 1261
+      },
+      {
+        "label": "Bot",
+        "rows": 1953,
+        "sampled": 6
+      },
+      {
+        "label": "DDoS",
+        "rows": 128013,
+        "sampled": 430
+      },
+      {
+        "label": "PortScan",
+        "rows": 90255,
+        "sampled": 303
+      }
+    ],
+    "attack_rate_sample": 0.3695,
+    "attack_rate_friday": 0.36967013192372966
+  },
+  "coherence": {
+    "max_abs_margin_error": 7.62939453125e-06,
+    "max_abs_probability_error": 7.748603820800781e-07,
+    "decisions_match_at_official_threshold": true,
+    "rows_checked": 2005
+  },
+  "timing": {
+    "explainer_seconds": 0.014407699927687645,
+    "global_seconds": 0.10682670027017593,
+    "cases_seconds": 0.005058600101619959
+  },
+  "importance": [
+    {
+      "rank": 1,
+      "feature": "Destination Port",
+      "mean_abs_shap": 3.597745418548584,
+      "mean_shap": -3.052438974380493
+    },
+    {
+      "rank": 2,
+      "feature": "Bwd Packet Length Std",
+      "mean_abs_shap": 2.7420778274536133,
+      "mean_shap": -0.42019158601760864
+    },
+    {
+      "rank": 3,
+      "feature": "Init_Win_bytes_backward",
+      "mean_abs_shap": 2.574079990386963,
+      "mean_shap": -2.541501522064209
+    },
+    {
+      "rank": 4,
+      "feature": "Bwd Packet Length Mean",
+      "mean_abs_shap": 1.4742778539657593,
+      "mean_shap": -1.1962511539459229
+    },
+    {
+      "rank": 5,
+      "feature": "Init_Win_bytes_forward",
+      "mean_abs_shap": 1.1714516878128052,
+      "mean_shap": -1.0487087965011597
+    },
+    {
+      "rank": 6,
+      "feature": "Bwd Packets/s",
+      "mean_abs_shap": 0.6014949083328247,
+      "mean_shap": -0.5650203824043274
+    },
+    {
+      "rank": 7,
+      "feature": "Fwd IAT Min",
+      "mean_abs_shap": 0.597862958908081,
+      "mean_shap": -0.36203810572624207
+    },
+    {
+      "rank": 8,
+      "feature": "Bwd Packet Length Min",
+      "mean_abs_shap": 0.5287655591964722,
+      "mean_shap": -0.4892632067203522
+    },
+    {
+      "rank": 9,
+      "feature": "min_seg_size_forward",
+      "mean_abs_shap": 0.48748475313186646,
+      "mean_shap": -0.42121925950050354
+    },
+    {
+      "rank": 10,
+      "feature": "Bwd Packet Length Max",
+      "mean_abs_shap": 0.43512511253356934,
+      "mean_shap": -0.2552626132965088
+    },
+    {
+      "rank": 11,
+      "feature": "Fwd Header Length",
+      "mean_abs_shap": 0.3804011344909668,
+      "mean_shap": -0.06764712929725647
+    },
+    {
+      "rank": 12,
+      "feature": "Flow IAT Std",
+      "mean_abs_shap": 0.26579082012176514,
+      "mean_shap": -0.2084396630525589
+    },
+    {
+      "rank": 13,
+      "feature": "PSH Flag Count",
+      "mean_abs_shap": 0.26249659061431885,
+      "mean_shap": 0.13591477274894714
+    },
+    {
+      "rank": 14,
+      "feature": "Bwd Header Length",
+      "mean_abs_shap": 0.23647084832191467,
+      "mean_shap": -0.2364029586315155
+    },
+    {
+      "rank": 15,
+      "feature": "Flow IAT Mean",
+      "mean_abs_shap": 0.20932672917842865,
+      "mean_shap": -0.1920027881860733
+    },
+    {
+      "rank": 16,
+      "feature": "Total Backward Packets",
+      "mean_abs_shap": 0.18847475945949554,
+      "mean_shap": -0.18777935206890106
+    },
+    {
+      "rank": 17,
+      "feature": "Active Min",
+      "mean_abs_shap": 0.18701323866844177,
+      "mean_shap": -0.11645211279392242
+    },
+    {
+      "rank": 18,
+      "feature": "Idle Min",
+      "mean_abs_shap": 0.17442627251148224,
+      "mean_shap": 0.09133050590753555
+    },
+    {
+      "rank": 19,
+      "feature": "Fwd IAT Max",
+      "mean_abs_shap": 0.17417514324188232,
+      "mean_shap": -0.06816687434911728
+    },
+    {
+      "rank": 20,
+      "feature": "Fwd IAT Total",
+      "mean_abs_shap": 0.17185859382152557,
+      "mean_shap": 0.02657543309032917
+    },
+    {
+      "rank": 21,
+      "feature": "URG Flag Count",
+      "mean_abs_shap": 0.15197637677192688,
+      "mean_shap": -0.027290744706988335
+    },
+    {
+      "rank": 22,
+      "feature": "Flow Bytes/s",
+      "mean_abs_shap": 0.15076565742492676,
+      "mean_shap": 0.024949567392468452
+    },
+    {
+      "rank": 23,
+      "feature": "Packet Length Std",
+      "mean_abs_shap": 0.14436544477939606,
+      "mean_shap": 0.002022860338911414
+    },
+    {
+      "rank": 24,
+      "feature": "Flow Duration",
+      "mean_abs_shap": 0.14251738786697388,
+      "mean_shap": -0.05667627230286598
+    },
+    {
+      "rank": 25,
+      "feature": "Flow IAT Min",
+      "mean_abs_shap": 0.14042803645133972,
+      "mean_shap": -0.08024320006370544
+    },
+    {
+      "rank": 26,
+      "feature": "Fwd Packets/s",
+      "mean_abs_shap": 0.12780706584453583,
+      "mean_shap": -0.020803101360797882
+    },
+    {
+      "rank": 27,
+      "feature": "Idle Max",
+      "mean_abs_shap": 0.11881425231695175,
+      "mean_shap": 0.006012709345668554
+    },
+    {
+      "rank": 28,
+      "feature": "Total Length of Bwd Packets",
+      "mean_abs_shap": 0.1178271472454071,
+      "mean_shap": -0.11637475341558456
+    },
+    {
+      "rank": 29,
+      "feature": "Flow IAT Max",
+      "mean_abs_shap": 0.10340926051139832,
+      "mean_shap": 0.003748773830011487
+    },
+    {
+      "rank": 30,
+      "feature": "Fwd Packet Length Max",
+      "mean_abs_shap": 0.1026134118437767,
+      "mean_shap": -0.08342587947845459
+    },
+    {
+      "rank": 31,
+      "feature": "Flow Packets/s",
+      "mean_abs_shap": 0.10198043286800385,
+      "mean_shap": -0.09130336344242096
+    },
+    {
+      "rank": 32,
+      "feature": "Bwd IAT Min",
+      "mean_abs_shap": 0.09407781064510345,
+      "mean_shap": -0.041571058332920074
+    },
+    {
+      "rank": 33,
+      "feature": "Total Fwd Packets",
+      "mean_abs_shap": 0.09274738281965256,
+      "mean_shap": -0.03887694701552391
+    },
+    {
+      "rank": 34,
+      "feature": "Average Packet Size",
+      "mean_abs_shap": 0.09133122861385345,
+      "mean_shap": 0.05625956133008003
+    },
+    {
+      "rank": 35,
+      "feature": "Fwd IAT Mean",
+      "mean_abs_shap": 0.08987931907176971,
+      "mean_shap": -0.02778021991252899
+    },
+    {
+      "rank": 36,
+      "feature": "FIN Flag Count",
+      "mean_abs_shap": 0.08958785235881805,
+      "mean_shap": -0.08385129272937775
+    },
+    {
+      "rank": 37,
+      "feature": "Fwd IAT Std",
+      "mean_abs_shap": 0.08901329338550568,
+      "mean_shap": -0.08019060641527176
+    },
+    {
+      "rank": 38,
+      "feature": "Max Packet Length",
+      "mean_abs_shap": 0.08432596176862717,
+      "mean_shap": 0.034404151141643524
+    },
+    {
+      "rank": 39,
+      "feature": "Min Packet Length",
+      "mean_abs_shap": 0.07794859260320663,
+      "mean_shap": -0.0773877426981926
+    },
+    {
+      "rank": 40,
+      "feature": "Packet Length Mean",
+      "mean_abs_shap": 0.07672509551048279,
+      "mean_shap": -0.0543016716837883
+    },
+    {
+      "rank": 41,
+      "feature": "Fwd Packet Length Mean",
+      "mean_abs_shap": 0.06556584686040878,
+      "mean_shap": -0.013003701344132423
+    },
+    {
+      "rank": 42,
+      "feature": "Fwd Packet Length Std",
+      "mean_abs_shap": 0.05710352957248688,
+      "mean_shap": 0.03854262828826904
+    },
+    {
+      "rank": 43,
+      "feature": "Fwd PSH Flags",
+      "mean_abs_shap": 0.05678445100784302,
+      "mean_shap": 0.01107864361256361
+    },
+    {
+      "rank": 44,
+      "feature": "Total Length of Fwd Packets",
+      "mean_abs_shap": 0.04341771826148033,
+      "mean_shap": -0.008765791542828083
+    },
+    {
+      "rank": 45,
+      "feature": "Idle Mean",
+      "mean_abs_shap": 0.039232656359672546,
+      "mean_shap": 0.014102726243436337
+    },
+    {
+      "rank": 46,
+      "feature": "act_data_pkt_fwd",
+      "mean_abs_shap": 0.03528066352009773,
+      "mean_shap": 0.028208166360855103
+    },
+    {
+      "rank": 47,
+      "feature": "Fwd Packet Length Min",
+      "mean_abs_shap": 0.029401294887065887,
+      "mean_shap": -0.02913697436451912
+    },
+    {
+      "rank": 48,
+      "feature": "Bwd IAT Max",
+      "mean_abs_shap": 0.02216471917927265,
+      "mean_shap": 0.0017872171010822058
+    },
+    {
+      "rank": 49,
+      "feature": "Bwd IAT Mean",
+      "mean_abs_shap": 0.01633569598197937,
+      "mean_shap": -0.010831394232809544
+    },
+    {
+      "rank": 50,
+      "feature": "Active Max",
+      "mean_abs_shap": 0.013246406801044941,
+      "mean_shap": -0.009717002511024475
+    },
+    {
+      "rank": 51,
+      "feature": "Down/Up Ratio",
+      "mean_abs_shap": 0.013160711154341698,
+      "mean_shap": 0.0017057996010407805
+    },
+    {
+      "rank": 52,
+      "feature": "Bwd IAT Total",
+      "mean_abs_shap": 0.01299462839961052,
+      "mean_shap": -0.007077259011566639
+    },
+    {
+      "rank": 53,
+      "feature": "Idle Std",
+      "mean_abs_shap": 0.009855033829808235,
+      "mean_shap": 0.003262412501499057
+    },
+    {
+      "rank": 54,
+      "feature": "Bwd IAT Std",
+      "mean_abs_shap": 0.008912410587072372,
+      "mean_shap": 0.003552241250872612
+    },
+    {
+      "rank": 55,
+      "feature": "ACK Flag Count",
+      "mean_abs_shap": 0.0038166700396686792,
+      "mean_shap": -0.0036003284621983767
+    },
+    {
+      "rank": 56,
+      "feature": "Packet Length Variance",
+      "mean_abs_shap": 0.0029349098913371563,
+      "mean_shap": -0.00016757287085056305
+    },
+    {
+      "rank": 57,
+      "feature": "Active Std",
+      "mean_abs_shap": 0.0014065135037526488,
+      "mean_shap": 0.00014236626157071441
+    },
+    {
+      "rank": 58,
+      "feature": "Active Mean",
+      "mean_abs_shap": 0.0012693792814388871,
+      "mean_shap": -0.0008591642254032195
+    },
+    {
+      "rank": 59,
+      "feature": "RST Flag Count",
+      "mean_abs_shap": 0.0,
+      "mean_shap": 0.0
+    },
+    {
+      "rank": 60,
+      "feature": "ECE Flag Count",
+      "mean_abs_shap": 0.0,
+      "mean_shap": 0.0
+    },
+    {
+      "rank": 61,
+      "feature": "Subflow Bwd Bytes",
+      "mean_abs_shap": 0.0,
+      "mean_shap": 0.0
+    }
+  ],
+  "top_10": [
+    {
+      "rank": 1,
+      "feature": "Destination Port",
+      "mean_abs_shap": 3.597745418548584,
+      "mean_shap": -3.052438974380493
+    },
+    {
+      "rank": 2,
+      "feature": "Bwd Packet Length Std",
+      "mean_abs_shap": 2.7420778274536133,
+      "mean_shap": -0.42019158601760864
+    },
+    {
+      "rank": 3,
+      "feature": "Init_Win_bytes_backward",
+      "mean_abs_shap": 2.574079990386963,
+      "mean_shap": -2.541501522064209
+    },
+    {
+      "rank": 4,
+      "feature": "Bwd Packet Length Mean",
+      "mean_abs_shap": 1.4742778539657593,
+      "mean_shap": -1.1962511539459229
+    },
+    {
+      "rank": 5,
+      "feature": "Init_Win_bytes_forward",
+      "mean_abs_shap": 1.1714516878128052,
+      "mean_shap": -1.0487087965011597
+    },
+    {
+      "rank": 6,
+      "feature": "Bwd Packets/s",
+      "mean_abs_shap": 0.6014949083328247,
+      "mean_shap": -0.5650203824043274
+    },
+    {
+      "rank": 7,
+      "feature": "Fwd IAT Min",
+      "mean_abs_shap": 0.597862958908081,
+      "mean_shap": -0.36203810572624207
+    },
+    {
+      "rank": 8,
+      "feature": "Bwd Packet Length Min",
+      "mean_abs_shap": 0.5287655591964722,
+      "mean_shap": -0.4892632067203522
+    },
+    {
+      "rank": 9,
+      "feature": "min_seg_size_forward",
+      "mean_abs_shap": 0.48748475313186646,
+      "mean_shap": -0.42121925950050354
+    },
+    {
+      "rank": 10,
+      "feature": "Bwd Packet Length Max",
+      "mean_abs_shap": 0.43512511253356934,
+      "mean_shap": -0.2552626132965088
+    }
+  ],
+  "cases": [
+    {
+      "id": "tp_confident",
+      "present": true,
+      "index": 352055,
+      "score": 0.9999704360961914,
+      "label": 1,
+      "mode": "highest",
+      "n_eligible": 84206,
+      "n_tied": 1,
+      "tie_break": "plus petit indice du vendredi",
+      "absolute_row": 2277298,
+      "label_original": "PortScan",
+      "missing_features": [],
+      "base_log_odds": -0.025027237832546234,
+      "reconstructed_log_odds": 10.427108764648438,
+      "reconstructed_probability": 0.9999704360961914,
+      "contributions": [
+        {
+          "rank": 1,
+          "feature": "Destination Port",
+          "feature_value": 80.0,
+          "shap_log_odds": 3.213364839553833,
+          "direction": "vers l'attaque"
+        },
+        {
+          "rank": 2,
+          "feature": "Bwd Packet Length Mean",
+          "feature_value": 0.0,
+          "shap_log_odds": 2.7406911849975586,
+          "direction": "vers l'attaque"
+        },
+        {
+          "rank": 3,
+          "feature": "Fwd Header Length",
+          "feature_value": 160.0,
+          "shap_log_odds": 2.7300684452056885,
+          "direction": "vers l'attaque"
+        },
+        {
+          "rank": 4,
+          "feature": "Init_Win_bytes_backward",
+          "feature_value": -1.0,
+          "shap_log_odds": -1.551489233970642,
+          "direction": "vers le normal"
+        },
+        {
+          "rank": 5,
+          "feature": "Init_Win_bytes_forward",
+          "feature_value": 251.0,
+          "shap_log_odds": 1.539002537727356,
+          "direction": "vers l'attaque"
+        },
+        {
+          "rank": 6,
+          "feature": "Fwd IAT Min",
+          "feature_value": 3.0,
+          "shap_log_odds": 0.8847657442092896,
+          "direction": "vers l'attaque"
+        },
+        {
+          "rank": 7,
+          "feature": "Bwd Packet Length Max",
+          "feature_value": 0.0,
+          "shap_log_odds": 0.5509039163589478,
+          "direction": "vers l'attaque"
+        },
+        {
+          "rank": 8,
+          "feature": "Packet Length Std",
+          "feature_value": 0.0,
+          "shap_log_odds": -0.25049182772636414,
+          "direction": "vers le normal"
+        },
+        {
+          "rank": 9,
+          "feature": "Flow IAT Mean",
+          "feature_value": 599.0,
+          "shap_log_odds": 0.22893083095550537,
+          "direction": "vers l'attaque"
+        },
+        {
+          "rank": 10,
+          "feature": "Flow IAT Std",
+          "feature_value": 724.0096435546875,
+          "shap_log_odds": 0.22816142439842224,
+          "direction": "vers l'attaque"
+        }
+      ],
+      "figure": "C:\\Users\\nouha\\OneDrive\\Desktop\\projet eya\\outputs\\figures\\shap_waterfall_tp_confident.png"
+    },
+    {
+      "id": "tp_marginal",
+      "present": true,
+      "index": 532774,
+      "score": 0.010005769319832325,
+      "label": 1,
+      "mode": "closest_above",
+      "n_eligible": 84206,
+      "n_tied": 1,
+      "tie_break": "plus petit indice du vendredi",
+      "absolute_row": 2458017,
+      "label_original": "DDoS",
+      "missing_features": [],
+      "base_log_odds": -0.025027237832546234,
+      "reconstructed_log_odds": -4.594535827636719,
+      "reconstructed_probability": 0.010005783289670944,
+      "contributions": [
+        {
+          "rank": 1,
+          "feature": "Init_Win_bytes_forward",
+          "feature_value": 256.0,
+          "shap_log_odds": -3.1481549739837646,
+          "direction": "vers le normal"
+        },
+        {
+          "rank": 2,
+          "feature": "Destination Port",
+          "feature_value": 80.0,
+          "shap_log_odds": 2.1037676334381104,
+          "direction": "vers l'attaque"
+        },
+        {
+          "rank": 3,
+          "feature": "Init_Win_bytes_backward",
+          "feature_value": -1.0,
+          "shap_log_odds": -1.7331730127334595,
+          "direction": "vers le normal"
+        },
+        {
+          "rank": 4,
+          "feature": "Bwd Packet Length Mean",
+          "feature_value": 0.0,
+          "shap_log_odds": 1.602297067642212,
+          "direction": "vers l'attaque"
+        },
+        {
+          "rank": 5,
+          "feature": "Fwd IAT Min",
+          "feature_value": 988.0,
+          "shap_log_odds": 1.241655707359314,
+          "direction": "vers l'attaque"
+        },
+        {
+          "rank": 6,
+          "feature": "min_seg_size_forward",
+          "feature_value": 20.0,
+          "shap_log_odds": -1.2188920974731445,
+          "direction": "vers le normal"
+        },
+        {
+          "rank": 7,
+          "feature": "Fwd Header Length",
+          "feature_value": 120.0,
+          "shap_log_odds": 1.0728224515914917,
+          "direction": "vers l'attaque"
+        },
+        {
+          "rank": 8,
+          "feature": "Bwd Packet Length Std",
+          "feature_value": 0.0,
+          "shap_log_odds": -0.9934177398681641,
+          "direction": "vers le normal"
+        },
+        {
+          "rank": 9,
+          "feature": "Idle Min",
+          "feature_value": 8267501.0,
+          "shap_log_odds": 0.6298192739486694,
+          "direction": "vers l'attaque"
+        },
+        {
+          "rank": 10,
+          "feature": "Fwd Packet Length Min",
+          "feature_value": 6.0,
+          "shap_log_odds": -0.6069222092628479,
+          "direction": "vers le normal"
+        }
+      ],
+      "figure": "C:\\Users\\nouha\\OneDrive\\Desktop\\projet eya\\outputs\\figures\\shap_waterfall_tp_marginal.png"
+    },
+    {
+      "id": "fp_confident",
+      "present": true,
+      "index": 181994,
+      "score": 0.9996188879013062,
+      "label": 0,
+      "mode": "highest",
+      "n_eligible": 259,
+      "n_tied": 5,
+      "tie_break": "plus petit indice du vendredi",
+      "absolute_row": 2107237,
+      "label_original": "BENIGN",
+      "missing_features": [],
+      "base_log_odds": -0.025027237832546234,
+      "reconstructed_log_odds": 7.872219562530518,
+      "reconstructed_probability": 0.9996188879013062,
+      "contributions": [
+        {
+          "rank": 1,
+          "feature": "Destination Port",
+          "feature_value": 80.0,
+          "shap_log_odds": 2.98856520652771,
+          "direction": "vers l'attaque"
+        },
+        {
+          "rank": 2,
+          "feature": "Bwd Packet Length Mean",
+          "feature_value": 0.0,
+          "shap_log_odds": 2.6373844146728516,
+          "direction": "vers l'attaque"
+        },
+        {
+          "rank": 3,
+          "feature": "Init_Win_bytes_backward",
+          "feature_value": -1.0,
+          "shap_log_odds": -1.532981276512146,
+          "direction": "vers le normal"
+        },
+        {
+          "rank": 4,
+          "feature": "Fwd Header Length",
+          "feature_value": 280.0,
+          "shap_log_odds": 1.4653605222702026,
+          "direction": "vers l'attaque"
+        },
+        {
+          "rank": 5,
+          "feature": "Flow IAT Std",
+          "feature_value": 11900000.0,
+          "shap_log_odds": 1.1718264818191528,
+          "direction": "vers l'attaque"
+        },
+        {
+          "rank": 6,
+          "feature": "Active Min",
+          "feature_value": 7013505.0,
+          "shap_log_odds": -0.5908114314079285,
+          "direction": "vers le normal"
+        },
+        {
+          "rank": 7,
+          "feature": "Bwd Packet Length Max",
+          "feature_value": 0.0,
+          "shap_log_odds": 0.546883225440979,
+          "direction": "vers l'attaque"
+        },
+        {
+          "rank": 8,
+          "feature": "Flow IAT Min",
+          "feature_value": 997510.0,
+          "shap_log_odds": 0.42227280139923096,
+          "direction": "vers l'attaque"
+        },
+        {
+          "rank": 9,
+          "feature": "Idle Mean",
+          "feature_value": 18700000.0,
+          "shap_log_odds": 0.3863184154033661,
+          "direction": "vers l'attaque"
+        },
+        {
+          "rank": 10,
+          "feature": "Idle Min",
+          "feature_value": 8016015.0,
+          "shap_log_odds": 0.2676910161972046,
+          "direction": "vers l'attaque"
+        }
+      ],
+      "figure": "C:\\Users\\nouha\\OneDrive\\Desktop\\projet eya\\outputs\\figures\\shap_waterfall_fp_confident.png"
+    },
+    {
+      "id": "fp_marginal",
+      "present": true,
+      "index": 182411,
+      "score": 0.010128781199455261,
+      "label": 0,
+      "mode": "closest_above",
+      "n_eligible": 259,
+      "n_tied": 2,
+      "tie_break": "plus petit indice du vendredi",
+      "absolute_row": 2107654,
+      "label_original": "BENIGN",
+      "missing_features": [],
+      "base_log_odds": -0.025027237832546234,
+      "reconstructed_log_odds": -4.582195281982422,
+      "reconstructed_probability": 0.010128766298294067,
+      "contributions": [
+        {
+          "rank": 1,
+          "feature": "Init_Win_bytes_forward",
+          "feature_value": 264.0,
+          "shap_log_odds": -3.1236472129821777,
+          "direction": "vers le normal"
+        },
+        {
+          "rank": 2,
+          "feature": "Destination Port",
+          "feature_value": 80.0,
+          "shap_log_odds": 1.9316275119781494,
+          "direction": "vers l'attaque"
+        },
+        {
+          "rank": 3,
+          "feature": "Init_Win_bytes_backward",
+          "feature_value": -1.0,
+          "shap_log_odds": -1.7050756216049194,
+          "direction": "vers le normal"
+        },
+        {
+          "rank": 4,
+          "feature": "Bwd Packet Length Mean",
+          "feature_value": 0.0,
+          "shap_log_odds": 1.5429797172546387,
+          "direction": "vers l'attaque"
+        },
+        {
+          "rank": 5,
+          "feature": "Bwd Packet Length Std",
+          "feature_value": 0.0,
+          "shap_log_odds": -1.0785895586013794,
+          "direction": "vers le normal"
+        },
+        {
+          "rank": 6,
+          "feature": "Flow IAT Std",
+          "feature_value": 0.0,
+          "shap_log_odds": -0.9693912863731384,
+          "direction": "vers le normal"
+        },
+        {
+          "rank": 7,
+          "feature": "Fwd IAT Max",
+          "feature_value": 141.0,
+          "shap_log_odds": -0.5663779973983765,
+          "direction": "vers le normal"
+        },
+        {
+          "rank": 8,
+          "feature": "Fwd IAT Min",
+          "feature_value": 141.0,
+          "shap_log_odds": -0.31868842244148254,
+          "direction": "vers le normal"
+        },
+        {
+          "rank": 9,
+          "feature": "Bwd Packet Length Max",
+          "feature_value": 0.0,
+          "shap_log_odds": 0.3158983290195465,
+          "direction": "vers l'attaque"
+        },
+        {
+          "rank": 10,
+          "feature": "Flow IAT Mean",
+          "feature_value": 141.0,
+          "shap_log_odds": 0.3150217533111572,
+          "direction": "vers l'attaque"
+        }
+      ],
+      "figure": "C:\\Users\\nouha\\OneDrive\\Desktop\\projet eya\\outputs\\figures\\shap_waterfall_fp_marginal.png"
+    },
+    {
+      "id": "fn_marginal",
+      "present": true,
+      "index": 442290,
+      "score": 0.009999923408031464,
+      "label": 1,
+      "mode": "closest_below",
+      "n_eligible": 136015,
+      "n_tied": 2,
+      "tie_break": "plus petit indice du vendredi",
+      "absolute_row": 2367533,
+      "label_original": "DDoS",
+      "missing_features": [],
+      "base_log_odds": -0.025027237832546234,
+      "reconstructed_log_odds": -4.595127105712891,
+      "reconstructed_probability": 0.009999928995966911,
+      "contributions": [
+        {
+          "rank": 1,
+          "feature": "Bwd Packet Length Std",
+          "feature_value": 4128.3193359375,
+          "shap_log_odds": 8.42652416229248,
+          "direction": "vers l'attaque"
+        },
+        {
+          "rank": 2,
+          "feature": "Init_Win_bytes_backward",
+          "feature_value": 229.0,
+          "shap_log_odds": -7.770086765289307,
+          "direction": "vers le normal"
+        },
+        {
+          "rank": 3,
+          "feature": "Init_Win_bytes_forward",
+          "feature_value": 8192.0,
+          "shap_log_odds": -1.7669495344161987,
+          "direction": "vers le normal"
+        },
+        {
+          "rank": 4,
+          "feature": "Bwd Packet Length Mean",
+          "feature_value": 2900.25,
+          "shap_log_odds": -0.9319897294044495,
+          "direction": "vers le normal"
+        },
+        {
+          "rank": 5,
+          "feature": "Fwd IAT Min",
+          "feature_value": 58.0,
+          "shap_log_odds": -0.9088741540908813,
+          "direction": "vers le normal"
+        },
+        {
+          "rank": 6,
+          "feature": "PSH Flag Count",
+          "feature_value": 1.0,
+          "shap_log_odds": 0.7376310229301453,
+          "direction": "vers l'attaque"
+        },
+        {
+          "rank": 7,
+          "feature": "Bwd IAT Min",
+          "feature_value": 178.0,
+          "shap_log_odds": -0.5688048601150513,
+          "direction": "vers le normal"
+        },
+        {
+          "rank": 8,
+          "feature": "Bwd Header Length",
+          "feature_value": 92.0,
+          "shap_log_odds": -0.5649783611297607,
+          "direction": "vers le normal"
+        },
+        {
+          "rank": 9,
+          "feature": "min_seg_size_forward",
+          "feature_value": 20.0,
+          "shap_log_odds": -0.3995231091976166,
+          "direction": "vers le normal"
+        },
+        {
+          "rank": 10,
+          "feature": "Average Packet Size",
+          "feature_value": 1661.0,
+          "shap_log_odds": 0.3987278938293457,
+          "direction": "vers l'attaque"
+        }
+      ],
+      "figure": "C:\\Users\\nouha\\OneDrive\\Desktop\\projet eya\\outputs\\figures\\shap_waterfall_fn_marginal.png"
+    }
+  ],
+  "figures": {
+    "beeswarm": "C:\\Users\\nouha\\OneDrive\\Desktop\\projet eya\\outputs\\figures\\shap_summary_beeswarm.png",
+    "bar": "C:\\Users\\nouha\\OneDrive\\Desktop\\projet eya\\outputs\\figures\\shap_bar_top10.png",
+    "tp_confident": "C:\\Users\\nouha\\OneDrive\\Desktop\\projet eya\\outputs\\figures\\shap_waterfall_tp_confident.png",
+    "tp_marginal": "C:\\Users\\nouha\\OneDrive\\Desktop\\projet eya\\outputs\\figures\\shap_waterfall_tp_marginal.png",
+    "fp_confident": "C:\\Users\\nouha\\OneDrive\\Desktop\\projet eya\\outputs\\figures\\shap_waterfall_fp_confident.png",
+    "fp_marginal": "C:\\Users\\nouha\\OneDrive\\Desktop\\projet eya\\outputs\\figures\\shap_waterfall_fp_marginal.png",
+    "fn_marginal": "C:\\Users\\nouha\\OneDrive\\Desktop\\projet eya\\outputs\\figures\\shap_waterfall_fn_marginal.png"
+  }
+}

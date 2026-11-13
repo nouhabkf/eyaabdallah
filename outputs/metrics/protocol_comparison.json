@@ -1,0 +1,2640 @@
+{
+  "raw_files_modified": false,
+  "rows_deleted": false,
+  "split_saved": false,
+  "training_performed": false,
+  "models_retained": [
+    "logistic_regression",
+    "random_forest",
+    "xgboost"
+  ],
+  "day_order": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday-Morning",
+    "Thursday-Afternoon",
+    "Friday-Morning",
+    "Friday-Afternoon-PortScan",
+    "Friday-Afternoon-DDoS"
+  ],
+  "scenarios": [
+    {
+      "train_days": [
+        "Monday"
+      ],
+      "validation_days": [
+        "Tuesday"
+      ],
+      "test_days": [
+        "Wednesday",
+        "Thursday-Morning",
+        "Thursday-Afternoon",
+        "Friday-Morning",
+        "Friday-Afternoon-PortScan",
+        "Friday-Afternoon-DDoS"
+      ],
+      "train": {
+        "rows": 529918,
+        "normal": 529918,
+        "attack": 0,
+        "families": [],
+        "labels": {
+          "BENIGN": 529918
+        }
+      },
+      "validation": {
+        "rows": 445909,
+        "normal": 432074,
+        "attack": 13835,
+        "families": [
+          "FTP-Patator",
+          "SSH-Patator"
+        ],
+        "labels": {
+          "BENIGN": 432074,
+          "FTP-Patator": 7938,
+          "SSH-Patator": 5897
+        }
+      },
+      "test": {
+        "rows": 1854916,
+        "normal": 1311105,
+        "attack": 543811,
+        "families": [
+          "Bot",
+          "DDoS",
+          "DoS GoldenEye",
+          "DoS Hulk",
+          "DoS Slowhttptest",
+          "DoS slowloris",
+          "Heartbleed",
+          "Infiltration",
+          "PortScan",
+          "Web Attack � Brute Force",
+          "Web Attack � Sql Injection",
+          "Web Attack � XSS"
+        ],
+        "labels": {
+          "BENIGN": 1311105,
+          "DoS GoldenEye": 10293,
+          "DoS Hulk": 231073,
+          "DoS Slowhttptest": 5499,
+          "DoS slowloris": 5796,
+          "Heartbleed": 11,
+          "Web Attack � Brute Force": 1507,
+          "Web Attack � Sql Injection": 21,
+          "Web Attack � XSS": 652,
+          "Infiltration": 36,
+          "Bot": 1966,
+          "PortScan": 158930,
+          "DDoS": 128027
+        }
+      },
+      "families_in_train_absent_from_validation": [],
+      "families_in_train_absent_from_test": [],
+      "families_in_test_absent_from_train": [
+        "Bot",
+        "DDoS",
+        "DoS GoldenEye",
+        "DoS Hulk",
+        "DoS Slowhttptest",
+        "DoS slowloris",
+        "Heartbleed",
+        "Infiltration",
+        "PortScan",
+        "Web Attack � Brute Force",
+        "Web Attack � Sql Injection",
+        "Web Attack � XSS"
+      ],
+      "exact_copies_from_train_in_validation": {
+        "contents": 53,
+        "rows_in_later_set": 291
+      },
+      "exact_copies_from_train_in_test": {
+        "contents": 329,
+        "rows_in_later_set": 5802
+      },
+      "exact_copies_from_validation_in_test": {
+        "contents": 15147,
+        "rows_in_later_set": 42875
+      }
+    },
+    {
+      "train_days": [
+        "Monday"
+      ],
+      "validation_days": [
+        "Tuesday",
+        "Wednesday"
+      ],
+      "test_days": [
+        "Thursday-Morning",
+        "Thursday-Afternoon",
+        "Friday-Morning",
+        "Friday-Afternoon-PortScan",
+        "Friday-Afternoon-DDoS"
+      ],
+      "train": {
+        "rows": 529918,
+        "normal": 529918,
+        "attack": 0,
+        "families": [],
+        "labels": {
+          "BENIGN": 529918
+        }
+      },
+      "validation": {
+        "rows": 1138612,
+        "normal": 872105,
+        "attack": 266507,
+        "families": [
+          "DoS GoldenEye",
+          "DoS Hulk",
+          "DoS Slowhttptest",
+          "DoS slowloris",
+          "FTP-Patator",
+          "Heartbleed",
+          "SSH-Patator"
+        ],
+        "labels": {
+          "BENIGN": 872105,
+          "FTP-Patator": 7938,
+          "SSH-Patator": 5897,
+          "DoS GoldenEye": 10293,
+          "DoS Hulk": 231073,
+          "DoS Slowhttptest": 5499,
+          "DoS slowloris": 5796,
+          "Heartbleed": 11
+        }
+      },
+      "test": {
+        "rows": 1162213,
+        "normal": 871074,
+        "attack": 291139,
+        "families": [
+          "Bot",
+          "DDoS",
+          "Infiltration",
+          "PortScan",
+          "Web Attack � Brute Force",
+          "Web Attack � Sql Injection",
+          "Web Attack � XSS"
+        ],
+        "labels": {
+          "BENIGN": 871074,
+          "Web Attack � Brute Force": 1507,
+          "Web Attack � Sql Injection": 21,
+          "Web Attack � XSS": 652,
+          "Infiltration": 36,
+          "Bot": 1966,
+          "PortScan": 158930,
+          "DDoS": 128027
+        }
+      },
+      "families_in_train_absent_from_validation": [],
+      "families_in_train_absent_from_test": [],
+      "families_in_test_absent_from_train": [
+        "Bot",
+        "DDoS",
+        "Infiltration",
+        "PortScan",
+        "Web Attack � Brute Force",
+        "Web Attack � Sql Injection",
+        "Web Attack � XSS"
+      ],
+      "exact_copies_from_train_in_validation": {
+        "contents": 235,
+        "rows_in_later_set": 2294
+      },
+      "exact_copies_from_train_in_test": {
+        "contents": 275,
+        "rows_in_later_set": 3799
+      },
+      "exact_copies_from_validation_in_test": {
+        "contents": 23553,
+        "rows_in_later_set": 59004
+      }
+    },
+    {
+      "train_days": [
+        "Monday"
+      ],
+      "validation_days": [
+        "Tuesday",
+        "Wednesday",
+        "Thursday-Morning"
+      ],
+      "test_days": [
+        "Thursday-Afternoon",
+        "Friday-Morning",
+        "Friday-Afternoon-PortScan",
+        "Friday-Afternoon-DDoS"
+      ],
+      "train": {
+        "rows": 529918,
+        "normal": 529918,
+        "attack": 0,
+        "families": [],
+        "labels": {
+          "BENIGN": 529918
+        }
+      },
+      "validation": {
+        "rows": 1308978,
+        "normal": 1040291,
+        "attack": 268687,
+        "families": [
+          "DoS GoldenEye",
+          "DoS Hulk",
+          "DoS Slowhttptest",
+          "DoS slowloris",
+          "FTP-Patator",
+          "Heartbleed",
+          "SSH-Patator",
+          "Web Attack � Brute Force",
+          "Web Attack � Sql Injection",
+          "Web Attack � XSS"
+        ],
+        "labels": {
+          "BENIGN": 1040291,
+          "FTP-Patator": 7938,
+          "SSH-Patator": 5897,
+          "DoS GoldenEye": 10293,
+          "DoS Hulk": 231073,
+          "DoS Slowhttptest": 5499,
+          "DoS slowloris": 5796,
+          "Heartbleed": 11,
+          "Web Attack � Brute Force": 1507,
+          "Web Attack � Sql Injection": 21,
+          "Web Attack � XSS": 652
+        }
+      },
+      "test": {
+        "rows": 991847,
+        "normal": 702888,
+        "attack": 288959,
+        "families": [
+          "Bot",
+          "DDoS",
+          "Infiltration",
+          "PortScan"
+        ],
+        "labels": {
+          "BENIGN": 702888,
+          "Infiltration": 36,
+          "Bot": 1966,
+          "PortScan": 158930,
+          "DDoS": 128027
+        }
+      },
+      "families_in_train_absent_from_validation": [],
+      "families_in_train_absent_from_test": [],
+      "families_in_test_absent_from_train": [
+        "Bot",
+        "DDoS",
+        "Infiltration",
+        "PortScan"
+      ],
+      "exact_copies_from_train_in_validation": {
+        "contents": 281,
+        "rows_in_later_set": 3013
+      },
+      "exact_copies_from_train_in_test": {
+        "contents": 238,
+        "rows_in_later_set": 3080
+      },
+      "exact_copies_from_validation_in_test": {
+        "contents": 23132,
+        "rows_in_later_set": 50516
+      }
+    },
+    {
+      "train_days": [
+        "Monday"
+      ],
+      "validation_days": [
+        "Tuesday",
+        "Wednesday",
+        "Thursday-Morning",
+        "Thursday-Afternoon"
+      ],
+      "test_days": [
+        "Friday-Morning",
+        "Friday-Afternoon-PortScan",
+        "Friday-Afternoon-DDoS"
+      ],
+      "train": {
+        "rows": 529918,
+        "normal": 529918,
+        "attack": 0,
+        "families": [],
+        "labels": {
+          "BENIGN": 529918
+        }
+      },
+      "validation": {
+        "rows": 1597580,
+        "normal": 1328857,
+        "attack": 268723,
+        "families": [
+          "DoS GoldenEye",
+          "DoS Hulk",
+          "DoS Slowhttptest",
+          "DoS slowloris",
+          "FTP-Patator",
+          "Heartbleed",
+          "Infiltration",
+          "SSH-Patator",
+          "Web Attack � Brute Force",
+          "Web Attack � Sql Injection",
+          "Web Attack � XSS"
+        ],
+        "labels": {
+          "BENIGN": 1328857,
+          "FTP-Patator": 7938,
+          "SSH-Patator": 5897,
+          "DoS GoldenEye": 10293,
+          "DoS Hulk": 231073,
+          "DoS Slowhttptest": 5499,
+          "DoS slowloris": 5796,
+          "Heartbleed": 11,
+          "Web Attack � Brute Force": 1507,
+          "Web Attack � Sql Injection": 21,
+          "Web Attack � XSS": 652,
+          "Infiltration": 36
+        }
+      },
+      "test": {
+        "rows": 703245,
+        "normal": 414322,
+        "attack": 288923,
+        "families": [
+          "Bot",
+          "DDoS",
+          "PortScan"
+        ],
+        "labels": {
+          "BENIGN": 414322,
+          "Bot": 1966,
+          "PortScan": 158930,
+          "DDoS": 128027
+        }
+      },
+      "families_in_train_absent_from_validation": [],
+      "families_in_train_absent_from_test": [],
+      "families_in_test_absent_from_train": [
+        "Bot",
+        "DDoS",
+        "PortScan"
+      ],
+      "exact_copies_from_train_in_validation": {
+        "contents": 315,
+        "rows_in_later_set": 4539
+      },
+      "exact_copies_from_train_in_test": {
+        "contents": 196,
+        "rows_in_later_set": 1554
+      },
+      "exact_copies_from_validation_in_test": {
+        "contents": 19552,
+        "rows_in_later_set": 35038
+      }
+    },
+    {
+      "train_days": [
+        "Monday"
+      ],
+      "validation_days": [
+        "Tuesday",
+        "Wednesday",
+        "Thursday-Morning",
+        "Thursday-Afternoon",
+        "Friday-Morning"
+      ],
+      "test_days": [
+        "Friday-Afternoon-PortScan",
+        "Friday-Afternoon-DDoS"
+      ],
+      "train": {
+        "rows": 529918,
+        "normal": 529918,
+        "attack": 0,
+        "families": [],
+        "labels": {
+          "BENIGN": 529918
+        }
+      },
+      "validation": {
+        "rows": 1788613,
+        "normal": 1517924,
+        "attack": 270689,
+        "families": [
+          "Bot",
+          "DoS GoldenEye",
+          "DoS Hulk",
+          "DoS Slowhttptest",
+          "DoS slowloris",
+          "FTP-Patator",
+          "Heartbleed",
+          "Infiltration",
+          "SSH-Patator",
+          "Web Attack � Brute Force",
+          "Web Attack � Sql Injection",
+          "Web Attack � XSS"
+        ],
+        "labels": {
+          "BENIGN": 1517924,
+          "FTP-Patator": 7938,
+          "SSH-Patator": 5897,
+          "DoS GoldenEye": 10293,
+          "DoS Hulk": 231073,
+          "DoS Slowhttptest": 5499,
+          "DoS slowloris": 5796,
+          "Heartbleed": 11,
+          "Web Attack � Brute Force": 1507,
+          "Web Attack � Sql Injection": 21,
+          "Web Attack � XSS": 652,
+          "Infiltration": 36,
+          "Bot": 1966
+        }
+      },
+      "test": {
+        "rows": 512212,
+        "normal": 225255,
+        "attack": 286957,
+        "families": [
+          "DDoS",
+          "PortScan"
+        ],
+        "labels": {
+          "BENIGN": 225255,
+          "PortScan": 158930,
+          "DDoS": 128027
+        }
+      },
+      "families_in_train_absent_from_validation": [],
+      "families_in_train_absent_from_test": [],
+      "families_in_test_absent_from_train": [
+        "DDoS",
+        "PortScan"
+      ],
+      "exact_copies_from_train_in_validation": {
+        "contents": 332,
+        "rows_in_later_set": 5313
+      },
+      "exact_copies_from_train_in_test": {
+        "contents": 128,
+        "rows_in_later_set": 780
+      },
+      "exact_copies_from_validation_in_test": {
+        "contents": 12421,
+        "rows_in_later_set": 19167
+      }
+    },
+    {
+      "train_days": [
+        "Monday"
+      ],
+      "validation_days": [
+        "Tuesday",
+        "Wednesday",
+        "Thursday-Morning",
+        "Thursday-Afternoon",
+        "Friday-Morning",
+        "Friday-Afternoon-PortScan"
+      ],
+      "test_days": [
+        "Friday-Afternoon-DDoS"
+      ],
+      "train": {
+        "rows": 529918,
+        "normal": 529918,
+        "attack": 0,
+        "families": [],
+        "labels": {
+          "BENIGN": 529918
+        }
+      },
+      "validation": {
+        "rows": 2075080,
+        "normal": 1645461,
+        "attack": 429619,
+        "families": [
+          "Bot",
+          "DoS GoldenEye",
+          "DoS Hulk",
+          "DoS Slowhttptest",
+          "DoS slowloris",
+          "FTP-Patator",
+          "Heartbleed",
+          "Infiltration",
+          "PortScan",
+          "SSH-Patator",
+          "Web Attack � Brute Force",
+          "Web Attack � Sql Injection",
+          "Web Attack � XSS"
+        ],
+        "labels": {
+          "BENIGN": 1645461,
+          "FTP-Patator": 7938,
+          "SSH-Patator": 5897,
+          "DoS GoldenEye": 10293,
+          "DoS Hulk": 231073,
+          "DoS Slowhttptest": 5499,
+          "DoS slowloris": 5796,
+          "Heartbleed": 11,
+          "Web Attack � Brute Force": 1507,
+          "Web Attack � Sql Injection": 21,
+          "Web Attack � XSS": 652,
+          "Infiltration": 36,
+          "Bot": 1966,
+          "PortScan": 158930
+        }
+      },
+      "test": {
+        "rows": 225745,
+        "normal": 97718,
+        "attack": 128027,
+        "families": [
+          "DDoS"
+        ],
+        "labels": {
+          "BENIGN": 97718,
+          "DDoS": 128027
+        }
+      },
+      "families_in_train_absent_from_validation": [],
+      "families_in_train_absent_from_test": [],
+      "families_in_test_absent_from_train": [
+        "DDoS"
+      ],
+      "exact_copies_from_train_in_validation": {
+        "contents": 347,
+        "rows_in_later_set": 5911
+      },
+      "exact_copies_from_train_in_test": {
+        "contents": 61,
+        "rows_in_later_set": 182
+      },
+      "exact_copies_from_validation_in_test": {
+        "contents": 5341,
+        "rows_in_later_set": 7173
+      }
+    },
+    {
+      "train_days": [
+        "Monday",
+        "Tuesday"
+      ],
+      "validation_days": [
+        "Wednesday"
+      ],
+      "test_days": [
+        "Thursday-Morning",
+        "Thursday-Afternoon",
+        "Friday-Morning",
+        "Friday-Afternoon-PortScan",
+        "Friday-Afternoon-DDoS"
+      ],
+      "train": {
+        "rows": 975827,
+        "normal": 961992,
+        "attack": 13835,
+        "families": [
+          "FTP-Patator",
+          "SSH-Patator"
+        ],
+        "labels": {
+          "BENIGN": 961992,
+          "FTP-Patator": 7938,
+          "SSH-Patator": 5897
+        }
+      },
+      "validation": {
+        "rows": 692703,
+        "normal": 440031,
+        "attack": 252672,
+        "families": [
+          "DoS GoldenEye",
+          "DoS Hulk",
+          "DoS Slowhttptest",
+          "DoS slowloris",
+          "Heartbleed"
+        ],
+        "labels": {
+          "BENIGN": 440031,
+          "DoS GoldenEye": 10293,
+          "DoS Hulk": 231073,
+          "DoS Slowhttptest": 5499,
+          "DoS slowloris": 5796,
+          "Heartbleed": 11
+        }
+      },
+      "test": {
+        "rows": 1162213,
+        "normal": 871074,
+        "attack": 291139,
+        "families": [
+          "Bot",
+          "DDoS",
+          "Infiltration",
+          "PortScan",
+          "Web Attack � Brute Force",
+          "Web Attack � Sql Injection",
+          "Web Attack � XSS"
+        ],
+        "labels": {
+          "BENIGN": 871074,
+          "Web Attack � Brute Force": 1507,
+          "Web Attack � Sql Injection": 21,
+          "Web Attack � XSS": 652,
+          "Infiltration": 36,
+          "Bot": 1966,
+          "PortScan": 158930,
+          "DDoS": 128027
+        }
+      },
+      "families_in_train_absent_from_validation": [
+        "FTP-Patator",
+        "SSH-Patator"
+      ],
+      "families_in_train_absent_from_test": [
+        "FTP-Patator",
+        "SSH-Patator"
+      ],
+      "families_in_test_absent_from_train": [
+        "Bot",
+        "DDoS",
+        "Infiltration",
+        "PortScan",
+        "Web Attack � Brute Force",
+        "Web Attack � Sql Injection",
+        "Web Attack � XSS"
+      ],
+      "exact_copies_from_train_in_validation": {
+        "contents": 8229,
+        "rows_in_later_set": 17180
+      },
+      "exact_copies_from_train_in_test": {
+        "contents": 11869,
+        "rows_in_later_set": 30416
+      },
+      "exact_copies_from_validation_in_test": {
+        "contents": 16453,
+        "rows_in_later_set": 48638
+      }
+    },
+    {
+      "train_days": [
+        "Monday",
+        "Tuesday"
+      ],
+      "validation_days": [
+        "Wednesday",
+        "Thursday-Morning"
+      ],
+      "test_days": [
+        "Thursday-Afternoon",
+        "Friday-Morning",
+        "Friday-Afternoon-PortScan",
+        "Friday-Afternoon-DDoS"
+      ],
+      "train": {
+        "rows": 975827,
+        "normal": 961992,
+        "attack": 13835,
+        "families": [
+          "FTP-Patator",
+          "SSH-Patator"
+        ],
+        "labels": {
+          "BENIGN": 961992,
+          "FTP-Patator": 7938,
+          "SSH-Patator": 5897
+        }
+      },
+      "validation": {
+        "rows": 863069,
+        "normal": 608217,
+        "attack": 254852,
+        "families": [
+          "DoS GoldenEye",
+          "DoS Hulk",
+          "DoS Slowhttptest",
+          "DoS slowloris",
+          "Heartbleed",
+          "Web Attack � Brute Force",
+          "Web Attack � Sql Injection",
+          "Web Attack � XSS"
+        ],
+        "labels": {
+          "BENIGN": 608217,
+          "DoS GoldenEye": 10293,
+          "DoS Hulk": 231073,
+          "DoS Slowhttptest": 5499,
+          "DoS slowloris": 5796,
+          "Heartbleed": 11,
+          "Web Attack � Brute Force": 1507,
+          "Web Attack � Sql Injection": 21,
+          "Web Attack � XSS": 652
+        }
+      },
+      "test": {
+        "rows": 991847,
+        "normal": 702888,
+        "attack": 288959,
+        "families": [
+          "Bot",
+          "DDoS",
+          "Infiltration",
+          "PortScan"
+        ],
+        "labels": {
+          "BENIGN": 702888,
+          "Infiltration": 36,
+          "Bot": 1966,
+          "PortScan": 158930,
+          "DDoS": 128027
+        }
+      },
+      "families_in_train_absent_from_validation": [
+        "FTP-Patator",
+        "SSH-Patator"
+      ],
+      "families_in_train_absent_from_test": [
+        "FTP-Patator",
+        "SSH-Patator"
+      ],
+      "families_in_test_absent_from_train": [
+        "Bot",
+        "DDoS",
+        "Infiltration",
+        "PortScan"
+      ],
+      "exact_copies_from_train_in_validation": {
+        "contents": 10242,
+        "rows_in_later_set": 23677
+      },
+      "exact_copies_from_train_in_test": {
+        "contents": 10167,
+        "rows_in_later_set": 23919
+      },
+      "exact_copies_from_validation_in_test": {
+        "contents": 17999,
+        "rows_in_later_set": 43807
+      }
+    },
+    {
+      "train_days": [
+        "Monday",
+        "Tuesday"
+      ],
+      "validation_days": [
+        "Wednesday",
+        "Thursday-Morning",
+        "Thursday-Afternoon"
+      ],
+      "test_days": [
+        "Friday-Morning",
+        "Friday-Afternoon-PortScan",
+        "Friday-Afternoon-DDoS"
+      ],
+      "train": {
+        "rows": 975827,
+        "normal": 961992,
+        "attack": 13835,
+        "families": [
+          "FTP-Patator",
+          "SSH-Patator"
+        ],
+        "labels": {
+          "BENIGN": 961992,
+          "FTP-Patator": 7938,
+          "SSH-Patator": 5897
+        }
+      },
+      "validation": {
+        "rows": 1151671,
+        "normal": 896783,
+        "attack": 254888,
+        "families": [
+          "DoS GoldenEye",
+          "DoS Hulk",
+          "DoS Slowhttptest",
+          "DoS slowloris",
+          "Heartbleed",
+          "Infiltration",
+          "Web Attack � Brute Force",
+          "Web Attack � Sql Injection",
+          "Web Attack � XSS"
+        ],
+        "labels": {
+          "BENIGN": 896783,
+          "DoS GoldenEye": 10293,
+          "DoS Hulk": 231073,
+          "DoS Slowhttptest": 5499,
+          "DoS slowloris": 5796,
+          "Heartbleed": 11,
+          "Web Attack � Brute Force": 1507,
+          "Web Attack � Sql Injection": 21,
+          "Web Attack � XSS": 652,
+          "Infiltration": 36
+        }
+      },
+      "test": {
+        "rows": 703245,
+        "normal": 414322,
+        "attack": 288923,
+        "families": [
+          "Bot",
+          "DDoS",
+          "PortScan"
+        ],
+        "labels": {
+          "BENIGN": 414322,
+          "Bot": 1966,
+          "PortScan": 158930,
+          "DDoS": 128027
+        }
+      },
+      "families_in_train_absent_from_validation": [
+        "FTP-Patator",
+        "SSH-Patator"
+      ],
+      "families_in_train_absent_from_test": [
+        "FTP-Patator",
+        "SSH-Patator"
+      ],
+      "families_in_test_absent_from_train": [
+        "Bot",
+        "DDoS",
+        "PortScan"
+      ],
+      "exact_copies_from_train_in_validation": {
+        "contents": 12159,
+        "rows_in_later_set": 32618
+      },
+      "exact_copies_from_train_in_test": {
+        "contents": 7813,
+        "rows_in_later_set": 14978
+      },
+      "exact_copies_from_validation_in_test": {
+        "contents": 16302,
+        "rows_in_later_set": 31145
+      }
+    },
+    {
+      "train_days": [
+        "Monday",
+        "Tuesday"
+      ],
+      "validation_days": [
+        "Wednesday",
+        "Thursday-Morning",
+        "Thursday-Afternoon",
+        "Friday-Morning"
+      ],
+      "test_days": [
+        "Friday-Afternoon-PortScan",
+        "Friday-Afternoon-DDoS"
+      ],
+      "train": {
+        "rows": 975827,
+        "normal": 961992,
+        "attack": 13835,
+        "families": [
+          "FTP-Patator",
+          "SSH-Patator"
+        ],
+        "labels": {
+          "BENIGN": 961992,
+          "FTP-Patator": 7938,
+          "SSH-Patator": 5897
+        }
+      },
+      "validation": {
+        "rows": 1342704,
+        "normal": 1085850,
+        "attack": 256854,
+        "families": [
+          "Bot",
+          "DoS GoldenEye",
+          "DoS Hulk",
+          "DoS Slowhttptest",
+          "DoS slowloris",
+          "Heartbleed",
+          "Infiltration",
+          "Web Attack � Brute Force",
+          "Web Attack � Sql Injection",
+          "Web Attack � XSS"
+        ],
+        "labels": {
+          "BENIGN": 1085850,
+          "DoS GoldenEye": 10293,
+          "DoS Hulk": 231073,
+          "DoS Slowhttptest": 5499,
+          "DoS slowloris": 5796,
+          "Heartbleed": 11,
+          "Web Attack � Brute Force": 1507,
+          "Web Attack � Sql Injection": 21,
+          "Web Attack � XSS": 652,
+          "Infiltration": 36,
+          "Bot": 1966
+        }
+      },
+      "test": {
+        "rows": 512212,
+        "normal": 225255,
+        "attack": 286957,
+        "families": [
+          "DDoS",
+          "PortScan"
+        ],
+        "labels": {
+          "BENIGN": 225255,
+          "PortScan": 158930,
+          "DDoS": 128027
+        }
+      },
+      "families_in_train_absent_from_validation": [
+        "FTP-Patator",
+        "SSH-Patator"
+      ],
+      "families_in_train_absent_from_test": [
+        "FTP-Patator",
+        "SSH-Patator"
+      ],
+      "families_in_test_absent_from_train": [
+        "DDoS",
+        "PortScan"
+      ],
+      "exact_copies_from_train_in_validation": {
+        "contents": 13814,
+        "rows_in_later_set": 39808
+      },
+      "exact_copies_from_train_in_test": {
+        "contents": 4866,
+        "rows_in_later_set": 7788
+      },
+      "exact_copies_from_validation_in_test": {
+        "contents": 10809,
+        "rows_in_later_set": 17378
+      }
+    },
+    {
+      "train_days": [
+        "Monday",
+        "Tuesday"
+      ],
+      "validation_days": [
+        "Wednesday",
+        "Thursday-Morning",
+        "Thursday-Afternoon",
+        "Friday-Morning",
+        "Friday-Afternoon-PortScan"
+      ],
+      "test_days": [
+        "Friday-Afternoon-DDoS"
+      ],
+      "train": {
+        "rows": 975827,
+        "normal": 961992,
+        "attack": 13835,
+        "families": [
+          "FTP-Patator",
+          "SSH-Patator"
+        ],
+        "labels": {
+          "BENIGN": 961992,
+          "FTP-Patator": 7938,
+          "SSH-Patator": 5897
+        }
+      },
+      "validation": {
+        "rows": 1629171,
+        "normal": 1213387,
+        "attack": 415784,
+        "families": [
+          "Bot",
+          "DoS GoldenEye",
+          "DoS Hulk",
+          "DoS Slowhttptest",
+          "DoS slowloris",
+          "Heartbleed",
+          "Infiltration",
+          "PortScan",
+          "Web Attack � Brute Force",
+          "Web Attack � Sql Injection",
+          "Web Attack � XSS"
+        ],
+        "labels": {
+          "BENIGN": 1213387,
+          "DoS GoldenEye": 10293,
+          "DoS Hulk": 231073,
+          "DoS Slowhttptest": 5499,
+          "DoS slowloris": 5796,
+          "Heartbleed": 11,
+          "Web Attack � Brute Force": 1507,
+          "Web Attack � Sql Injection": 21,
+          "Web Attack � XSS": 652,
+          "Infiltration": 36,
+          "Bot": 1966,
+          "PortScan": 158930
+        }
+      },
+      "test": {
+        "rows": 225745,
+        "normal": 97718,
+        "attack": 128027,
+        "families": [
+          "DDoS"
+        ],
+        "labels": {
+          "BENIGN": 97718,
+          "DDoS": 128027
+        }
+      },
+      "families_in_train_absent_from_validation": [
+        "FTP-Patator",
+        "SSH-Patator"
+      ],
+      "families_in_train_absent_from_test": [
+        "FTP-Patator",
+        "SSH-Patator"
+      ],
+      "families_in_test_absent_from_train": [
+        "DDoS"
+      ],
+      "exact_copies_from_train_in_validation": {
+        "contents": 14930,
+        "rows_in_later_set": 45011
+      },
+      "exact_copies_from_train_in_test": {
+        "contents": 1990,
+        "rows_in_later_set": 2585
+      },
+      "exact_copies_from_validation_in_test": {
+        "contents": 4830,
+        "rows_in_later_set": 6639
+      }
+    },
+    {
+      "train_days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday"
+      ],
+      "validation_days": [
+        "Thursday-Morning"
+      ],
+      "test_days": [
+        "Thursday-Afternoon",
+        "Friday-Morning",
+        "Friday-Afternoon-PortScan",
+        "Friday-Afternoon-DDoS"
+      ],
+      "train": {
+        "rows": 1668530,
+        "normal": 1402023,
+        "attack": 266507,
+        "families": [
+          "DoS GoldenEye",
+          "DoS Hulk",
+          "DoS Slowhttptest",
+          "DoS slowloris",
+          "FTP-Patator",
+          "Heartbleed",
+          "SSH-Patator"
+        ],
+        "labels": {
+          "BENIGN": 1402023,
+          "FTP-Patator": 7938,
+          "SSH-Patator": 5897,
+          "DoS GoldenEye": 10293,
+          "DoS Hulk": 231073,
+          "DoS Slowhttptest": 5499,
+          "DoS slowloris": 5796,
+          "Heartbleed": 11
+        }
+      },
+      "validation": {
+        "rows": 170366,
+        "normal": 168186,
+        "attack": 2180,
+        "families": [
+          "Web Attack � Brute Force",
+          "Web Attack � Sql Injection",
+          "Web Attack � XSS"
+        ],
+        "labels": {
+          "BENIGN": 168186,
+          "Web Attack � Brute Force": 1507,
+          "Web Attack � Sql Injection": 21,
+          "Web Attack � XSS": 652
+        }
+      },
+      "test": {
+        "rows": 991847,
+        "normal": 702888,
+        "attack": 288959,
+        "families": [
+          "Bot",
+          "DDoS",
+          "Infiltration",
+          "PortScan"
+        ],
+        "labels": {
+          "BENIGN": 702888,
+          "Infiltration": 36,
+          "Bot": 1966,
+          "PortScan": 158930,
+          "DDoS": 128027
+        }
+      },
+      "families_in_train_absent_from_validation": [
+        "DoS GoldenEye",
+        "DoS Hulk",
+        "DoS Slowhttptest",
+        "DoS slowloris",
+        "FTP-Patator",
+        "Heartbleed",
+        "SSH-Patator"
+      ],
+      "families_in_train_absent_from_test": [
+        "DoS GoldenEye",
+        "DoS Hulk",
+        "DoS Slowhttptest",
+        "DoS slowloris",
+        "FTP-Patator",
+        "Heartbleed",
+        "SSH-Patator"
+      ],
+      "families_in_test_absent_from_train": [
+        "Bot",
+        "DDoS",
+        "Infiltration",
+        "PortScan"
+      ],
+      "exact_copies_from_train_in_validation": {
+        "contents": 8041,
+        "rows_in_later_set": 12963
+      },
+      "exact_copies_from_train_in_test": {
+        "contents": 20202,
+        "rows_in_later_set": 46262
+      },
+      "exact_copies_from_validation_in_test": {
+        "contents": 7574,
+        "rows_in_later_set": 27016
+      }
+    },
+    {
+      "train_days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday"
+      ],
+      "validation_days": [
+        "Thursday-Morning",
+        "Thursday-Afternoon"
+      ],
+      "test_days": [
+        "Friday-Morning",
+        "Friday-Afternoon-PortScan",
+        "Friday-Afternoon-DDoS"
+      ],
+      "train": {
+        "rows": 1668530,
+        "normal": 1402023,
+        "attack": 266507,
+        "families": [
+          "DoS GoldenEye",
+          "DoS Hulk",
+          "DoS Slowhttptest",
+          "DoS slowloris",
+          "FTP-Patator",
+          "Heartbleed",
+          "SSH-Patator"
+        ],
+        "labels": {
+          "BENIGN": 1402023,
+          "FTP-Patator": 7938,
+          "SSH-Patator": 5897,
+          "DoS GoldenEye": 10293,
+          "DoS Hulk": 231073,
+          "DoS Slowhttptest": 5499,
+          "DoS slowloris": 5796,
+          "Heartbleed": 11
+        }
+      },
+      "validation": {
+        "rows": 458968,
+        "normal": 456752,
+        "attack": 2216,
+        "families": [
+          "Infiltration",
+          "Web Attack � Brute Force",
+          "Web Attack � Sql Injection",
+          "Web Attack � XSS"
+        ],
+        "labels": {
+          "BENIGN": 456752,
+          "Web Attack � Brute Force": 1507,
+          "Web Attack � Sql Injection": 21,
+          "Web Attack � XSS": 652,
+          "Infiltration": 36
+        }
+      },
+      "test": {
+        "rows": 703245,
+        "normal": 414322,
+        "attack": 288923,
+        "families": [
+          "Bot",
+          "DDoS",
+          "PortScan"
+        ],
+        "labels": {
+          "BENIGN": 414322,
+          "Bot": 1966,
+          "PortScan": 158930,
+          "DDoS": 128027
+        }
+      },
+      "families_in_train_absent_from_validation": [
+        "DoS GoldenEye",
+        "DoS Hulk",
+        "DoS Slowhttptest",
+        "DoS slowloris",
+        "FTP-Patator",
+        "Heartbleed",
+        "SSH-Patator"
+      ],
+      "families_in_train_absent_from_test": [
+        "DoS GoldenEye",
+        "DoS Hulk",
+        "DoS Slowhttptest",
+        "DoS slowloris",
+        "FTP-Patator",
+        "Heartbleed",
+        "SSH-Patator"
+      ],
+      "families_in_test_absent_from_train": [
+        "Bot",
+        "DDoS",
+        "PortScan"
+      ],
+      "exact_copies_from_train_in_validation": {
+        "contents": 14490,
+        "rows_in_later_set": 30141
+      },
+      "exact_copies_from_train_in_test": {
+        "contents": 15233,
+        "rows_in_later_set": 29084
+      },
+      "exact_copies_from_validation_in_test": {
+        "contents": 10409,
+        "rows_in_later_set": 23288
+      }
+    },
+    {
+      "train_days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday"
+      ],
+      "validation_days": [
+        "Thursday-Morning",
+        "Thursday-Afternoon",
+        "Friday-Morning"
+      ],
+      "test_days": [
+        "Friday-Afternoon-PortScan",
+        "Friday-Afternoon-DDoS"
+      ],
+      "train": {
+        "rows": 1668530,
+        "normal": 1402023,
+        "attack": 266507,
+        "families": [
+          "DoS GoldenEye",
+          "DoS Hulk",
+          "DoS Slowhttptest",
+          "DoS slowloris",
+          "FTP-Patator",
+          "Heartbleed",
+          "SSH-Patator"
+        ],
+        "labels": {
+          "BENIGN": 1402023,
+          "FTP-Patator": 7938,
+          "SSH-Patator": 5897,
+          "DoS GoldenEye": 10293,
+          "DoS Hulk": 231073,
+          "DoS Slowhttptest": 5499,
+          "DoS slowloris": 5796,
+          "Heartbleed": 11
+        }
+      },
+      "validation": {
+        "rows": 650001,
+        "normal": 645819,
+        "attack": 4182,
+        "families": [
+          "Bot",
+          "Infiltration",
+          "Web Attack � Brute Force",
+          "Web Attack � Sql Injection",
+          "Web Attack � XSS"
+        ],
+        "labels": {
+          "BENIGN": 645819,
+          "Web Attack � Brute Force": 1507,
+          "Web Attack � Sql Injection": 21,
+          "Web Attack � XSS": 652,
+          "Infiltration": 36,
+          "Bot": 1966
+        }
+      },
+      "test": {
+        "rows": 512212,
+        "normal": 225255,
+        "attack": 286957,
+        "families": [
+          "DDoS",
+          "PortScan"
+        ],
+        "labels": {
+          "BENIGN": 225255,
+          "PortScan": 158930,
+          "DDoS": 128027
+        }
+      },
+      "families_in_train_absent_from_validation": [
+        "DoS GoldenEye",
+        "DoS Hulk",
+        "DoS Slowhttptest",
+        "DoS slowloris",
+        "FTP-Patator",
+        "Heartbleed",
+        "SSH-Patator"
+      ],
+      "families_in_train_absent_from_test": [
+        "DoS GoldenEye",
+        "DoS Hulk",
+        "DoS Slowhttptest",
+        "DoS slowloris",
+        "FTP-Patator",
+        "Heartbleed",
+        "SSH-Patator"
+      ],
+      "families_in_test_absent_from_train": [
+        "DDoS",
+        "PortScan"
+      ],
+      "exact_copies_from_train_in_validation": {
+        "contents": 19478,
+        "rows_in_later_set": 44337
+      },
+      "exact_copies_from_train_in_test": {
+        "contents": 9126,
+        "rows_in_later_set": 14888
+      },
+      "exact_copies_from_validation_in_test": {
+        "contents": 8249,
+        "rows_in_later_set": 14438
+      }
+    },
+    {
+      "train_days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday"
+      ],
+      "validation_days": [
+        "Thursday-Morning",
+        "Thursday-Afternoon",
+        "Friday-Morning",
+        "Friday-Afternoon-PortScan"
+      ],
+      "test_days": [
+        "Friday-Afternoon-DDoS"
+      ],
+      "train": {
+        "rows": 1668530,
+        "normal": 1402023,
+        "attack": 266507,
+        "families": [
+          "DoS GoldenEye",
+          "DoS Hulk",
+          "DoS Slowhttptest",
+          "DoS slowloris",
+          "FTP-Patator",
+          "Heartbleed",
+          "SSH-Patator"
+        ],
+        "labels": {
+          "BENIGN": 1402023,
+          "FTP-Patator": 7938,
+          "SSH-Patator": 5897,
+          "DoS GoldenEye": 10293,
+          "DoS Hulk": 231073,
+          "DoS Slowhttptest": 5499,
+          "DoS slowloris": 5796,
+          "Heartbleed": 11
+        }
+      },
+      "validation": {
+        "rows": 936468,
+        "normal": 773356,
+        "attack": 163112,
+        "families": [
+          "Bot",
+          "Infiltration",
+          "PortScan",
+          "Web Attack � Brute Force",
+          "Web Attack � Sql Injection",
+          "Web Attack � XSS"
+        ],
+        "labels": {
+          "BENIGN": 773356,
+          "Web Attack � Brute Force": 1507,
+          "Web Attack � Sql Injection": 21,
+          "Web Attack � XSS": 652,
+          "Infiltration": 36,
+          "Bot": 1966,
+          "PortScan": 158930
+        }
+      },
+      "test": {
+        "rows": 225745,
+        "normal": 97718,
+        "attack": 128027,
+        "families": [
+          "DDoS"
+        ],
+        "labels": {
+          "BENIGN": 97718,
+          "DDoS": 128027
+        }
+      },
+      "families_in_train_absent_from_validation": [
+        "DoS GoldenEye",
+        "DoS Hulk",
+        "DoS Slowhttptest",
+        "DoS slowloris",
+        "FTP-Patator",
+        "Heartbleed",
+        "SSH-Patator"
+      ],
+      "families_in_train_absent_from_test": [
+        "DoS GoldenEye",
+        "DoS Hulk",
+        "DoS Slowhttptest",
+        "DoS slowloris",
+        "FTP-Patator",
+        "Heartbleed",
+        "SSH-Patator"
+      ],
+      "families_in_test_absent_from_train": [
+        "DDoS"
+      ],
+      "exact_copies_from_train_in_validation": {
+        "contents": 22369,
+        "rows_in_later_set": 54295
+      },
+      "exact_copies_from_train_in_test": {
+        "contents": 3720,
+        "rows_in_later_set": 4930
+      },
+      "exact_copies_from_validation_in_test": {
+        "contents": 4045,
+        "rows_in_later_set": 5809
+      }
+    },
+    {
+      "train_days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday-Morning"
+      ],
+      "validation_days": [
+        "Thursday-Afternoon"
+      ],
+      "test_days": [
+        "Friday-Morning",
+        "Friday-Afternoon-PortScan",
+        "Friday-Afternoon-DDoS"
+      ],
+      "train": {
+        "rows": 1838896,
+        "normal": 1570209,
+        "attack": 268687,
+        "families": [
+          "DoS GoldenEye",
+          "DoS Hulk",
+          "DoS Slowhttptest",
+          "DoS slowloris",
+          "FTP-Patator",
+          "Heartbleed",
+          "SSH-Patator",
+          "Web Attack � Brute Force",
+          "Web Attack � Sql Injection",
+          "Web Attack � XSS"
+        ],
+        "labels": {
+          "BENIGN": 1570209,
+          "FTP-Patator": 7938,
+          "SSH-Patator": 5897,
+          "DoS GoldenEye": 10293,
+          "DoS Hulk": 231073,
+          "DoS Slowhttptest": 5499,
+          "DoS slowloris": 5796,
+          "Heartbleed": 11,
+          "Web Attack � Brute Force": 1507,
+          "Web Attack � Sql Injection": 21,
+          "Web Attack � XSS": 652
+        }
+      },
+      "validation": {
+        "rows": 288602,
+        "normal": 288566,
+        "attack": 36,
+        "families": [
+          "Infiltration"
+        ],
+        "labels": {
+          "BENIGN": 288566,
+          "Infiltration": 36
+        }
+      },
+      "test": {
+        "rows": 703245,
+        "normal": 414322,
+        "attack": 288923,
+        "families": [
+          "Bot",
+          "DDoS",
+          "PortScan"
+        ],
+        "labels": {
+          "BENIGN": 414322,
+          "Bot": 1966,
+          "PortScan": 158930,
+          "DDoS": 128027
+        }
+      },
+      "families_in_train_absent_from_validation": [
+        "DoS GoldenEye",
+        "DoS Hulk",
+        "DoS Slowhttptest",
+        "DoS slowloris",
+        "FTP-Patator",
+        "Heartbleed",
+        "SSH-Patator",
+        "Web Attack � Brute Force",
+        "Web Attack � Sql Injection",
+        "Web Attack � XSS"
+      ],
+      "families_in_train_absent_from_test": [
+        "DoS GoldenEye",
+        "DoS Hulk",
+        "DoS Slowhttptest",
+        "DoS slowloris",
+        "FTP-Patator",
+        "Heartbleed",
+        "SSH-Patator",
+        "Web Attack � Brute Force",
+        "Web Attack � Sql Injection",
+        "Web Attack � XSS"
+      ],
+      "families_in_test_absent_from_train": [
+        "Bot",
+        "DDoS",
+        "PortScan"
+      ],
+      "exact_copies_from_train_in_validation": {
+        "contents": 10514,
+        "rows_in_later_set": 18766
+      },
+      "exact_copies_from_train_in_test": {
+        "contents": 17324,
+        "rows_in_later_set": 31863
+      },
+      "exact_copies_from_validation_in_test": {
+        "contents": 6900,
+        "rows_in_later_set": 18011
+      }
+    },
+    {
+      "train_days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday-Morning"
+      ],
+      "validation_days": [
+        "Thursday-Afternoon",
+        "Friday-Morning"
+      ],
+      "test_days": [
+        "Friday-Afternoon-PortScan",
+        "Friday-Afternoon-DDoS"
+      ],
+      "train": {
+        "rows": 1838896,
+        "normal": 1570209,
+        "attack": 268687,
+        "families": [
+          "DoS GoldenEye",
+          "DoS Hulk",
+          "DoS Slowhttptest",
+          "DoS slowloris",
+          "FTP-Patator",
+          "Heartbleed",
+          "SSH-Patator",
+          "Web Attack � Brute Force",
+          "Web Attack � Sql Injection",
+          "Web Attack � XSS"
+        ],
+        "labels": {
+          "BENIGN": 1570209,
+          "FTP-Patator": 7938,
+          "SSH-Patator": 5897,
+          "DoS GoldenEye": 10293,
+          "DoS Hulk": 231073,
+          "DoS Slowhttptest": 5499,
+          "DoS slowloris": 5796,
+          "Heartbleed": 11,
+          "Web Attack � Brute Force": 1507,
+          "Web Attack � Sql Injection": 21,
+          "Web Attack � XSS": 652
+        }
+      },
+      "validation": {
+        "rows": 479635,
+        "normal": 477633,
+        "attack": 2002,
+        "families": [
+          "Bot",
+          "Infiltration"
+        ],
+        "labels": {
+          "BENIGN": 477633,
+          "Infiltration": 36,
+          "Bot": 1966
+        }
+      },
+      "test": {
+        "rows": 512212,
+        "normal": 225255,
+        "attack": 286957,
+        "families": [
+          "DDoS",
+          "PortScan"
+        ],
+        "labels": {
+          "BENIGN": 225255,
+          "PortScan": 158930,
+          "DDoS": 128027
+        }
+      },
+      "families_in_train_absent_from_validation": [
+        "DoS GoldenEye",
+        "DoS Hulk",
+        "DoS Slowhttptest",
+        "DoS slowloris",
+        "FTP-Patator",
+        "Heartbleed",
+        "SSH-Patator",
+        "Web Attack � Brute Force",
+        "Web Attack � Sql Injection",
+        "Web Attack � XSS"
+      ],
+      "families_in_train_absent_from_test": [
+        "DoS GoldenEye",
+        "DoS Hulk",
+        "DoS Slowhttptest",
+        "DoS slowloris",
+        "FTP-Patator",
+        "Heartbleed",
+        "SSH-Patator",
+        "Web Attack � Brute Force",
+        "Web Attack � Sql Injection",
+        "Web Attack � XSS"
+      ],
+      "families_in_test_absent_from_train": [
+        "DDoS",
+        "PortScan"
+      ],
+      "exact_copies_from_train_in_validation": {
+        "contents": 17566,
+        "rows_in_later_set": 34397
+      },
+      "exact_copies_from_train_in_test": {
+        "contents": 10253,
+        "rows_in_later_set": 16232
+      },
+      "exact_copies_from_validation_in_test": {
+        "contents": 6804,
+        "rows_in_later_set": 12690
+      }
+    },
+    {
+      "train_days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday-Morning"
+      ],
+      "validation_days": [
+        "Thursday-Afternoon",
+        "Friday-Morning",
+        "Friday-Afternoon-PortScan"
+      ],
+      "test_days": [
+        "Friday-Afternoon-DDoS"
+      ],
+      "train": {
+        "rows": 1838896,
+        "normal": 1570209,
+        "attack": 268687,
+        "families": [
+          "DoS GoldenEye",
+          "DoS Hulk",
+          "DoS Slowhttptest",
+          "DoS slowloris",
+          "FTP-Patator",
+          "Heartbleed",
+          "SSH-Patator",
+          "Web Attack � Brute Force",
+          "Web Attack � Sql Injection",
+          "Web Attack � XSS"
+        ],
+        "labels": {
+          "BENIGN": 1570209,
+          "FTP-Patator": 7938,
+          "SSH-Patator": 5897,
+          "DoS GoldenEye": 10293,
+          "DoS Hulk": 231073,
+          "DoS Slowhttptest": 5499,
+          "DoS slowloris": 5796,
+          "Heartbleed": 11,
+          "Web Attack � Brute Force": 1507,
+          "Web Attack � Sql Injection": 21,
+          "Web Attack � XSS": 652
+        }
+      },
+      "validation": {
+        "rows": 766102,
+        "normal": 605170,
+        "attack": 160932,
+        "families": [
+          "Bot",
+          "Infiltration",
+          "PortScan"
+        ],
+        "labels": {
+          "BENIGN": 605170,
+          "Infiltration": 36,
+          "Bot": 1966,
+          "PortScan": 158930
+        }
+      },
+      "test": {
+        "rows": 225745,
+        "normal": 97718,
+        "attack": 128027,
+        "families": [
+          "DDoS"
+        ],
+        "labels": {
+          "BENIGN": 97718,
+          "DDoS": 128027
+        }
+      },
+      "families_in_train_absent_from_validation": [
+        "DoS GoldenEye",
+        "DoS Hulk",
+        "DoS Slowhttptest",
+        "DoS slowloris",
+        "FTP-Patator",
+        "Heartbleed",
+        "SSH-Patator",
+        "Web Attack � Brute Force",
+        "Web Attack � Sql Injection",
+        "Web Attack � XSS"
+      ],
+      "families_in_train_absent_from_test": [
+        "DoS GoldenEye",
+        "DoS Hulk",
+        "DoS Slowhttptest",
+        "DoS slowloris",
+        "FTP-Patator",
+        "Heartbleed",
+        "SSH-Patator",
+        "Web Attack � Brute Force",
+        "Web Attack � Sql Injection",
+        "Web Attack � XSS"
+      ],
+      "families_in_test_absent_from_train": [
+        "DDoS"
+      ],
+      "exact_copies_from_train_in_validation": {
+        "contents": 21449,
+        "rows_in_later_set": 45231
+      },
+      "exact_copies_from_train_in_test": {
+        "contents": 4149,
+        "rows_in_later_set": 5398
+      },
+      "exact_copies_from_validation_in_test": {
+        "contents": 3592,
+        "rows_in_later_set": 5327
+      }
+    },
+    {
+      "train_days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday-Morning",
+        "Thursday-Afternoon"
+      ],
+      "validation_days": [
+        "Friday-Morning"
+      ],
+      "test_days": [
+        "Friday-Afternoon-PortScan",
+        "Friday-Afternoon-DDoS"
+      ],
+      "train": {
+        "rows": 2127498,
+        "normal": 1858775,
+        "attack": 268723,
+        "families": [
+          "DoS GoldenEye",
+          "DoS Hulk",
+          "DoS Slowhttptest",
+          "DoS slowloris",
+          "FTP-Patator",
+          "Heartbleed",
+          "Infiltration",
+          "SSH-Patator",
+          "Web Attack � Brute Force",
+          "Web Attack � Sql Injection",
+          "Web Attack � XSS"
+        ],
+        "labels": {
+          "BENIGN": 1858775,
+          "FTP-Patator": 7938,
+          "SSH-Patator": 5897,
+          "DoS GoldenEye": 10293,
+          "DoS Hulk": 231073,
+          "DoS Slowhttptest": 5499,
+          "DoS slowloris": 5796,
+          "Heartbleed": 11,
+          "Web Attack � Brute Force": 1507,
+          "Web Attack � Sql Injection": 21,
+          "Web Attack � XSS": 652,
+          "Infiltration": 36
+        }
+      },
+      "validation": {
+        "rows": 191033,
+        "normal": 189067,
+        "attack": 1966,
+        "families": [
+          "Bot"
+        ],
+        "labels": {
+          "BENIGN": 189067,
+          "Bot": 1966
+        }
+      },
+      "test": {
+        "rows": 512212,
+        "normal": 225255,
+        "attack": 286957,
+        "families": [
+          "DDoS",
+          "PortScan"
+        ],
+        "labels": {
+          "BENIGN": 225255,
+          "PortScan": 158930,
+          "DDoS": 128027
+        }
+      },
+      "families_in_train_absent_from_validation": [
+        "DoS GoldenEye",
+        "DoS Hulk",
+        "DoS Slowhttptest",
+        "DoS slowloris",
+        "FTP-Patator",
+        "Heartbleed",
+        "Infiltration",
+        "SSH-Patator",
+        "Web Attack � Brute Force",
+        "Web Attack � Sql Injection",
+        "Web Attack � XSS"
+      ],
+      "families_in_train_absent_from_test": [
+        "DoS GoldenEye",
+        "DoS Hulk",
+        "DoS Slowhttptest",
+        "DoS slowloris",
+        "FTP-Patator",
+        "Heartbleed",
+        "Infiltration",
+        "SSH-Patator",
+        "Web Attack � Brute Force",
+        "Web Attack � Sql Injection",
+        "Web Attack � XSS"
+      ],
+      "families_in_test_absent_from_train": [
+        "DDoS",
+        "PortScan"
+      ],
+      "exact_copies_from_train_in_validation": {
+        "contents": 11100,
+        "rows_in_later_set": 16780
+      },
+      "exact_copies_from_train_in_test": {
+        "contents": 11641,
+        "rows_in_later_set": 18298
+      },
+      "exact_copies_from_validation_in_test": {
+        "contents": 3952,
+        "rows_in_later_set": 8512
+      }
+    },
+    {
+      "train_days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday-Morning",
+        "Thursday-Afternoon"
+      ],
+      "validation_days": [
+        "Friday-Morning",
+        "Friday-Afternoon-PortScan"
+      ],
+      "test_days": [
+        "Friday-Afternoon-DDoS"
+      ],
+      "train": {
+        "rows": 2127498,
+        "normal": 1858775,
+        "attack": 268723,
+        "families": [
+          "DoS GoldenEye",
+          "DoS Hulk",
+          "DoS Slowhttptest",
+          "DoS slowloris",
+          "FTP-Patator",
+          "Heartbleed",
+          "Infiltration",
+          "SSH-Patator",
+          "Web Attack � Brute Force",
+          "Web Attack � Sql Injection",
+          "Web Attack � XSS"
+        ],
+        "labels": {
+          "BENIGN": 1858775,
+          "FTP-Patator": 7938,
+          "SSH-Patator": 5897,
+          "DoS GoldenEye": 10293,
+          "DoS Hulk": 231073,
+          "DoS Slowhttptest": 5499,
+          "DoS slowloris": 5796,
+          "Heartbleed": 11,
+          "Web Attack � Brute Force": 1507,
+          "Web Attack � Sql Injection": 21,
+          "Web Attack � XSS": 652,
+          "Infiltration": 36
+        }
+      },
+      "validation": {
+        "rows": 477500,
+        "normal": 316604,
+        "attack": 160896,
+        "families": [
+          "Bot",
+          "PortScan"
+        ],
+        "labels": {
+          "BENIGN": 316604,
+          "Bot": 1966,
+          "PortScan": 158930
+        }
+      },
+      "test": {
+        "rows": 225745,
+        "normal": 97718,
+        "attack": 128027,
+        "families": [
+          "DDoS"
+        ],
+        "labels": {
+          "BENIGN": 97718,
+          "DDoS": 128027
+        }
+      },
+      "families_in_train_absent_from_validation": [
+        "DoS GoldenEye",
+        "DoS Hulk",
+        "DoS Slowhttptest",
+        "DoS slowloris",
+        "FTP-Patator",
+        "Heartbleed",
+        "Infiltration",
+        "SSH-Patator",
+        "Web Attack � Brute Force",
+        "Web Attack � Sql Injection",
+        "Web Attack � XSS"
+      ],
+      "families_in_train_absent_from_test": [
+        "DoS GoldenEye",
+        "DoS Hulk",
+        "DoS Slowhttptest",
+        "DoS slowloris",
+        "FTP-Patator",
+        "Heartbleed",
+        "Infiltration",
+        "SSH-Patator",
+        "Web Attack � Brute Force",
+        "Web Attack � Sql Injection",
+        "Web Attack � XSS"
+      ],
+      "families_in_test_absent_from_train": [
+        "DDoS"
+      ],
+      "exact_copies_from_train_in_validation": {
+        "contents": 16745,
+        "rows_in_later_set": 28429
+      },
+      "exact_copies_from_train_in_test": {
+        "contents": 4841,
+        "rows_in_later_set": 6649
+      },
+      "exact_copies_from_validation_in_test": {
+        "contents": 2502,
+        "rows_in_later_set": 3602
+      }
+    },
+    {
+      "train_days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday-Morning",
+        "Thursday-Afternoon",
+        "Friday-Morning"
+      ],
+      "validation_days": [
+        "Friday-Afternoon-PortScan"
+      ],
+      "test_days": [
+        "Friday-Afternoon-DDoS"
+      ],
+      "train": {
+        "rows": 2318531,
+        "normal": 2047842,
+        "attack": 270689,
+        "families": [
+          "Bot",
+          "DoS GoldenEye",
+          "DoS Hulk",
+          "DoS Slowhttptest",
+          "DoS slowloris",
+          "FTP-Patator",
+          "Heartbleed",
+          "Infiltration",
+          "SSH-Patator",
+          "Web Attack � Brute Force",
+          "Web Attack � Sql Injection",
+          "Web Attack � XSS"
+        ],
+        "labels": {
+          "BENIGN": 2047842,
+          "FTP-Patator": 7938,
+          "SSH-Patator": 5897,
+          "DoS GoldenEye": 10293,
+          "DoS Hulk": 231073,
+          "DoS Slowhttptest": 5499,
+          "DoS slowloris": 5796,
+          "Heartbleed": 11,
+          "Web Attack � Brute Force": 1507,
+          "Web Attack � Sql Injection": 21,
+          "Web Attack � XSS": 652,
+          "Infiltration": 36,
+          "Bot": 1966
+        }
+      },
+      "validation": {
+        "rows": 286467,
+        "normal": 127537,
+        "attack": 158930,
+        "families": [
+          "PortScan"
+        ],
+        "labels": {
+          "BENIGN": 127537,
+          "PortScan": 158930
+        }
+      },
+      "test": {
+        "rows": 225745,
+        "normal": 97718,
+        "attack": 128027,
+        "families": [
+          "DDoS"
+        ],
+        "labels": {
+          "BENIGN": 97718,
+          "DDoS": 128027
+        }
+      },
+      "families_in_train_absent_from_validation": [
+        "Bot",
+        "DoS GoldenEye",
+        "DoS Hulk",
+        "DoS Slowhttptest",
+        "DoS slowloris",
+        "FTP-Patator",
+        "Heartbleed",
+        "Infiltration",
+        "SSH-Patator",
+        "Web Attack � Brute Force",
+        "Web Attack � Sql Injection",
+        "Web Attack � XSS"
+      ],
+      "families_in_train_absent_from_test": [
+        "Bot",
+        "DoS GoldenEye",
+        "DoS Hulk",
+        "DoS Slowhttptest",
+        "DoS slowloris",
+        "FTP-Patator",
+        "Heartbleed",
+        "Infiltration",
+        "SSH-Patator",
+        "Web Attack � Brute Force",
+        "Web Attack � Sql Injection",
+        "Web Attack � XSS"
+      ],
+      "families_in_test_absent_from_train": [
+        "DDoS"
+      ],
+      "exact_copies_from_train_in_validation": {
+        "contents": 8620,
+        "rows_in_later_set": 12252
+      },
+      "exact_copies_from_train_in_test": {
+        "contents": 5112,
+        "rows_in_later_set": 6936
+      },
+      "exact_copies_from_validation_in_test": {
+        "contents": 1525,
+        "rows_in_later_set": 2468
+      }
+    }
+  ],
+  "contradictory_profiles": {
+    "groups": 698,
+    "rows": 7020,
+    "rows_by_label": {
+      "DoS Hulk": 5224,
+      "PortScan": 1053,
+      "BENIGN": 736,
+      "DDoS": 6,
+      "DoS slowloris": 1
+    },
+    "rows_by_day": {
+      "Thursday-Afternoon": 620,
+      "Friday-Afternoon-PortScan": 1060,
+      "Wednesday": 5274,
+      "Tuesday": 33,
+      "Friday-Morning": 10,
+      "Thursday-Morning": 9,
+      "Monday": 3,
+      "Friday-Afternoon-DDoS": 11
+    },
+    "rows_by_day_and_label": [
+      {
+        "day": "Monday",
+        "label": "BENIGN",
+        "rows": 3
+      },
+      {
+        "day": "Tuesday",
+        "label": "BENIGN",
+        "rows": 33
+      },
+      {
+        "day": "Wednesday",
+        "label": "DoS Hulk",
+        "rows": 5224
+      },
+      {
+        "day": "Wednesday",
+        "label": "BENIGN",
+        "rows": 49
+      },
+      {
+        "day": "Wednesday",
+        "label": "DoS slowloris",
+        "rows": 1
+      },
+      {
+        "day": "Thursday-Morning",
+        "label": "BENIGN",
+        "rows": 9
+      },
+      {
+        "day": "Thursday-Afternoon",
+        "label": "BENIGN",
+        "rows": 620
+      },
+      {
+        "day": "Friday-Morning",
+        "label": "BENIGN",
+        "rows": 10
+      },
+      {
+        "day": "Friday-Afternoon-PortScan",
+        "label": "PortScan",
+        "rows": 1053
+      },
+      {
+        "day": "Friday-Afternoon-PortScan",
+        "label": "BENIGN",
+        "rows": 7
+      },
+      {
+        "day": "Friday-Afternoon-DDoS",
+        "label": "DDoS",
+        "rows": 6
+      },
+      {
+        "day": "Friday-Afternoon-DDoS",
+        "label": "BENIGN",
+        "rows": 5
+      }
+    ],
+    "patterns": [
+      {
+        "label_a": "BENIGN",
+        "days_a": [
+          "Thursday-Afternoon"
+        ],
+        "label_b": "PortScan",
+        "days_b": [
+          "Friday-Afternoon-PortScan"
+        ],
+        "groups": 564
+      },
+      {
+        "label_a": "BENIGN",
+        "days_a": [
+          "Wednesday"
+        ],
+        "label_b": "DoS Hulk",
+        "days_b": [
+          "Wednesday"
+        ],
+        "groups": 34
+      },
+      {
+        "label_a": "BENIGN",
+        "days_a": [
+          "Thursday-Afternoon"
+        ],
+        "label_b": "DoS Hulk",
+        "days_b": [
+          "Wednesday"
+        ],
+        "groups": 33
+      },
+      {
+        "label_a": "BENIGN",
+        "days_a": [
+          "Tuesday"
+        ],
+        "label_b": "DoS Hulk",
+        "days_b": [
+          "Wednesday"
+        ],
+        "groups": 22
+      },
+      {
+        "label_a": "BENIGN",
+        "days_a": [
+          "Friday-Morning"
+        ],
+        "label_b": "DoS Hulk",
+        "days_b": [
+          "Wednesday"
+        ],
+        "groups": 9
+      },
+      {
+        "label_a": "BENIGN",
+        "days_a": [
+          "Thursday-Morning"
+        ],
+        "label_b": "DoS Hulk",
+        "days_b": [
+          "Wednesday"
+        ],
+        "groups": 6
+      },
+      {
+        "label_a": "BENIGN",
+        "days_a": [
+          "Tuesday",
+          "Wednesday"
+        ],
+        "label_b": "DoS Hulk",
+        "days_b": [
+          "Wednesday"
+        ],
+        "groups": 6
+      },
+      {
+        "label_a": "BENIGN",
+        "days_a": [
+          "Wednesday",
+          "Thursday-Afternoon"
+        ],
+        "label_b": "DoS Hulk",
+        "days_b": [
+          "Wednesday"
+        ],
+        "groups": 5
+      },
+      {
+        "label_a": "BENIGN",
+        "days_a": [
+          "Friday-Afternoon-PortScan"
+        ],
+        "label_b": "DoS Hulk",
+        "days_b": [
+          "Wednesday"
+        ],
+        "groups": 3
+      },
+      {
+        "label_a": "BENIGN",
+        "days_a": [
+          "Friday-Afternoon-DDoS"
+        ],
+        "label_b": "DoS Hulk",
+        "days_b": [
+          "Wednesday"
+        ],
+        "groups": 3
+      },
+      {
+        "label_a": "BENIGN",
+        "days_a": [
+          "Monday"
+        ],
+        "label_b": "DoS Hulk",
+        "days_b": [
+          "Wednesday"
+        ],
+        "groups": 2
+      },
+      {
+        "label_a": "BENIGN",
+        "days_a": [
+          "Tuesday",
+          "Friday-Afternoon-PortScan"
+        ],
+        "label_b": "DoS Hulk",
+        "days_b": [
+          "Wednesday"
+        ],
+        "groups": 2
+      },
+      {
+        "label_a": "BENIGN",
+        "days_a": [
+          "Thursday-Morning",
+          "Friday-Afternoon-PortScan"
+        ],
+        "label_b": "DoS Hulk",
+        "days_b": [
+          "Wednesday"
+        ],
+        "groups": 1
+      },
+      {
+        "label_a": "BENIGN",
+        "days_a": [
+          "Wednesday",
+          "Thursday-Morning"
+        ],
+        "label_b": "DoS Hulk",
+        "days_b": [
+          "Wednesday"
+        ],
+        "groups": 1
+      },
+      {
+        "label_a": "BENIGN",
+        "days_a": [
+          "Friday-Morning"
+        ],
+        "label_b": "DDoS",
+        "days_b": [
+          "Friday-Afternoon-DDoS"
+        ],
+        "groups": 1
+      },
+      {
+        "label_a": "BENIGN",
+        "days_a": [
+          "Tuesday",
+          "Thursday-Afternoon"
+        ],
+        "label_b": "DoS Hulk",
+        "days_b": [
+          "Wednesday"
+        ],
+        "groups": 1
+      },
+      {
+        "label_a": "BENIGN",
+        "days_a": [
+          "Monday",
+          "Wednesday",
+          "Friday-Afternoon-DDoS"
+        ],
+        "label_b": "DoS Hulk",
+        "days_b": [
+          "Wednesday"
+        ],
+        "groups": 1
+      },
+      {
+        "label_a": "BENIGN",
+        "days_a": [
+          "Thursday-Morning"
+        ],
+        "label_b": "DDoS",
+        "days_b": [
+          "Friday-Afternoon-DDoS"
+        ],
+        "groups": 1
+      },
+      {
+        "label_a": "BENIGN",
+        "days_a": [
+          "Thursday-Afternoon",
+          "Friday-Afternoon-DDoS"
+        ],
+        "label_b": "DoS Hulk",
+        "days_b": [
+          "Wednesday"
+        ],
+        "groups": 1
+      },
+      {
+        "label_a": "BENIGN",
+        "days_a": [
+          "Thursday-Afternoon"
+        ],
+        "label_b": "DDoS",
+        "days_b": [
+          "Friday-Afternoon-DDoS"
+        ],
+        "groups": 1
+      },
+      {
+        "label_a": "BENIGN",
+        "days_a": [
+          "Wednesday",
+          "Thursday-Afternoon"
+        ],
+        "label_b": "DoS slowloris",
+        "days_b": [
+          "Wednesday"
+        ],
+        "groups": 1
+      }
+    ]
+  },
+  "grouped_split_after_excluding_contradictions": [
+    {
+      "label": "BENIGN",
+      "distinct_rows": 2095786,
+      "train": 1467052,
+      "validation": 314367,
+      "test": 314367
+    },
+    {
+      "label": "Bot",
+      "distinct_rows": 1953,
+      "train": 1369,
+      "validation": 292,
+      "test": 292
+    },
+    {
+      "label": "DDoS",
+      "distinct_rows": 128013,
+      "train": 89611,
+      "validation": 19201,
+      "test": 19201
+    },
+    {
+      "label": "DoS GoldenEye",
+      "distinct_rows": 10286,
+      "train": 7202,
+      "validation": 1542,
+      "test": 1542
+    },
+    {
+      "label": "DoS Hulk",
+      "distinct_rows": 172719,
+      "train": 120905,
+      "validation": 25907,
+      "test": 25907
+    },
+    {
+      "label": "DoS Slowhttptest",
+      "distinct_rows": 5228,
+      "train": 3660,
+      "validation": 784,
+      "test": 784
+    },
+    {
+      "label": "DoS slowloris",
+      "distinct_rows": 5384,
+      "train": 3770,
+      "validation": 807,
+      "test": 807
+    },
+    {
+      "label": "FTP-Patator",
+      "distinct_rows": 5933,
+      "train": 4155,
+      "validation": 889,
+      "test": 889
+    },
+    {
+      "label": "Heartbleed",
+      "distinct_rows": 11,
+      "train": 9,
+      "validation": 1,
+      "test": 1
+    },
+    {
+      "label": "Infiltration",
+      "distinct_rows": 36,
+      "train": 26,
+      "validation": 5,
+      "test": 5
+    },
+    {
+      "label": "PortScan",
+      "distinct_rows": 90255,
+      "train": 63179,
+      "validation": 13538,
+      "test": 13538
+    },
+    {
+      "label": "SSH-Patator",
+      "distinct_rows": 3219,
+      "train": 2255,
+      "validation": 482,
+      "test": 482
+    },
+    {
+      "label": "Web Attack � Brute Force",
+      "distinct_rows": 1470,
+      "train": 1030,
+      "validation": 220,
+      "test": 220
+    },
+    {
+      "label": "Web Attack � Sql Injection",
+      "distinct_rows": 21,
+      "train": 15,
+      "validation": 3,
+      "test": 3
+    },
+    {
+      "label": "Web Attack � XSS",
+      "distinct_rows": 652,
+      "train": 458,
+      "validation": 97,
+      "test": 97
+    }
+  ]
+}

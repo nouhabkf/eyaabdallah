@@ -1,0 +1,51 @@
+id,rank,feature,feature_value,shap_log_odds,direction
+tp_confident,1,Destination Port,80.0,3.213364839553833,vers l'attaque
+tp_confident,2,Bwd Packet Length Mean,0.0,2.7406911849975586,vers l'attaque
+tp_confident,3,Fwd Header Length,160.0,2.7300684452056885,vers l'attaque
+tp_confident,4,Init_Win_bytes_backward,-1.0,-1.551489233970642,vers le normal
+tp_confident,5,Init_Win_bytes_forward,251.0,1.539002537727356,vers l'attaque
+tp_confident,6,Fwd IAT Min,3.0,0.8847657442092896,vers l'attaque
+tp_confident,7,Bwd Packet Length Max,0.0,0.5509039163589478,vers l'attaque
+tp_confident,8,Packet Length Std,0.0,-0.25049182772636414,vers le normal
+tp_confident,9,Flow IAT Mean,599.0,0.22893083095550537,vers l'attaque
+tp_confident,10,Flow IAT Std,724.0096435546875,0.22816142439842224,vers l'attaque
+tp_marginal,1,Init_Win_bytes_forward,256.0,-3.1481549739837646,vers le normal
+tp_marginal,2,Destination Port,80.0,2.1037676334381104,vers l'attaque
+tp_marginal,3,Init_Win_bytes_backward,-1.0,-1.7331730127334595,vers le normal
+tp_marginal,4,Bwd Packet Length Mean,0.0,1.602297067642212,vers l'attaque
+tp_marginal,5,Fwd IAT Min,988.0,1.241655707359314,vers l'attaque
+tp_marginal,6,min_seg_size_forward,20.0,-1.2188920974731445,vers le normal
+tp_marginal,7,Fwd Header Length,120.0,1.0728224515914917,vers l'attaque
+tp_marginal,8,Bwd Packet Length Std,0.0,-0.9934177398681641,vers le normal
+tp_marginal,9,Idle Min,8267501.0,0.6298192739486694,vers l'attaque
+tp_marginal,10,Fwd Packet Length Min,6.0,-0.6069222092628479,vers le normal
+fp_confident,1,Destination Port,80.0,2.98856520652771,vers l'attaque
+fp_confident,2,Bwd Packet Length Mean,0.0,2.6373844146728516,vers l'attaque
+fp_confident,3,Init_Win_bytes_backward,-1.0,-1.532981276512146,vers le normal
+fp_confident,4,Fwd Header Length,280.0,1.4653605222702026,vers l'attaque
+fp_confident,5,Flow IAT Std,11900000.0,1.1718264818191528,vers l'attaque
+fp_confident,6,Active Min,7013505.0,-0.5908114314079285,vers le normal
+fp_confident,7,Bwd Packet Length Max,0.0,0.546883225440979,vers l'attaque
+fp_confident,8,Flow IAT Min,997510.0,0.42227280139923096,vers l'attaque
+fp_confident,9,Idle Mean,18700000.0,0.3863184154033661,vers l'attaque
+fp_confident,10,Idle Min,8016015.0,0.2676910161972046,vers l'attaque
+fp_marginal,1,Init_Win_bytes_forward,264.0,-3.1236472129821777,vers le normal
+fp_marginal,2,Destination Port,80.0,1.9316275119781494,vers l'attaque
+fp_marginal,3,Init_Win_bytes_backward,-1.0,-1.7050756216049194,vers le normal
+fp_marginal,4,Bwd Packet Length Mean,0.0,1.5429797172546387,vers l'attaque
+fp_marginal,5,Bwd Packet Length Std,0.0,-1.0785895586013794,vers le normal
+fp_marginal,6,Flow IAT Std,0.0,-0.9693912863731384,vers le normal
+fp_marginal,7,Fwd IAT Max,141.0,-0.5663779973983765,vers le normal
+fp_marginal,8,Fwd IAT Min,141.0,-0.31868842244148254,vers le normal
+fp_marginal,9,Bwd Packet Length Max,0.0,0.3158983290195465,vers l'attaque
+fp_marginal,10,Flow IAT Mean,141.0,0.3150217533111572,vers l'attaque
+fn_marginal,1,Bwd Packet Length Std,4128.3193359375,8.42652416229248,vers l'attaque
+fn_marginal,2,Init_Win_bytes_backward,229.0,-7.770086765289307,vers le normal
+fn_marginal,3,Init_Win_bytes_forward,8192.0,-1.7669495344161987,vers le normal
+fn_marginal,4,Bwd Packet Length Mean,2900.25,-0.9319897294044495,vers le normal
+fn_marginal,5,Fwd IAT Min,58.0,-0.9088741540908813,vers le normal
+fn_marginal,6,PSH Flag Count,1.0,0.7376310229301453,vers l'attaque
+fn_marginal,7,Bwd IAT Min,178.0,-0.5688048601150513,vers le normal
+fn_marginal,8,Bwd Header Length,92.0,-0.5649783611297607,vers le normal
+fn_marginal,9,min_seg_size_forward,20.0,-0.3995231091976166,vers le normal
+fn_marginal,10,Average Packet Size,1661.0,0.3987278938293457,vers l'attaque

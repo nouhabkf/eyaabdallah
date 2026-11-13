@@ -1,0 +1,10 @@
+[project]
+name = "explainable-ids"
+version = "0.1.0"
+description = "Explainable Intrusion Detection System using Machine Learning and SHAP"
+requires-python = ">=3.12,<3.13"
+readme = "README.md"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

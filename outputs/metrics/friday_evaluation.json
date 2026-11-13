@@ -1,0 +1,145 @@
+{
+  "model": "xgboost",
+  "model_modified": false,
+  "model_refit": false,
+  "threshold_adjusted_on_test": false,
+  "shap_computed": false,
+  "feature_audit_started": false,
+  "rows": 595723,
+  "class_counts": {
+    "normal": 375502,
+    "attack": 220221
+  },
+  "attack_rate": 0.36967013192372966,
+  "attack_families": {
+    "Bot": 1953,
+    "DDoS": 128013,
+    "PortScan": 90255
+  },
+  "pr_auc": 0.8061119575266651,
+  "thresholds": [
+    {
+      "threshold": 0.5,
+      "tn": 375463,
+      "fp": 39,
+      "fn": 214050,
+      "tp": 6171,
+      "accuracy": 0.6406232426815819,
+      "precision": 0.993719806763285,
+      "recall": 0.02802185077717384,
+      "f1": 0.05450667090636883,
+      "fpr": 0.00010386096478846983,
+      "fnr": 0.9719781492228262,
+      "pr_auc": 0.8061119575266651
+    },
+    {
+      "threshold": 0.01,
+      "tn": 375243,
+      "fp": 259,
+      "fn": 136015,
+      "tp": 84206,
+      "accuracy": 0.7712460321323836,
+      "precision": 0.9969336411531403,
+      "recall": 0.38237043697013456,
+      "f1": 0.5527395416921027,
+      "fpr": 0.0006897433302618894,
+      "fnr": 0.6176295630298655,
+      "pr_auc": 0.8061119575266651
+    }
+  ],
+  "families_at_official_threshold": [
+    {
+      "label": "BENIGN",
+      "rows": 375502,
+      "tp": 0,
+      "fn": 0,
+      "fp": 259,
+      "tn": 375243
+    },
+    {
+      "label": "Bot",
+      "rows": 1953,
+      "tp": 0,
+      "fn": 1953,
+      "fp": 0,
+      "tn": 0
+    },
+    {
+      "label": "DDoS",
+      "rows": 128013,
+      "tp": 83050,
+      "fn": 44963,
+      "fp": 0,
+      "tn": 0
+    },
+    {
+      "label": "PortScan",
+      "rows": 90255,
+      "tp": 1156,
+      "fn": 89099,
+      "fp": 0,
+      "tn": 0
+    }
+  ],
+  "families_at_reference_threshold": [
+    {
+      "label": "BENIGN",
+      "rows": 375502,
+      "tp": 0,
+      "fn": 0,
+      "fp": 39,
+      "tn": 375463
+    },
+    {
+      "label": "Bot",
+      "rows": 1953,
+      "tp": 0,
+      "fn": 1953,
+      "fp": 0,
+      "tn": 0
+    },
+    {
+      "label": "DDoS",
+      "rows": 128013,
+      "tp": 5914,
+      "fn": 122099,
+      "fp": 0,
+      "tn": 0
+    },
+    {
+      "label": "PortScan",
+      "rows": 90255,
+      "tp": 257,
+      "fn": 89998,
+      "fp": 0,
+      "tn": 0
+    }
+  ],
+  "inference": {
+    "method": "time.perf_counter autour de pipeline.predict_proba, cinq passages",
+    "full_seconds": [
+      0.5808887002058327,
+      0.5730389999225736,
+      0.503220200072974,
+      0.4772881995886564,
+      0.4890028000809252
+    ],
+    "full_mean_seconds": 0.5246877799741924,
+    "seconds_per_flow": 8.807579696842197e-07,
+    "batch_rows": 10000,
+    "batch_seconds": [
+      0.01188979996368289,
+      0.008915800135582685,
+      0.008370500057935715,
+      0.009034099988639355,
+      0.008431300055235624
+    ],
+    "batch_mean_seconds": 0.009328300040215254,
+    "batch_seconds_per_flow": 9.328300040215254e-07
+  },
+  "figures": {
+    "confusion": "C:\\Users\\nouha\\OneDrive\\Desktop\\projet eya\\outputs\\figures\\friday_confusion_matrices.png",
+    "comparison": "C:\\Users\\nouha\\OneDrive\\Desktop\\projet eya\\outputs\\figures\\friday_threshold_comparison.png",
+    "precision_recall": "C:\\Users\\nouha\\OneDrive\\Desktop\\projet eya\\outputs\\figures\\friday_precision_recall.png"
+  }
+}

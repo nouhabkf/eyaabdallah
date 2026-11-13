@@ -1,0 +1,490 @@
+# Source de vérité du protocole.
+# Toute modification d'une règle scientifique se fait ici, avant de lire le test.
+# Préparation, entraînement, seuil et évaluation du vendredi validés.
+# SHAP d'illustration et audit descriptif des variables sont ouverts.
+# Aucune variable n'est retirée. La stabilité n'est pas lancée.
+# Le test ne sert pas à modifier le modèle, le seuil ou les caractéristiques.
+
+project:
+  name: explainable-ids
+  protocol_version: 1
+  title: Explainable Intrusion Detection System using Machine Learning and SHAP
+  positive_class: attack
+  negative_class: normal
+
+runtime:
+  python: "3.12"
+  venv: "C:/venvs/explainable-ids"
+  pythonhashseed: "42"
+  numpy_seed: 42
+  matplotlib_backend: Agg
+
+phases:
+  architecture: open
+  data_preparation: open
+  training: open
+  evaluation: open
+  explanation: open
+  audit: open
+
+paths:
+  data_root: "C:/data/cic-ids2017"
+  raw_dirname: raw
+  interim_dirname: interim
+  processed_dirname: processed
+  splits_dirname: splits
+  outputs_dirname: outputs
+  metrics_dirname: outputs/metrics
+  figures_dirname: outputs/figures
+  tables_dirname: outputs/tables
+  models_dirname: outputs/models
+
+dataset:
+  name: CIC-IDS2017
+  provider: Canadian Institute for Cybersecurity, University of New Brunswick
+  source_url: "https://www.unb.ca/cic/datasets/ids-2017.html"
+  local_status: present
+  download_during_architecture_phase: false
+  # Noms publics usuels. Inventaire à confirmer à l'ouverture. Cette liste n'est pas un filtre.
+  expected_filenames_to_confirm:
+    - Monday-WorkingHours.pcap_ISCX.csv
+    - Tuesday-WorkingHours.pcap_ISCX.csv
+    - Wednesday-workingHours.pcap_ISCX.csv
+    - Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv
+    - Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv
+    - Friday-WorkingHours-Morning.pcap_ISCX.csv
+    - Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv
+    - Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv
+  expected_filenames_are_a_filter: false
+
+labels:
+  positive_class_name: attack
+  positive_class_value: 1
+  negative_class_name: normal
+  negative_class_value: 0
+  benign_values: ["BENIGN"]
+  mapping: all_non_benign_are_attacks
+  keep_original_label: true
+  original_label_column: label_original
+  binary_column: label
+  known_labels_are_a_filter: false
+  unexpected_label_policy: record_in_cleaning_log_and_stop
+
+columns:
+  label_candidates: ["Label", "label"]
+  strip_names: true
+  exclude_from_features_if_present:
+    - "Flow ID"
+    - "Source IP"
+    - "Src IP"
+    - "Destination IP"
+    - "Dst IP"
+    - "Timestamp"
+    - timestamp
+  exclusion_reason: identifiers_or_clock_are_not_predictors
+  timestamp_use: chronological_analysis_only
+
+cleaning:
+  # L'imputation, le filtre de variance et la standardisation sont ajustés sur le train après le découpage.
+  order:
+    - strip_column_names
+    - drop_duplicate_fwd_header_length_after_equality_check
+    - replace_positive_and_negative_infinity_with_missing
+    - keep_rows_with_missing_features
+    - keep_original_labels
+    - add_binary_target
+    - exclude_contradictory_feature_profiles
+    - drop_exact_duplicate_rows
+  infinity_replacement: missing
+  drop_rows_with_missing_features: false
+  contradictory_profiles:
+    exclude_from_official_sets: true
+    identity: csv_feature_columns_before_label
+    expected_groups: 698
+    expected_rows: 7020
+  deduplicate:
+    definition: exact_raw_line_including_label
+    includes_label: true
+    before_split: true
+    keep: first_chronological_occurrence
+  # Deux flux identiques horodatés différemment sont conservés.
+  # Leur dépendance reste une limite explicite du découpage groupé.
+
+train_only_feature_filters:
+  fit_on: train
+  drop_exact_duplicate_columns: true
+  drop_zero_variance_columns: true
+  drop_near_zero_variance: false
+  impute: median
+  scale_for_logistic_regression: standard
+  scale_for_trees: "none"
+  apply_same_columns_to: [validation, test]
+  forbidden_fit_on: [validation, test]
+
+split:
+  role: complementary_grouped_stratified
+  train_percent: 70
+  validation_percent: 15
+  test_percent: 15
+  stratify: true
+  stratify_on: label_original
+  shuffle: true
+  seed: 42
+  deduplicate_exact_before_split: true
+  unit: percent_of_distinct_contents_after_contradictory_exclusion
+  group: exact_content
+  official_record_name: grouped-split-seed-42
+  selects_official_model: false
+  selects_official_threshold: false
+  selects_official_features: false
+  selects_official_hyperparameters: false
+  limitations:
+    - "Ce découpage groupé est le protocole complémentaire. Il ne choisit ni le modèle officiel, ni le seuil officiel, ni les variables."
+    - "Les flux d'une même campagne ne sont pas indépendants. Un découpage aléatoire peut donc surestimer la performance."
+    - "Les répétitions de stabilité mesurent la sensibilité au découpage sur le même jeu nettoyé. Elles ne constituent pas une validation externe."
+
+chronological_analysis:
+  enabled: true
+  role: official_evaluation
+  train_days:
+    - Monday
+    - Tuesday
+    - Wednesday
+  validation_days:
+    - Thursday-Morning
+    - Thursday-Afternoon
+  test_days:
+    - Friday-Morning
+    - Friday-Afternoon-PortScan
+    - Friday-Afternoon-DDoS
+  validation_selects_model: true
+  validation_selects_threshold: true
+  test_selects_model: false
+  test_selects_threshold: false
+  test_selects_features: false
+  test_selects_hyperparameters: false
+  day_order_to_confirm:
+    - Monday
+    - Tuesday
+    - Wednesday
+    - Thursday-Morning
+    - Thursday-Afternoon
+    - Friday-Morning
+    - Friday-Afternoon-PortScan
+    - Friday-Afternoon-DDoS
+
+imbalance:
+  smote: false
+  synthetic_samples: false
+  method: class_weight_or_scale_pos_weight
+  logistic_regression: class_weight
+  random_forest: class_weight
+  xgboost: scale_pos_weight
+
+models:
+  compare_all: true
+  baseline: logistic_regression
+  families: [logistic_regression, random_forest, xgboost]
+  logistic_regression:
+    class_weight: balanced
+    solver: lbfgs
+    max_iter: 1000
+    random_state: 42
+  random_forest:
+    class_weight: balanced
+    random_state: 42
+    n_jobs_key: sklearn_n_jobs
+  xgboost:
+    objective: "binary:logistic"
+    tree_method: hist
+    device: cpu
+    eval_metric: aucpr
+    eval_metric_role: internal_training_only
+    random_state: 42
+    n_jobs_key: xgboost_n_jobs
+    scale_pos_weight:
+      mode: negative_count_over_positive_count
+      fit_on: train
+      forbid_precomputed_constant: true
+
+hyperparameters:
+  test_access: false
+  validation_access_during_search: false
+  early_stopping:
+    mode: "none"
+    uses_official_validation: false
+  subsample:
+    source: train
+    max_rows: 200000
+    hard_cap_rows: 250000
+    stratify: true
+    seed: 42
+    if_fewer_rows: use_all_training_rows
+  inner_cv:
+    folds: 3
+    shuffle: true
+    stratify: true
+    seed: 42
+    scoring: average_precision
+    scoring_input: continuous_scores
+    n_jobs: 1
+  refit_winner_on: full_train
+  logistic_regression:
+    strategy: grid
+    param_grid:
+      C: [0.01, 0.1, 1.0, 10.0]
+  random_forest:
+    strategy: randomized
+    n_iter: 12
+    param_distributions:
+      n_estimators: [100, 200]
+      max_depth: [10, 20, null]
+      min_samples_leaf: [1, 5, 20]
+      max_features: ["sqrt", 0.3]
+  xgboost:
+    strategy: randomized
+    n_iter: 15
+    param_distributions:
+      n_estimators: [100, 200, 400]
+      max_depth: [3, 6, 8]
+      learning_rate: [0.05, 0.1, 0.2]
+      min_child_weight: [1, 5]
+      subsample: [0.8, 1.0]
+      colsample_bytree: [0.8, 1.0]
+
+model_selection:
+  split: validation
+  metric: average_precision
+  input: continuous_scores
+  tie_break: [higher_recall_at_0_5, lower_training_time]
+  limitation: "La validation choisit le modèle principal puis le seuil. Ses chiffres de sélection ne sont pas une estimation impartiale. Le test ne participe pas à ce choix."
+
+threshold:
+  selection_split: validation
+  forbidden_splits: [train, test]
+  objective: weighted_fpr_fnr
+  formula: "fp_weight * (FP / n_normal) + fn_weight * (FN / n_attack)"
+  fp_weight: 1.0
+  fn_weight: 2.0
+  weights_locked: true
+  weights_justification: "Le coût utilise les taux, pas les effectifs bruts. Le faux négatif pèse le double du faux positif : une attaque manquée coûte plus cher, et les fausses alertes restent dans le critère. Poids figés avant tout résultat de test."
+  grid:
+    unit: hundredths
+    start: 1
+    stop: 99
+    step: 1
+  score_rule: "score >= threshold"
+  score_source: predict_proba_positive_class
+  tie_break: [lower_fnr, closer_to_0_5]
+  always_evaluate_hundredths: [50]
+  per_model: true
+
+scores:
+  source: predict_proba_positive_class
+  positive_class_index: 1
+  forbid: [binary_predictions]
+
+metrics:
+  published_pr_auc:
+    implementation: sklearn.metrics.average_precision_score
+    input: continuous_scores
+    forbid_input: binary_predictions
+  xgboost_internal_eval_metric: aucpr
+  internal_eval_is_the_published_metric: false
+  report_for_each_model:
+    - confusion_matrix
+    - precision
+    - recall
+    - f1
+    - pr_auc
+    - precision_recall_curve
+    - false_positives
+    - false_negatives
+  report_at_thresholds: [selected_on_validation, fixed_0_5]
+  positive_class: attack
+  accuracy_is_not_a_selection_metric: true
+
+evaluation:
+  official_partition: chronological
+  official_test_reads: single_final_pass
+  error_analysis_by_original_label: true
+
+timing:
+  train_timer: "time.perf_counter autour de fit"
+  inference_split: test
+  inference_batch_rows: 10000
+  inference_repeats: 5
+  report_seconds_per_flow: true
+  device: cpu
+  record_processor_name: true
+
+protocol_order:
+  - clean
+  - exact_deduplicate
+  - main_split
+  - tune_on_train_subsample
+  - refit_on_full_train
+  - select_primary_model_by_validation_pr_auc
+  - select_threshold_on_validation
+  - evaluate_test_once
+  - explain_without_changing_model
+  - audit_without_test_decisions
+  - stability_independent_partitions
+
+explanations:
+  rf_impurity:
+    model: random_forest
+    source: trained_model_impurity
+  permutation:
+    split: validation
+    scoring: average_precision
+    scoring_input: continuous_scores
+    n_repeats: 5
+    max_rows: 5000
+    hard_cap_rows: 10000
+    hard_cap_repeats: 10
+    sample_seed: 42
+    used_for_feature_decisions: true
+  shap_global:
+    explainer: tree
+    forbid_kernel_explainer: true
+    split: validation
+    background_rows: 2000
+    explained_rows: 2000
+    hard_cap_rows: 5000
+    sample_seed: 42
+    aggregation: mean_absolute_shap
+    used_for_feature_decisions: true
+  shap_model:
+    prefer: primary_if_tree
+    fallback: best_tree_by_validation_average_precision
+    linear_explainer: false
+
+shap_cases:
+  rule_id: scores_and_labels_only_v1
+  selection_uses_shap_values: false
+  explanation_computed_after_selection: true
+  source_split: test
+  source_split_role: illustration_only
+  reuse_official_test_scores: true
+  rescore_allowed: false
+  forbidden_uses:
+    - feature_selection
+    - suspect_feature_decision
+    - threshold_selection
+    - hyperparameter_selection
+    - model_selection
+  rules:
+    - id: tp_confident
+      count: 1
+      definition: attack_with_highest_continuous_score
+    - id: tp_marginal
+      count: 1
+      definition: attack_with_score_closest_above_selected_threshold
+    - id: fp_confident
+      count: 1
+      definition: benign_with_highest_continuous_score
+    - id: fp_marginal
+      count: 1
+      definition: benign_with_score_closest_above_selected_threshold
+    - id: fn_marginal
+      count: 1
+      definition: attack_with_score_closest_below_selected_threshold
+  empty_category_policy: document_absence_do_not_invent
+  fallback: "none"
+
+feature_decisions:
+  allowed_evidence_splits: [train, validation]
+  forbidden_evidence_splits: [test]
+  drop_requires_written_justification: true
+  primary_model_keeps_suspect_until_audit: true
+  suspect_feature:
+    top_k: 10
+    minimum_methods_in_top_k: 2
+    methods: [rf_impurity, permutation_validation, shap_validation]
+    domain_reason_required: true
+    domain_reasons_allowed:
+      - experimental_setup_proxy
+      - duplicate_column
+      - measurement_artifact
+      - impossible_values
+      - degenerate_distribution_on_train
+    test_metrics_may_decide: false
+    ablation_replaces_official_score: false
+    freeze_hyperparameters_on_ablation: true
+    if_no_candidate: report_none_and_do_not_force_ablation
+
+stability:
+  select_best_run_as_official: false
+  official_metrics_come_from: chronological_only
+  reads_official_test_to_choose_a_winner: false
+  each_split_has_its_own_test: true
+  not_an_external_validation: true
+  interpretation: sensitivity_to_seed_and_split_on_the_same_cleaned_dataset
+  explanation_overlap: jaccard_top_10
+  pass_fail_cutoff: null
+  report_dispersion_of:
+    - average_precision
+    - recall_at_selected_threshold
+    - f1_at_selected_threshold
+  freeze:
+    - model_family
+    - hyperparameters
+  recompute_on_each_partition_train:
+    - imputation
+    - scaler
+    - scale_pos_weight
+    - class_weight_from_mode
+  recompute_on_each_partition_validation:
+    - threshold
+  never_recompute_from_partition_test: true
+  model_seed_experiments:
+    seeds: [42, 7, 123]
+    partition: official
+    independent_partitions: false
+    record_pattern: "model-seed-{seed}"
+  split_seed_experiments:
+    seeds: [1001, 1002, 1003]
+    independent_partitions: true
+    stratify: true
+    ratios: main
+    must_not_copy_official_indices: true
+    record_pattern: "split-seed-{seed}"
+  partition_record:
+    directory_dirname: splits/stability
+    required_fields:
+      - experiment_id
+      - experiment_type
+      - split_seed
+      - model_seed
+      - stratify
+      - train_percent
+      - validation_percent
+      - test_percent
+      - train_indices_sha256
+      - validation_indices_sha256
+      - test_indices_sha256
+      - n_train
+      - n_validation
+      - n_test
+      - hyperparameters_frozen_from
+      - created_utc
+
+compute:
+  device: cpu
+  allow_gpu: false
+  xgboost_tree_method: hist
+  xgboost_device: cpu
+  pandas_numeric_dtype: float32
+  read_chunk_rows: 200000
+  sklearn_n_jobs: 4
+  xgboost_n_jobs: 8
+  cv_n_jobs: 1
+  max_search_iterations: 30
+  parallel_reason: "Forêt et XGBoost parallélisent en interne. Les plis de recherche restent séquentiels pour éviter la sursouscription sur le portable."
+
+reproducibility:
+  record_config_sha256: true
+  record_package_versions: true
+  record_split_index_hashes: true
+  report_numbers_come_from_metric_files: true

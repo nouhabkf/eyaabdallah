@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.venv/
+*.egg-info/
+.eggs/
+
+# Les résultats enregistrés dans outputs/ sont versionnés.
+# Les données brutes et le fichier dérivé restent hors du dépôt.
+*.parquet
+data/
+raw/
+C:/data/

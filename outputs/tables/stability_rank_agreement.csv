@@ -1,0 +1,7 @@
+left,right,jaccard_top10,spearman_full_ranking
+graine-42,graine-7,1.0,1.0
+graine-42,graine-123,1.0,1.0
+graine-7,graine-123,1.0,1.0
+sous-echantillon-1001,sous-echantillon-1002,0.8181818181818182,0.9112109994711792
+sous-echantillon-1001,sous-echantillon-1003,0.8181818181818182,0.9031729243786356
+sous-echantillon-1002,sous-echantillon-1003,0.8181818181818182,0.8977260708619778

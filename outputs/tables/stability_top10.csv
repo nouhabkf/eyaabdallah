@@ -1,0 +1,61 @@
+run_id,experiment,rank,feature,mean_abs_shap
+graine-42,model_seed,1,Destination Port,3.817221164703369
+graine-42,model_seed,2,Bwd Packet Length Std,1.9369266033172607
+graine-42,model_seed,3,Init_Win_bytes_backward,1.794023036956787
+graine-42,model_seed,4,Bwd Packet Length Mean,1.7858622074127197
+graine-42,model_seed,5,Init_Win_bytes_forward,1.0170257091522217
+graine-42,model_seed,6,Fwd IAT Min,0.6838063597679138
+graine-42,model_seed,7,Bwd Packet Length Min,0.6704683303833008
+graine-42,model_seed,8,Bwd Packets/s,0.6585263013839722
+graine-42,model_seed,9,Bwd Packet Length Max,0.5090456604957581
+graine-42,model_seed,10,min_seg_size_forward,0.358775794506073
+graine-7,model_seed,1,Destination Port,3.817221164703369
+graine-7,model_seed,2,Bwd Packet Length Std,1.9369266033172607
+graine-7,model_seed,3,Init_Win_bytes_backward,1.794023036956787
+graine-7,model_seed,4,Bwd Packet Length Mean,1.7858622074127197
+graine-7,model_seed,5,Init_Win_bytes_forward,1.0170257091522217
+graine-7,model_seed,6,Fwd IAT Min,0.6838063597679138
+graine-7,model_seed,7,Bwd Packet Length Min,0.6704683303833008
+graine-7,model_seed,8,Bwd Packets/s,0.6585263013839722
+graine-7,model_seed,9,Bwd Packet Length Max,0.5090456604957581
+graine-7,model_seed,10,min_seg_size_forward,0.358775794506073
+graine-123,model_seed,1,Destination Port,3.817221164703369
+graine-123,model_seed,2,Bwd Packet Length Std,1.9369266033172607
+graine-123,model_seed,3,Init_Win_bytes_backward,1.794023036956787
+graine-123,model_seed,4,Bwd Packet Length Mean,1.7858622074127197
+graine-123,model_seed,5,Init_Win_bytes_forward,1.0170257091522217
+graine-123,model_seed,6,Fwd IAT Min,0.6838063597679138
+graine-123,model_seed,7,Bwd Packet Length Min,0.6704683303833008
+graine-123,model_seed,8,Bwd Packets/s,0.6585263013839722
+graine-123,model_seed,9,Bwd Packet Length Max,0.5090456604957581
+graine-123,model_seed,10,min_seg_size_forward,0.358775794506073
+sous-echantillon-1001,train_subsample,1,Destination Port,3.7014081478118896
+sous-echantillon-1001,train_subsample,2,Bwd Packet Length Std,2.111173391342163
+sous-echantillon-1001,train_subsample,3,Init_Win_bytes_backward,1.8896827697753906
+sous-echantillon-1001,train_subsample,4,Bwd Packet Length Mean,1.6732776165008545
+sous-echantillon-1001,train_subsample,5,Init_Win_bytes_forward,1.1773384809494019
+sous-echantillon-1001,train_subsample,6,Bwd Packet Length Min,0.7237538695335388
+sous-echantillon-1001,train_subsample,7,Bwd Packets/s,0.6138473749160767
+sous-echantillon-1001,train_subsample,8,Bwd Packet Length Max,0.573750913143158
+sous-echantillon-1001,train_subsample,9,Fwd IAT Min,0.4926573932170868
+sous-echantillon-1001,train_subsample,10,min_seg_size_forward,0.4556509852409363
+sous-echantillon-1002,train_subsample,1,Destination Port,3.671018123626709
+sous-echantillon-1002,train_subsample,2,Bwd Packet Length Std,2.2149667739868164
+sous-echantillon-1002,train_subsample,3,Init_Win_bytes_backward,1.989060640335083
+sous-echantillon-1002,train_subsample,4,Bwd Packet Length Mean,1.7763842344284058
+sous-echantillon-1002,train_subsample,5,Init_Win_bytes_forward,1.1489434242248535
+sous-echantillon-1002,train_subsample,6,Bwd Packets/s,0.8114064931869507
+sous-echantillon-1002,train_subsample,7,min_seg_size_forward,0.544411838054657
+sous-echantillon-1002,train_subsample,8,Bwd Packet Length Max,0.4583033621311188
+sous-echantillon-1002,train_subsample,9,Fwd IAT Min,0.45566990971565247
+sous-echantillon-1002,train_subsample,10,Fwd Header Length,0.4473607838153839
+sous-echantillon-1003,train_subsample,1,Destination Port,3.8749003410339355
+sous-echantillon-1003,train_subsample,2,Bwd Packet Length Std,2.052746057510376
+sous-echantillon-1003,train_subsample,3,Bwd Packet Length Mean,1.8386485576629639
+sous-echantillon-1003,train_subsample,4,Init_Win_bytes_backward,1.7997658252716064
+sous-echantillon-1003,train_subsample,5,Init_Win_bytes_forward,1.0210720300674438
+sous-echantillon-1003,train_subsample,6,Bwd Packet Length Max,0.7299001812934875
+sous-echantillon-1003,train_subsample,7,Bwd Packets/s,0.5494826436042786
+sous-echantillon-1003,train_subsample,8,min_seg_size_forward,0.4863949716091156
+sous-echantillon-1003,train_subsample,9,Bwd Packet Length Min,0.4075058102607727
+sous-echantillon-1003,train_subsample,10,Fwd Header Length,0.3699188828468323
